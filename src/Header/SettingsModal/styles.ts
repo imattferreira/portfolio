@@ -24,6 +24,18 @@ export const Button = styled('button', {
   svg: {
     color: '$red500',
   },
+
+  '@mobile': {
+    fontSize: '$xlarge',
+    width: '2.6rem',
+    height: '2.6rem',
+  },
+
+  '@min-mobile': {
+    width: '2.4rem',
+    height: '2.4rem',
+    fontSize: '$large',
+  },
 });
 
 export const Modal = styled('div', {
@@ -50,7 +62,7 @@ export const ModalArrow = styled('div', {
   width: 0,
   height: 0,
 
-  marginRight: '24px',
+  marginRight: '1.5rem',
 
   borderLeft: '10px solid transparent',
   borderRight: '10px solid transparent',
@@ -65,6 +77,10 @@ export const ModalContent = styled('div', {
 
   borderRadius: '0.5rem',
   padding: '1rem',
+
+  '@mobile': {
+    marginRight: '1rem',
+  },
 });
 
 export const LangOptions = styled('div', {

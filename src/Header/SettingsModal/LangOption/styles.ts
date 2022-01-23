@@ -27,4 +27,8 @@ export const Container = styled('button', {
   '&:first-child': {
     marginRight: '4px',
   },
+
+  '@mobile': {
+    padding: '0.72rem 1rem',
+  },
 });

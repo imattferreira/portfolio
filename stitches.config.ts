@@ -21,16 +21,19 @@ export const {
       gray50: '#997BAD',
     },
     fontSizes: {
-      small: '12px',
-      medium: '16px',
-      large: '22px',
-      xlarge: '28px',
+      small: '0.75rem',
+      medium: '1rem',
+      large: '1.375rem',
+      xlarge: '1.75rem',
     },
     fonts: {
       logo: 'Outfit, sans-serif',
       body: 'Roboto, sans-serif',
     },
   },
-  media: {},
+  media: {
+    mobile: '(max-width: 480px)',
+    'min-mobile': '(max-width: 360px)',
+  },
   utils: {},
 });

@@ -16,4 +16,16 @@ export const Button = styled('button', {
   '&:hover': {
     background: '$black800',
   },
+
+  '@mobile': {
+    width: '2.6rem',
+    height: '2.6rem',
+    fontSize: '$xlarge',
+  },
+
+  '@min-mobile': {
+    width: '2.4rem',
+    height: '2.4rem',
+    fontSize: '$large',
+  },
 });

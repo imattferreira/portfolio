@@ -21,4 +21,9 @@ export const Container = styled('button', {
     color: '$gray50',
     cursor: 'not-allowed',
   },
+
+  '@min-mobile': {
+    letterSpacing: '0.2px',
+    padding: '0.2rem 0.4rem',
+  },
 });
