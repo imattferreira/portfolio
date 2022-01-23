@@ -1,15 +1,7 @@
 import React from 'react';
 
-import { styled } from '../../../stitches.config';
+import { Button } from './styles';
 
 export function Logo() {
-  return (
-    <Button>
-      <span>M</span>
-    </Button>
-  );
+  return <Button aria-label="home page">M</Button>;
 }
-
-const Button = styled('button', {
-  background: '$red500',
-});

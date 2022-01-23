@@ -21,11 +21,16 @@ export const globalStyles = globalCss({
   body: {
     height: '100vh',
     width: '100vw',
+
+    color: '$gray100',
+    fontFamily: '$body',
+    background: '$black900',
   },
 
   button: {
     cursor: 'pointer',
     border: 'none',
+    transition: '250ms',
   },
   a: {
     textDecoration: 'none',

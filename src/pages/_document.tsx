@@ -6,12 +6,12 @@ import { getCssText } from '../../stitches.config';
 export default class Document extends NextDocument {
   render() {
     return (
-      <Html>
+      <Html lang="pt-br">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Roboto:wght@300;400;700&display=swap"
             rel="stylesheet"
           />
           <style
@@ -19,6 +19,7 @@ export default class Document extends NextDocument {
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: getCssText() }}
           />
+          <meta name="description" content="Website de Matheus Ferreira" />
         </Head>
         <body>
           <Main />

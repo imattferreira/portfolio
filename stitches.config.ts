@@ -16,6 +16,19 @@ export const {
 
       black900: '#1D1821',
       black800: '#302736',
+
+      gray100: '#735C82',
+      gray50: '#997BAD',
+    },
+    fontSizes: {
+      small: '12px',
+      medium: '16px',
+      large: '22px',
+      xlarge: '28px',
+    },
+    fonts: {
+      logo: 'Outfit, sans-serif',
+      body: 'Roboto, sans-serif',
     },
   },
   media: {},
