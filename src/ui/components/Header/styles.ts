@@ -1,4 +1,4 @@
-import { styled } from '../../stitches.config';
+import { styled } from '../../../app/configs/stitches';
 
 export const Container = styled('header', {
   borderBottom: '1px solid $black800',

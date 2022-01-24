@@ -2,16 +2,17 @@ import React, { ButtonHTMLAttributes } from 'react';
 
 import { Container } from './styles';
 
-type LangOptionProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+interface LangOptionButtonProps
+  extends ButtonHTMLAttributes<HTMLButtonElement> {
   active?: boolean;
   title: string;
-};
+}
 
-export function LangOption({
+export function LangOptionButton({
   title,
   active = false,
   ...rest
-}: LangOptionProps) {
+}: LangOptionButtonProps) {
   return (
     <Container className={active ? 'active' : ''} {...rest}>
       <span>{title}</span>

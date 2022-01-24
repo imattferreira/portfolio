@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 
-import { globalStyles } from '../styles/global';
+import { globalStyles } from '../ui/styles/global';
 
 function MyApp({ Component, pageProps }) {
   globalStyles();

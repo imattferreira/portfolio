@@ -1,4 +1,4 @@
-import { styled } from '../../../stitches.config';
+import { styled } from '../../../../app/configs/stitches';
 
 export const Button = styled('button', {
   borderRadius: '0.5rem',
@@ -46,7 +46,7 @@ export const Modal = styled('div', {
   left: 0,
 });
 
-export const ModalWrapper = styled('div', {
+export const Wrapper = styled('div', {
   width: '100%',
   maxWidth: '1440px',
 
@@ -58,7 +58,7 @@ export const ModalWrapper = styled('div', {
   justifyContent: 'center',
 });
 
-export const ModalArrow = styled('div', {
+export const ArrowUp = styled('div', {
   width: 0,
   height: 0,
 
@@ -70,7 +70,7 @@ export const ModalArrow = styled('div', {
   borderBottom: '10px solid $black800',
 });
 
-export const ModalContent = styled('div', {
+export const Content = styled('div', {
   background: '$black800',
   // height: '8rem',
   width: '18rem',

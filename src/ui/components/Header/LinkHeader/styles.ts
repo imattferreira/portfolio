@@ -1,4 +1,4 @@
-import { styled } from '../../../stitches.config';
+import { styled } from '../../../../app/configs/stitches';
 
 export const Container = styled('button', {
   background: '$black900',

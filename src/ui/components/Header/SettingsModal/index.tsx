@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { GoSettings } from 'react-icons/go';
 
-import { LangOption } from './LangOption';
+import { GoSettings } from '../../../../app/configs/icons';
+import { LangOptionButton } from './LangOptionButton';
 import { ModalSection } from './ModalSection';
 import {
   Button,
   Modal,
-  ModalContent,
-  ModalWrapper,
-  ModalArrow,
+  Content,
+  Wrapper,
+  ArrowUp,
   LangOptions,
 } from './styles';
 
@@ -38,27 +38,28 @@ export function SettingsModal() {
 
       {modalIsOpen && (
         <Modal>
-          <ModalWrapper>
-            <ModalArrow />
-            <ModalContent>
-              <ModalSection title="Language">
+          <Wrapper>
+            <ArrowUp />
+
+            <Content>
+              <ModalSection title="Idioma">
                 <LangOptions>
-                  <LangOption
-                    aria-label="Brazilian Portuguese"
+                  <LangOptionButton
+                    aria-label="Portugues Brasileiro"
                     title="PTBR"
                     active={currentLanguage === 'ptbr'}
                     onClick={() => handleCurrentLanguage('ptbr')}
                   />
-                  <LangOption
-                    aria-label="English"
+                  <LangOptionButton
+                    aria-label="Ingles"
                     title="EN"
                     active={currentLanguage === 'en'}
                     onClick={() => handleCurrentLanguage('en')}
                   />
                 </LangOptions>
               </ModalSection>
-            </ModalContent>
-          </ModalWrapper>
+            </Content>
+          </Wrapper>
         </Modal>
       )}
     </div>
