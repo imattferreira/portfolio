@@ -10,8 +10,7 @@ export const Button = styled('button', {
 
   borderRadius: '0.5rem',
 
-  width: '2.4rem',
-  height: '2.4rem',
+  size: '2.4rem',
 
   '&:hover': {
     background: '$black800',

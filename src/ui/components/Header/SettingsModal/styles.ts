@@ -6,8 +6,7 @@ export const Button = styled('button', {
 
   fontSize: '$large',
 
-  width: '2.4rem',
-  height: '2.4rem',
+  size: '2.4rem',
 
   display: 'flex',
   alignItems: 'center',
@@ -27,13 +26,11 @@ export const Button = styled('button', {
 
   '@mobile': {
     fontSize: '$xlarge',
-    width: '2.6rem',
-    height: '2.6rem',
+    size: '2.6rem',
   },
 
   '@min-mobile': {
-    width: '2.4rem',
-    height: '2.4rem',
+    size: '2.4rem',
     fontSize: '$large',
   },
 });
@@ -42,7 +39,7 @@ export const Modal = styled('div', {
   width: '100vw',
 
   position: 'fixed',
-  marginTop: '1rem',
+  marginY: '1rem',
   left: 0,
 });
 
@@ -64,9 +61,7 @@ export const ArrowUp = styled('div', {
 
   marginRight: '1.5rem',
 
-  borderLeft: '10px solid transparent',
-  borderRight: '10px solid transparent',
-
+  borderX: '10px solid transparent',
   borderBottom: '10px solid $black800',
 });
 

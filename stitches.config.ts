@@ -35,5 +35,30 @@ export const {
     mobile: '(max-width: 480px)',
     'min-mobile': '(max-width: 360px)',
   },
-  utils: {},
+  utils: {
+    marginY: (value) => ({
+      marginTop: value,
+      marginBottom: value,
+    }),
+    marginX: (value) => ({
+      marginLeft: value,
+      marginRight: value,
+    }),
+    paddingY: (value) => ({
+      paddingTop: value,
+      paddingBottom: value,
+    }),
+    size: (value) => ({
+      width: value,
+      height: value,
+    }),
+    borderX: (value) => ({
+      borderLeft: value,
+      borderRight: value,
+    }),
+    borderY: (value) => ({
+      borderTop: value,
+      borderBottom: value,
+    }),
+  },
 });
