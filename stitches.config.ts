@@ -48,6 +48,10 @@ export const {
       paddingTop: value,
       paddingBottom: value,
     }),
+    paddingX: (value) => ({
+      paddingLeft: value,
+      paddingRight: value,
+    }),
     size: (value) => ({
       width: value,
       height: value,

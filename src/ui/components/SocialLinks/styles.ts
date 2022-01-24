@@ -20,6 +20,11 @@ export const Wrapper = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
+
+  '@mobile': {
+    paddingX: '2rem',
+    flexDirection: 'column',
+  },
 });
 
 export const Title = styled('h2', {

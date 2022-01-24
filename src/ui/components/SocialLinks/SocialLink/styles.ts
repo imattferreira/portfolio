@@ -37,4 +37,8 @@ export const Container = styled('button', {
   '& span.reduced': {
     fontSize: '$small',
   },
+
+  '@mobile': {
+    width: '100%',
+  },
 });
