@@ -1,4 +1,5 @@
 import React from 'react';
+import { ProjectLinks } from 'ui/components/ProjectLinks';
 import { SocialLinks } from 'ui/components/SocialLinks';
 
 import { Header } from '../ui/components/Header';
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <Header />
       <SocialLinks />
+      <ProjectLinks />
     </>
   );
 }

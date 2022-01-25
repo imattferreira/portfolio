@@ -7,9 +7,9 @@ export const Container = styled('button', {
   flexDirection: 'column',
 
   size: '14rem',
-  borderRadius: '0.5rem',
   marginY: '1rem',
 
+  borderRadius: '0.5rem',
   border: '1px solid $black800',
   background: 'none',
 
