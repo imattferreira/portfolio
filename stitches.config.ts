@@ -19,6 +19,8 @@ export const {
 
       gray100: '#735C82',
       gray50: '#997BAD',
+
+      white: '#fff',
     },
     fontSizes: {
       small: '0.75rem',

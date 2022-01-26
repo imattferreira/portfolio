@@ -7,6 +7,11 @@ export const globalStyles = globalCss({
     boxSizing: 'border-box',
     cursor: 'none',
   },
+  '*::selection': {
+    background: '$gray100',
+    color: '$white',
+  },
+
   html: {
     '@media (max-width: 1080px)': {
       fontSize: '93.75%',
@@ -20,14 +25,10 @@ export const globalStyles = globalCss({
   },
 
   body: {
-    // height: '100vh',
-    // width: '100vw',
-
     color: '$gray100',
     fontFamily: '$body',
     background: '$black900',
   },
-
   button: {
     // cursor: 'pointer',
     border: 'none',

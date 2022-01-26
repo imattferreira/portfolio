@@ -67,7 +67,7 @@ export const TechIcons = styled('div', {
 export const GitLink = styled('div', {
   fontSize: '1.5rem',
 
-  cursor: 'pointer',
+  // cursor: 'pointer',
 
   '@mobile': {
     fontSize: '$xlarge',

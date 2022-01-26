@@ -11,7 +11,7 @@ export const Container = styled('div', {
   flexDirection: 'column',
   alignItems: 'center',
 
-  borderY: '1px solid $black800',
+  borderBottom: '1px solid $black800',
 });
 
 export const Wrapper = styled('div', {

@@ -19,7 +19,7 @@ export const Container = styled('button', {
   '&.active': {
     background: '$black800',
     color: '$gray50',
-    cursor: 'not-allowed',
+    // cursor: 'not-allowed',
   },
 
   '@min-mobile': {

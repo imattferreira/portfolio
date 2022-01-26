@@ -6,7 +6,7 @@ import { Container, Title, Wrapper } from './styles';
 export function ProjectLinks() {
   return (
     <Container>
-      <Title>Projects</Title>
+      <Title>Projetos</Title>
       <Wrapper>
         <ProjectLink />
         <ProjectLink />
