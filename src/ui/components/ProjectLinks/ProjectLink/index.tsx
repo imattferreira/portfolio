@@ -1,3 +1,4 @@
+import { useMouseContext } from 'app/contexts/MouseContext';
 import Link from 'next/link';
 import React from 'react';
 
@@ -21,6 +22,8 @@ import {
 } from './styles';
 
 export function ProjectLink() {
+  const { cursorChangeHandler } = useMouseContext();
+
   return (
     <Container>
       <div>
@@ -39,7 +42,10 @@ export function ProjectLink() {
         </TechIcons>
 
         <Link href="https://github.com/MattFerreira18">
-          <GitLink>
+          <GitLink
+            onMouseEnter={() => cursorChangeHandler('hovered')}
+            onMouseLeave={() => cursorChangeHandler()}
+          >
             <IoLogoGithub />
           </GitLink>
         </Link>

@@ -1,3 +1,4 @@
+import { useMouseContext } from 'app/contexts/MouseContext';
 import React, { useState } from 'react';
 
 import { GoSettings } from '../../../../app/configs/icons';
@@ -13,6 +14,8 @@ import {
 } from './styles';
 
 export function SettingsModal() {
+  const { cursorChangeHandler } = useMouseContext();
+
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState<'ptbr' | 'en'>('ptbr');
 
@@ -32,6 +35,8 @@ export function SettingsModal() {
         onClick={() => setModalIsOpen(!modalIsOpen)}
         className={modalIsOpen && 'active'}
         aria-label="open settings"
+        onMouseEnter={() => cursorChangeHandler('hovered')}
+        onMouseLeave={() => cursorChangeHandler()}
       >
         <GoSettings />
       </Button>

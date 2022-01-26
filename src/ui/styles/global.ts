@@ -5,6 +5,7 @@ export const globalStyles = globalCss({
     margin: 0,
     padding: 0,
     boxSizing: 'border-box',
+    cursor: 'none',
   },
   html: {
     '@media (max-width: 1080px)': {
@@ -28,7 +29,7 @@ export const globalStyles = globalCss({
   },
 
   button: {
-    cursor: 'pointer',
+    // cursor: 'pointer',
     border: 'none',
     transition: '250ms',
   },
