@@ -10,4 +10,8 @@ export {
   SiPrisma,
   SiSocketdotio,
   SiStyledcomponents,
+  SiPostgresql,
+  SiLinux,
+  SiDocker,
+  SiGit,
 } from 'react-icons/si';

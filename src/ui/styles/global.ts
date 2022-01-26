@@ -19,8 +19,8 @@ export const globalStyles = globalCss({
   },
 
   body: {
-    height: '100vh',
-    width: '100vw',
+    // height: '100vh',
+    // width: '100vw',
 
     color: '$gray100',
     fontFamily: '$body',

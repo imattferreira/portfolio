@@ -1,4 +1,5 @@
 import React from 'react';
+import { HardSkills } from 'ui/components/HardSkills';
 import { ProjectLinks } from 'ui/components/ProjectLinks';
 import { SocialLinks } from 'ui/components/SocialLinks';
 
@@ -9,7 +10,8 @@ export default function Home() {
     <>
       <Header />
       <SocialLinks />
-      <ProjectLinks />
+      {/* <ProjectLinks /> */}
+      <HardSkills />
     </>
   );
 }
