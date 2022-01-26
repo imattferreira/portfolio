@@ -5,9 +5,10 @@ export const Container = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   flexDirection: 'column',
-  justifySelf: 'center',
 
-  marginY: '1rem',
+  position: 'absolute',
+
+  marginBottom: '1rem',
   size: '14rem',
   borderRadius: '0.5rem',
   border: '1px solid $black800',

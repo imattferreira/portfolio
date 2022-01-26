@@ -56,8 +56,7 @@ export const Wrapper = styled('div', {
 });
 
 export const ArrowUp = styled('div', {
-  width: 0,
-  height: 0,
+  size: 0,
 
   marginRight: '1.5rem',
 
@@ -79,8 +78,6 @@ export const Content = styled('div', {
 });
 
 export const LangOptions = styled('div', {
-  marginTop: '0.6rem',
-
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',

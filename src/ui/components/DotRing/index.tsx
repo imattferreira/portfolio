@@ -12,7 +12,7 @@ export function DotRing() {
 
   useEffect(() => {
     setCustomCursorIsActive(!useMobileVersion());
-  }, [useMobileVersion()]);
+  }, []);
 
   if (!customCursorIsActive) {
     return null;
