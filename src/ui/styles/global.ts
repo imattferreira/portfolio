@@ -38,4 +38,21 @@ export const globalStyles = globalCss({
   input: {
     outline: 'none',
   },
+
+  '::-webkit-scrollbar': {
+    width: '8px',
+  },
+
+  '::-webkit-scrollbar-track': {
+    background: '$black800',
+  },
+
+  '::-webkit-scrollbar-thumb': {
+    background: '$gray100',
+    borderRadius: '4px',
+  },
+
+  '::-webkit-scrollbar-thumb:hover': {
+    background: '$gray50',
+  },
 });
