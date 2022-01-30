@@ -7,7 +7,7 @@ import {
   BsCodeSlash,
   AiFillHeart,
 } from '../../../app/configs/icons';
-import { IconSocialLink } from './IconSocialLink';
+import { IconSocialLink } from '../links';
 import { Container, IconsWrapper, InfoWrapper } from './styles';
 
 export function Footer() {

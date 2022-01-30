@@ -11,8 +11,8 @@ import {
   SiDocker,
   SiGit,
   SiJest,
-} from '../../../app/configs/icons';
-import { HardSkill } from './HardSkill';
+} from '../../../../app/configs/icons';
+import { HardSkill } from '../../HardSkill';
 import { Container, Title, Wrapper } from './styles';
 
 export function HardSkills() {

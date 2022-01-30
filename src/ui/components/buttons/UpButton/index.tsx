@@ -1,7 +1,7 @@
 import { useMouseContext } from 'app/contexts/MouseContext';
 import React, { useEffect, useState } from 'react';
 
-import { FiArrowUp } from '../../../app/configs/icons';
+import { FiArrowUp } from '../../../../app/configs/icons';
 import { Container } from './styles';
 
 export function UpButton() {

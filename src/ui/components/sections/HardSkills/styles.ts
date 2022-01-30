@@ -1,4 +1,4 @@
-import { styled } from '../../../app/configs/stitches';
+import { styled } from '../../../../app/configs/stitches';
 
 export const Container = styled('section', {
   marginX: 'auto',

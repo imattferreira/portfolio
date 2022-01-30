@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ProjectLink } from './ProjectLink';
+import { ProjectLink } from '../../links';
 import { Container, Title, Wrapper } from './styles';
 
 export function ProjectLinks() {

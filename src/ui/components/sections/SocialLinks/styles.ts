@@ -1,23 +1,17 @@
-import { styled } from '../../../app/configs/stitches';
+import { styled } from '../../../../app/configs/stitches';
 
 export const Container = styled('section', {
-  maxWidth: '1200px',
-
   marginX: 'auto',
-  marginBottom: '2rem',
+  marginTop: '2rem',
+
+  maxWidth: '1200px',
   paddingY: '2rem',
 
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
 
-  // borderBottom: '1px solid $black800',
-});
-
-export const Title = styled('h2', {
-  marginBottom: '1rem',
-
-  fontSize: '$xlarge',
+  borderBottom: '1px solid $black800',
 });
 
 export const Wrapper = styled('div', {
@@ -28,7 +22,13 @@ export const Wrapper = styled('div', {
   justifyContent: 'space-between',
 
   '@mobile': {
-    flexDirection: 'column',
     paddingX: '2rem',
+    flexDirection: 'column',
   },
+});
+
+export const Title = styled('h2', {
+  marginBottom: '1rem',
+
+  fontSize: '$xlarge',
 });

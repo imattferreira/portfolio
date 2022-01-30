@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { LinkHeader } from './LinkHeader';
+import { LinkHeader } from '../links';
 import { Logo } from './Logo';
 import { SettingsModal } from './SettingsModal';
 import { Container } from './styles';

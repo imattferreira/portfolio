@@ -1,12 +1,14 @@
 import React from 'react';
-import { UpButton } from 'ui/components/UpButton';
+import { UpButton } from 'ui/components/buttons';
 
-import { About } from '../ui/components/About';
 import { Footer } from '../ui/components/Footer';
-import { HardSkills } from '../ui/components/HardSkills';
 import { Header } from '../ui/components/Header';
-import { ProjectLinks } from '../ui/components/ProjectLinks';
-import { SocialLinks } from '../ui/components/SocialLinks';
+import {
+  About,
+  HardSkills,
+  ProjectLinks,
+  SocialLinks,
+} from '../ui/components/sections';
 
 export default function Home() {
   return (

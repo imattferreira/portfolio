@@ -5,8 +5,8 @@ import {
   IoLogoGithub,
   BsTelegram,
   MdEmail,
-} from '../../../app/configs/icons';
-import { SocialLink } from './SocialLink';
+} from '../../../../app/configs/icons';
+import { SocialLink } from '../../links';
 import { Container, Wrapper, Title } from './styles';
 
 export function SocialLinks() {
