@@ -1,7 +1,7 @@
-import { useMouseContext } from 'app/contexts/MouseContext';
 import Link from 'next/link';
 import React from 'react';
 
+import { useMouseContext } from '../../../../app/contexts/MouseContext';
 import { Container } from './styles';
 
 type SocialLinkProps = {

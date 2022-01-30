@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { About } from '../ui/components/About';
+import { Footer } from '../ui/components/Footer';
 import { HardSkills } from '../ui/components/HardSkills';
 import { Header } from '../ui/components/Header';
 import { ProjectLinks } from '../ui/components/ProjectLinks';
@@ -14,6 +15,7 @@ export default function Home() {
       <SocialLinks />
       <HardSkills />
       <ProjectLinks />
+      <Footer />
     </>
   );
 }
