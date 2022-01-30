@@ -39,6 +39,6 @@ export const Container = styled('button', {
   },
 
   '@mobile': {
-    width: '100%',
+    width: 'calc(100vw - 4rem)',
   },
 });
