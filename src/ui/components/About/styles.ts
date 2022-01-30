@@ -4,7 +4,8 @@ export const Container = styled('div', {
   maxWidth: '1200px',
 
   marginX: 'auto',
-  marginY: '2rem',
+  marginTop: '5rem',
+  marginBottom: '2rem',
   paddingY: '2rem',
 
   display: 'flex',
