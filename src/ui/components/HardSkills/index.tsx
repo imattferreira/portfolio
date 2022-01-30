@@ -10,6 +10,7 @@ import {
   SiLinux,
   SiDocker,
   SiGit,
+  SiJest,
 } from '../../../app/configs/icons';
 import { HardSkill } from './HardSkill';
 import { Container, Title, Wrapper } from './styles';
@@ -63,6 +64,11 @@ export function HardSkills() {
           name="Git"
           description="é uma plataforma utilizada para podermos versionar nossos arquivos e códigos de programação."
           icon={<SiGit />}
+        />
+        <HardSkill
+          name="Jest"
+          description="é um framework de testes de aplicações que tem como foco a simplicidade."
+          icon={<SiJest />}
         />
       </Wrapper>
     </Container>

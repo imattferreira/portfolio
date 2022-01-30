@@ -14,4 +14,5 @@ export {
   SiLinux,
   SiDocker,
   SiGit,
+  SiJest,
 } from 'react-icons/si';
