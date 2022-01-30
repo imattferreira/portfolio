@@ -4,6 +4,7 @@ export { BsTelegram, BsCodeSlash } from 'react-icons/bs';
 export { MdEmail } from 'react-icons/md';
 export { AiFillHeart } from 'react-icons/ai';
 export { FaNodeJs } from 'react-icons/fa';
+export { FiArrowUp } from 'react-icons/fi';
 export {
   SiTypescript,
   SiReact,

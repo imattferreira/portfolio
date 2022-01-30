@@ -1,4 +1,5 @@
 import React from 'react';
+import { UpButton } from 'ui/components/UpButton';
 
 import { About } from '../ui/components/About';
 import { Footer } from '../ui/components/Footer';
@@ -16,6 +17,7 @@ export default function Home() {
       <HardSkills />
       <ProjectLinks />
       <Footer />
+      <UpButton />
     </>
   );
 }
