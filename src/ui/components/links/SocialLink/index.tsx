@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import React from 'react';
 
@@ -16,17 +17,19 @@ export function SocialLink({ title, link, nickname, icon }: SocialLinkProps) {
 
   return (
     <Link href={link}>
-      <Container
-        aria-label={title}
-        onMouseEnter={() => cursorChangeHandler('hovered')}
-        onMouseLeave={() => cursorChangeHandler()}
-      >
-        {icon}
-        <span>{title}</span>
-        <span className={nickname.length > 26 ? 'reduced' : ''}>
-          {nickname}
-        </span>
-      </Container>
+      <motion.div whileTap={{ scale: 1.2 }}>
+        <Container
+          aria-label={title}
+          onMouseEnter={() => cursorChangeHandler('hovered')}
+          onMouseLeave={() => cursorChangeHandler()}
+        >
+          {icon}
+          <span>{title}</span>
+          <span className={nickname.length > 26 ? 'reduced' : ''}>
+            {nickname}
+          </span>
+        </Container>
+      </motion.div>
     </Link>
   );
 }

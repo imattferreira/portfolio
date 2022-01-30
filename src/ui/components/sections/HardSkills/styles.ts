@@ -4,7 +4,7 @@ export const Container = styled('section', {
   marginX: 'auto',
   marginTop: '2rem',
 
-  maxWidth: '1200px',
+  maxWidth: '1300px',
   paddingY: '2rem',
 
   display: 'flex',
@@ -12,6 +12,12 @@ export const Container = styled('section', {
   alignItems: 'center',
 
   borderBottom: '1px solid $black800',
+});
+
+export const Title = styled('h2', {
+  marginBottom: '1rem',
+
+  fontSize: '$xlarge',
 });
 
 export const Wrapper = styled('div', {
@@ -29,10 +35,4 @@ export const Wrapper = styled('div', {
 
     paddingX: '2rem',
   },
-});
-
-export const Title = styled('h2', {
-  marginBottom: '1rem',
-
-  fontSize: '$xlarge',
 });

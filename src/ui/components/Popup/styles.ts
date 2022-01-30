@@ -1,4 +1,5 @@
 import { styled } from '../../../app/configs/stitches';
+import { translation } from '../../styles/animations';
 
 export const Container = styled('div', {
   justifySelf: 'center',
@@ -14,13 +15,13 @@ export const Container = styled('div', {
 
 export const Wrapper = styled('div', {
   display: 'none',
-  zIndex: '100',
   position: 'absolute',
   marginBottom: '10rem',
   bottom: 'calc(100% - 150px)',
 
   '&.active': {
     display: 'inline',
+    animation: `${translation} 400ms`,
   },
 
   '@mobile': {

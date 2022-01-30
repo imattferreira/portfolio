@@ -27,7 +27,7 @@ export const Container = styled('div', {
   },
 });
 
-export const Title = styled('h2', {
+export const Title = styled('h3', {
   marginBottom: '0.2rem',
 
   fontSize: '$large',

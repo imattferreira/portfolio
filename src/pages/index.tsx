@@ -1,6 +1,6 @@
 import React from 'react';
-import { UpButton } from 'ui/components/buttons';
 
+import { UpButton } from '../ui/components/buttons';
 import { Footer } from '../ui/components/Footer';
 import { Header } from '../ui/components/Header';
 import {
@@ -8,6 +8,7 @@ import {
   HardSkills,
   ProjectLinks,
   SocialLinks,
+  Articles,
 } from '../ui/components/sections';
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <SocialLinks />
       <HardSkills />
       <ProjectLinks />
+      <Articles />
       <Footer />
       <UpButton />
     </>
