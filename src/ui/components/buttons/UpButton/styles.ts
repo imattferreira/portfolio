@@ -23,4 +23,8 @@ export const Container = styled('button', {
     background: '$black900',
     color: '$red500',
   },
+
+  '@mobile': {
+    size: '4rem',
+  },
 });
