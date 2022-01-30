@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ModalSection } from 'ui/components/modal/ModalSection';
 
 import { RiMenu3Fill } from '../../../../app/configs/icons';
 import { MenuButton, Modal, Wrapper, ArrowUp, Content } from './styles';
@@ -20,7 +21,9 @@ export function LinksModal({ children }: LinksModalProps) {
         <Modal>
           <Wrapper onClick={() => setModalIsOpen(false)}>
             <ArrowUp />
-            <Content>{children}</Content>
+            <Content>
+              <ModalSection title="Seções">{children}</ModalSection>
+            </Content>
           </Wrapper>
         </Modal>
       )}

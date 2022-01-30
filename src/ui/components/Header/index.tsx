@@ -25,9 +25,9 @@ export function Header() {
               aria-label="Sobre Mim"
             />
             <LinkHeader
-              title="Projetos"
-              section="projects"
-              aria-label="Projetos"
+              title="Redes Sociais"
+              section="social-links"
+              aria-label="Redes Sociais"
             />
             <LinkHeader
               title="Habilidades"
@@ -35,9 +35,9 @@ export function Header() {
               aria-label="Projetos"
             />
             <LinkHeader
-              title="Redes Sociais"
-              section="social-links"
-              aria-label="Redes Sociais"
+              title="Projetos"
+              section="projects"
+              aria-label="Projetos"
             />
             <LinkHeader
               title="Artigos"
@@ -54,9 +54,9 @@ export function Header() {
             aria-label="Sobre Mim"
           />
           <LinkHeader
-            title="Projetos"
-            section="projects"
-            aria-label="Projetos"
+            title="Redes Sociais"
+            section="social-links"
+            aria-label="Redes Sociais"
           />
           <LinkHeader
             title="Habilidades"
@@ -64,9 +64,9 @@ export function Header() {
             aria-label="Projetos"
           />
           <LinkHeader
-            title="Redes Sociais"
-            section="social-links"
-            aria-label="Redes Sociais"
+            title="Projetos"
+            section="projects"
+            aria-label="Projetos"
           />
           <LinkHeader title="Artigos" section="articles" aria-label="Artigos" />
         </div>

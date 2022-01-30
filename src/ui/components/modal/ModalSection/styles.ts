@@ -6,4 +6,12 @@ export const Container = styled('div', {
     fontSize: '$medium',
     marginBottom: '0.6rem',
   },
+
+  '@mobile': {
+    '& > div': {
+      fontWeight: 'bold',
+      fontSize: '$large',
+      marginBottom: '0.6rem',
+    },
+  },
 });
