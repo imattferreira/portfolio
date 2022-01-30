@@ -21,7 +21,6 @@ export const Container = styled('button', {
   '&.active': {
     background: '$black900',
     color: '$gray50',
-    // cursor: 'not-allowed',
   },
 
   '&:first-child': {

@@ -20,5 +20,3 @@ export {
   SiGit,
   SiJest,
 } from 'react-icons/si';
-
-// AiOutlineHeart

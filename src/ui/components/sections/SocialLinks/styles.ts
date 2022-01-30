@@ -23,7 +23,6 @@ export const Wrapper = styled('div', {
 
   '@mobile': {
     paddingX: '2rem',
-    // justifyContent: 'center',
     flexDirection: 'column',
   },
 });

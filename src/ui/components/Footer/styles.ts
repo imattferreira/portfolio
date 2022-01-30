@@ -48,8 +48,17 @@ export const IconsWrapper = styled('div', {
 
   fontSize: '1.5rem',
 
-  'div:not(:first-child)': {
+  '& a': {
+    color: '$gray100',
+    transition: '250ms',
+  },
+
+  '& a:not(:first-child)': {
     marginLeft: '1rem',
+  },
+
+  '& a:hover': {
+    color: '$gray50',
   },
 
   '@mobile': {

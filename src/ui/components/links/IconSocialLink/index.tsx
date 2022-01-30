@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 
 import { useMouseContext } from '../../../../app/contexts/MouseContext';
@@ -12,13 +11,13 @@ export function IconSocialLink({ icon, link }: IconSocialLinkProps) {
   const { cursorChangeHandler } = useMouseContext();
 
   return (
-    <Link href={link}>
+    <a target="_blank" href={link} rel="noreferrer">
       <div
         onMouseEnter={() => cursorChangeHandler('hovered')}
         onMouseLeave={() => cursorChangeHandler()}
       >
         {icon}
       </div>
-    </Link>
+    </a>
   );
 }

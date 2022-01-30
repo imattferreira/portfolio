@@ -19,6 +19,10 @@ export const Container = styled('div', {
   '&:hover': {
     background: '$black800',
     color: '$gray50',
+
+    '& a': {
+      color: '$gray50',
+    },
   },
 
   '@mobile': {
@@ -49,6 +53,10 @@ export const IconsWrapper = styled('div', {
   justifyContent: 'space-between',
   fontSize: '$large',
 
+  '& a': {
+    color: '$gray100',
+  },
+
   '@mobile': {
     fontSize: '1.5rem',
   },
@@ -66,8 +74,6 @@ export const TechIcons = styled('div', {
 
 export const GitLink = styled('div', {
   fontSize: '1.5rem',
-
-  // cursor: 'pointer',
 
   '@mobile': {
     fontSize: '$xlarge',

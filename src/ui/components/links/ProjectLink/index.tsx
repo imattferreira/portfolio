@@ -1,5 +1,4 @@
 import { useMouseContext } from 'app/contexts/MouseContext';
-import Link from 'next/link';
 import React from 'react';
 
 import {
@@ -41,14 +40,18 @@ export function ProjectLink() {
           <FaNodeJs />
         </TechIcons>
 
-        <Link href="https://github.com/MattFerreira18">
+        <a
+          href="https://github.com/MattFerreira18"
+          target="_blank"
+          rel="noreferrer"
+        >
           <GitLink
             onMouseEnter={() => cursorChangeHandler('hovered')}
             onMouseLeave={() => cursorChangeHandler()}
           >
             <IoLogoGithub />
           </GitLink>
-        </Link>
+        </a>
       </IconsWrapper>
     </Container>
   );

@@ -66,7 +66,6 @@ export const ArrowUp = styled('div', {
 
 export const Content = styled('div', {
   background: '$black800',
-  // height: '8rem',
   width: '18rem',
 
   borderRadius: '0.5rem',

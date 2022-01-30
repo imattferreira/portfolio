@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import React from 'react';
 
 import { useMouseContext } from '../../../../app/contexts/MouseContext';
@@ -16,7 +15,7 @@ export function SocialLink({ title, link, nickname, icon }: SocialLinkProps) {
   const { cursorChangeHandler } = useMouseContext();
 
   return (
-    <Link href={link}>
+    <a href={link} target="_blank" rel="noreferrer">
       <motion.div whileTap={{ scale: 1.2 }}>
         <Container
           aria-label={title}
@@ -30,6 +29,6 @@ export function SocialLink({ title, link, nickname, icon }: SocialLinkProps) {
           </span>
         </Container>
       </motion.div>
-    </Link>
+    </a>
   );
 }
