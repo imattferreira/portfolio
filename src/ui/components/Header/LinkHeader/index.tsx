@@ -4,9 +4,18 @@ import { Container } from './styles';
 
 type LinkHeaderProps = {
   title: string;
+  section: string;
   active?: boolean;
 };
 
-export function LinkHeader({ title, active = false }: LinkHeaderProps) {
-  return <Container className={active && 'active'}>{title}</Container>;
+export function LinkHeader({
+  title,
+  section,
+  active = false,
+}: LinkHeaderProps) {
+  return (
+    <a href={`#${section}`}>
+      <Container className={active && 'active'}>{title}</Container>
+    </a>
+  );
 }

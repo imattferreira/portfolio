@@ -8,12 +8,6 @@ export const Container = styled('header', {
   maxWidth: '1440px',
   margin: '0 auto',
 
-  position: 'fixed',
-  top: 0,
-  left: 0,
-  right: 0,
-  zIndex: 999,
-
   padding: '1rem',
 
   display: 'flex',

@@ -1,6 +1,6 @@
 import { styled } from '../../../app/configs/stitches';
 
-export const Container = styled('div', {
+export const Container = styled('section', {
   maxWidth: '1200px',
 
   marginX: 'auto',

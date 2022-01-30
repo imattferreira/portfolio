@@ -10,9 +10,19 @@ export function Header() {
     <Container>
       <Logo />
       <div>
-        <LinkHeader title="Sobre mim" aria-label="Sobre mim" />
-        <LinkHeader title="Projetos" aria-label="Projetos" />
-        <LinkHeader title="Artigos" aria-label="Sobre mim" />
+        <LinkHeader title="Sobre Mim" section="about" aria-label="Sobre Mim" />
+        <LinkHeader title="Projetos" section="projects" aria-label="Projetos" />
+        <LinkHeader
+          title="Habilidades"
+          section="skills"
+          aria-label="Projetos"
+        />
+        <LinkHeader
+          title="Redes Sociais"
+          section="social-links"
+          aria-label="Redes Sociais"
+        />
+        <LinkHeader title="Artigos" section="articles" aria-label="Artigos" />
       </div>
       <SettingsModal />
     </Container>

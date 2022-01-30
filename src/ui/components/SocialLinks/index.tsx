@@ -11,8 +11,8 @@ import { Container, Wrapper, Title } from './styles';
 
 export function SocialLinks() {
   return (
-    <Container>
-      <Title>Minhas Redes</Title>
+    <Container id="social-links">
+      <Title>Redes Sociais</Title>
 
       <Wrapper>
         <SocialLink

@@ -6,6 +6,7 @@ export const globalStyles = globalCss({
     padding: 0,
     boxSizing: 'border-box',
     cursor: 'none',
+    'scroll-behavior': 'smooth',
   },
   '*::selection': {
     background: '$gray100',
@@ -30,7 +31,6 @@ export const globalStyles = globalCss({
     background: '$black900',
   },
   button: {
-    // cursor: 'pointer',
     border: 'none',
     transition: '250ms',
   },

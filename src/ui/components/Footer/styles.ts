@@ -54,5 +54,6 @@ export const IconsWrapper = styled('div', {
 
   '@mobile': {
     fontSize: '$xlarge',
+    marginBottom: '1rem',
   },
 });

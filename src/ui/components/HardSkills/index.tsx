@@ -17,12 +17,12 @@ import { Container, Title, Wrapper } from './styles';
 
 export function HardSkills() {
   return (
-    <Container>
-      <Title>Minhas Habilidades</Title>
+    <Container id="skills">
+      <Title>Habilidades</Title>
       <Wrapper>
         <HardSkill
           name="Typescript"
-          description="TypeScript é um superconjunto de JavaScript."
+          description="TypeScript é um superconjunto de JavaScript que adiciona várias ferramentas, como a tipagem estática."
           icon={<SiTypescript />}
         />
         <HardSkill
