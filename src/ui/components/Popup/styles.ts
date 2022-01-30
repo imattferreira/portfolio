@@ -42,8 +42,8 @@ export const ArrowDown = styled('div', {
 });
 
 export const Content = styled('div', {
-  width: '18rem',
-  height: '8rem',
+  width: '14rem',
+  height: '10rem',
 
   borderRadius: '0.5rem',
   background: '$black800',
