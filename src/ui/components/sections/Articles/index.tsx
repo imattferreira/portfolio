@@ -13,7 +13,14 @@ export function Articles() {
         style={{ marginTop: '26rem' }}
         viewport={{ once: true }}
       >
-        <Title>Artigos</Title>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <Title>Artigos</Title>
+        </motion.div>
         <Wrapper>
           <ArticleLink />
           <ArticleLink />

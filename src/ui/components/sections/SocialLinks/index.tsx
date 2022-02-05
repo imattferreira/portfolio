@@ -19,7 +19,14 @@ export function SocialLinks() {
         style={{ marginTop: '30rem' }}
         viewport={{ once: true }}
       >
-        <Title>Redes Sociais</Title>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <Title>Redes Sociais</Title>
+        </motion.div>
 
         <Wrapper>
           <SocialLink

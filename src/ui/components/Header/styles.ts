@@ -10,7 +10,9 @@ export const Container = styled('header', {
 
   padding: '1rem',
 
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
+  '& > div': {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
 });

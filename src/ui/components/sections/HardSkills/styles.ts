@@ -1,15 +1,14 @@
 import { styled } from '../../../../app/configs/stitches';
 
 export const Container = styled('section', {
-  height: '51.25rem',
+  height: '55rem',
   maxWidth: '1300px',
 
   marginX: 'auto',
   marginTop: '2rem',
-  paddingY: '2rem',
+  paddingTop: '2rem',
 
   background: '$black900',
-  borderBottom: '1px solid $black800',
 
   zIndex: '-8',
 
@@ -21,6 +20,16 @@ export const Container = styled('section', {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+  },
+
+  hr: {
+    height: '1px',
+    width: '1200px',
+
+    background: '$black800',
+
+    border: 'none',
+    margin: '2rem auto 0',
   },
 });
 

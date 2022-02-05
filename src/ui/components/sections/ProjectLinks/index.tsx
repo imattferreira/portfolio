@@ -13,7 +13,14 @@ export function ProjectLinks() {
         style={{ marginTop: '18rem' }}
         viewport={{ once: true }}
       >
-        <Title>Projetos</Title>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <Title>Projetos</Title>
+        </motion.div>
         <Wrapper>
           <ProjectLink />
           <ProjectLink />

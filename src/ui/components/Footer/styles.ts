@@ -11,9 +11,11 @@ export const Container = styled('footer', {
   padding: '1rem',
   zIndex: '1',
 
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
+  '& > div': {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
 
   '@mobile': {
     flexDirection: 'column-reverse',

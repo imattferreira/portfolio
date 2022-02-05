@@ -21,11 +21,18 @@ export function HardSkill({
 }: HardSkillProps) {
   return (
     <Popup title={name} description={description}>
-      <motion.div whileHover={{ scale: 1.1 }}>
-        <Container onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-          {icon}
-          <span>{name}</span>
-        </Container>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true }}
+      >
+        <motion.div transition={{ duration: 0.25 }} whileHover={{ scale: 1.1 }}>
+          <Container onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+            {icon}
+            <span>{name}</span>
+          </Container>
+        </motion.div>
       </motion.div>
     </Popup>
   );

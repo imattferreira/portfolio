@@ -25,37 +25,44 @@ export function ProjectLink() {
   const { cursorChangeHandler } = useMouseContext();
 
   return (
-    <motion.div whileHover={{ scale: 1.1 }}>
-      <Container>
-        <div>
-          <Title>theMessage</Title>
-          <SubTitle>your instant messaging open-source</SubTitle>
-        </div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      viewport={{ once: true }}
+    >
+      <motion.div transition={{ duration: 0.25 }} whileHover={{ scale: 1.1 }}>
+        <Container>
+          <div>
+            <Title>theMessage</Title>
+            <SubTitle>your instant messaging open-source</SubTitle>
+          </div>
 
-        <IconsWrapper>
-          <TechIcons>
-            <SiTypescript />
-            <SiNextdotjs />
-            <SiPrisma />
-            <SiSocketdotio />
-            <SiStyledcomponents />
-            <FaNodeJs />
-          </TechIcons>
+          <IconsWrapper>
+            <TechIcons>
+              <SiTypescript />
+              <SiNextdotjs />
+              <SiPrisma />
+              <SiSocketdotio />
+              <SiStyledcomponents />
+              <FaNodeJs />
+            </TechIcons>
 
-          <a
-            href="https://github.com/MattFerreira18"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <GitLink
-              onMouseEnter={() => cursorChangeHandler('hovered')}
-              onMouseLeave={() => cursorChangeHandler()}
+            <a
+              href="https://github.com/MattFerreira18"
+              target="_blank"
+              rel="noreferrer"
             >
-              <IoLogoGithub />
-            </GitLink>
-          </a>
-        </IconsWrapper>
-      </Container>
+              <GitLink
+                onMouseEnter={() => cursorChangeHandler('hovered')}
+                onMouseLeave={() => cursorChangeHandler()}
+              >
+                <IoLogoGithub />
+              </GitLink>
+            </a>
+          </IconsWrapper>
+        </Container>
+      </motion.div>
     </motion.div>
   );
 }

@@ -4,27 +4,30 @@ export const Container = styled('button', {
   position: 'fixed',
   bottom: 0,
   right: 0,
-
   marginRight: '2rem',
   marginBottom: '2rem',
 
-  size: '3rem',
+  background: 'none',
 
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
+  div: {
+    size: '3rem',
 
-  borderRadius: '8px',
-  fontSize: '$xlarge',
-  color: '$gray100',
-  background: '$black800',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
 
-  '&:hover': {
-    background: '$black900',
-    color: '$red500',
-  },
+    borderRadius: '8px',
+    fontSize: '$xlarge',
+    color: '$gray100',
+    background: '$black800',
 
-  '@mobile': {
-    size: '4rem',
+    '&:hover': {
+      background: '$black900',
+      color: '$red500',
+    },
+
+    '@mobile': {
+      size: '4rem',
+    },
   },
 });

@@ -1,7 +1,8 @@
-import { useMouseContext } from 'app/contexts/MouseContext';
+import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
 import { FiArrowUp } from '../../../../app/configs/icons';
+import { useMouseContext } from '../../../../app/contexts/MouseContext';
 import { Container } from './styles';
 
 export function UpButton() {
@@ -18,17 +19,23 @@ export function UpButton() {
     window.scrollTo(0, 0);
   }
 
-  if (!isVisible) {
-    return null;
-  }
-
   return (
     <Container
       onMouseEnter={() => cursorChangeHandler('hovered')}
       onMouseLeave={() => cursorChangeHandler()}
       onClick={() => handleToStartPage()}
     >
-      <FiArrowUp />
+      <AnimatePresence>
+        {isVisible && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <FiArrowUp />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </Container>
   );
 }

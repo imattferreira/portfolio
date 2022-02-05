@@ -25,7 +25,14 @@ export function HardSkills() {
         style={{ marginTop: '18rem' }}
         viewport={{ once: true }}
       >
-        <Title>Habilidades</Title>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
+          <Title>Habilidades</Title>
+        </motion.div>
         <Wrapper>
           <HardSkill
             name="Typescript"
@@ -79,6 +86,7 @@ export function HardSkills() {
           />
         </Wrapper>
       </motion.div>
+      <hr />
     </Container>
   );
 }
