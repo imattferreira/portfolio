@@ -9,12 +9,14 @@ import {
   ProjectLinks,
   SocialLinks,
   Articles,
+  Presentation,
 } from '../ui/components/sections';
 
 export default function Home() {
   return (
     <>
       <Header />
+      <Presentation />
       <About />
       <SocialLinks />
       <HardSkills />

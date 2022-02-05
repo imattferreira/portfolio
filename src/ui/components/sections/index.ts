@@ -3,3 +3,4 @@ export { HardSkills } from './HardSkills';
 export { ProjectLinks } from './ProjectLinks';
 export { SocialLinks } from './SocialLinks';
 export { Articles } from './Articles';
+export { Presentation } from './Presentation';

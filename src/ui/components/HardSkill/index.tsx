@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 import { Popup } from '../Popup';
@@ -20,10 +21,12 @@ export function HardSkill({
 }: HardSkillProps) {
   return (
     <Popup title={name} description={description}>
-      <Container onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-        {icon}
-        <span>{name}</span>
-      </Container>
+      <motion.div whileHover={{ scale: 1.1 }}>
+        <Container onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+          {icon}
+          <span>{name}</span>
+        </Container>
+      </motion.div>
     </Popup>
   );
 }

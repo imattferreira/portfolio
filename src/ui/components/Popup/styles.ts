@@ -16,12 +16,13 @@ export const Container = styled('div', {
 export const Wrapper = styled('div', {
   display: 'none',
   position: 'absolute',
-  marginBottom: '10rem',
+  marginBottom: '10.4rem',
   bottom: 'calc(100% - 150px)',
 
   '&.active': {
     display: 'inline',
-    animation: `${translation} 400ms`,
+    transform: 'scale(1.1)',
+    animation: `${translation} 300ms`,
   },
 
   '@mobile': {

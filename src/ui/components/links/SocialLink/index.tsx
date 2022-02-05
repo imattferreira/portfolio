@@ -16,7 +16,7 @@ export function SocialLink({ title, link, nickname, icon }: SocialLinkProps) {
 
   return (
     <a href={link} target="_blank" rel="noreferrer">
-      <motion.div whileTap={{ scale: 1.2 }}>
+      <motion.div whileHover={{ scale: 1.1 }}>
         <Container
           aria-label={title}
           onMouseEnter={() => cursorChangeHandler('hovered')}

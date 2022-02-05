@@ -1,4 +1,4 @@
-import { useMouseContext } from 'app/contexts/MouseContext';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 import {
@@ -11,6 +11,7 @@ import {
   FaNodeJs,
   SiStyledcomponents,
 } from '../../../../app/configs/icons';
+import { useMouseContext } from '../../../../app/contexts/MouseContext';
 import {
   Container,
   GitLink,
@@ -24,35 +25,37 @@ export function ProjectLink() {
   const { cursorChangeHandler } = useMouseContext();
 
   return (
-    <Container>
-      <div>
-        <Title>theMessage</Title>
-        <SubTitle>your instant messaging open-source</SubTitle>
-      </div>
+    <motion.div whileHover={{ scale: 1.1 }}>
+      <Container>
+        <div>
+          <Title>theMessage</Title>
+          <SubTitle>your instant messaging open-source</SubTitle>
+        </div>
 
-      <IconsWrapper>
-        <TechIcons>
-          <SiTypescript />
-          <SiNextdotjs />
-          <SiPrisma />
-          <SiSocketdotio />
-          <SiStyledcomponents />
-          <FaNodeJs />
-        </TechIcons>
+        <IconsWrapper>
+          <TechIcons>
+            <SiTypescript />
+            <SiNextdotjs />
+            <SiPrisma />
+            <SiSocketdotio />
+            <SiStyledcomponents />
+            <FaNodeJs />
+          </TechIcons>
 
-        <a
-          href="https://github.com/MattFerreira18"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <GitLink
-            onMouseEnter={() => cursorChangeHandler('hovered')}
-            onMouseLeave={() => cursorChangeHandler()}
+          <a
+            href="https://github.com/MattFerreira18"
+            target="_blank"
+            rel="noreferrer"
           >
-            <IoLogoGithub />
-          </GitLink>
-        </a>
-      </IconsWrapper>
-    </Container>
+            <GitLink
+              onMouseEnter={() => cursorChangeHandler('hovered')}
+              onMouseLeave={() => cursorChangeHandler()}
+            >
+              <IoLogoGithub />
+            </GitLink>
+          </a>
+        </IconsWrapper>
+      </Container>
+    </motion.div>
   );
 }
