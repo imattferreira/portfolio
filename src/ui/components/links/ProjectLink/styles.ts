@@ -26,7 +26,7 @@ export const Container = styled('div', {
   },
 
   '@mobile': {
-    width: '100%',
+    width: 'calc(100vw - 4rem)',
     height: '14rem',
   },
 });

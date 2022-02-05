@@ -15,7 +15,9 @@ export const Container = styled('footer', {
   justifyContent: 'space-between',
 
   '@mobile': {
-    flexDirection: 'column',
+    flexDirection: 'column-reverse',
+    height: 'auto',
+    paddingY: '2rem',
   },
 });
 
@@ -35,7 +37,7 @@ export const InfoWrapper = styled('div', {
   },
 
   '@mobile': {
-    marginBottom: '1rem',
+    // marginBottom: '1rem',
   },
 });
 

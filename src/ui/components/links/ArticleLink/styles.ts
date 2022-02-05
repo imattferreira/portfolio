@@ -14,8 +14,7 @@ export const Container = styled('article', {
   },
 
   '@mobile': {
-    width: '100%',
-    maxWidth: 'calc(100vw - 4rem)',
+    width: 'calc(100vw - 4rem)',
   },
 });
 

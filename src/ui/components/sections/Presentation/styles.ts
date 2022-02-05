@@ -16,6 +16,7 @@ export const Container = styled('section', {
 
   '@mobile': {
     display: 'flex',
+    justifyContent: 'center',
     flexDirection: 'column-reverse',
   },
 });
@@ -26,6 +27,16 @@ export const TextWrapper = styled('div', {
 
   justifySelf: 'initial',
 
+  '@mobile': {
+    width: '100%',
+
+    margin: '0',
+    marginTop: '4rem',
+    padding: '0 2rem',
+
+    textAlign: 'center',
+  },
+
   img: {
     width: '1.6rem',
     marginRight: '0.6rem',
@@ -33,14 +44,35 @@ export const TextWrapper = styled('div', {
 
   'img + span': {
     fontSize: '1.2rem',
+
+    '@mobile': {
+      fontSize: '$large',
+    },
+    '@min-mobile': {
+      fontSize: '$medium',
+    },
   },
 
   h1: {
     fontSize: '3.2rem',
+
+    '@mobile': {
+      fontSize: '2.8rem',
+    },
+    '@min-mobile': {
+      fontSize: '2.2rem',
+    },
   },
 
   'h1 + span': {
     fontSize: '1.4rem',
+
+    '@mobile': {
+      fontSize: '$large',
+    },
+    '@min-mobile': {
+      fontSize: '$medium',
+    },
   },
 });
 
@@ -51,5 +83,9 @@ export const ProfileWrapper = styled('div', {
     borderRadius: '50%',
 
     maxWidth: '360px',
+
+    '@mobile': {
+      width: 'calc(100vw - 4rem)',
+    },
   },
 });
