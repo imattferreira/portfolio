@@ -2,16 +2,25 @@ import { styled } from '../../../../app/configs/stitches';
 
 export const Container = styled('section', {
   maxWidth: '1200px',
+  height: '21.25rem',
 
   marginX: 'auto',
-  marginBottom: '2rem',
+  marginY: '2rem',
   paddingY: '2rem',
 
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
+  zIndex: '-7',
 
   borderBottom: '1px solid $black800',
+
+  '@mobile': {
+    height: '56rem',
+  },
+
+  '& > div': {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
 });
 
 export const Title = styled('h2', {
@@ -26,6 +35,8 @@ export const Wrapper = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
+
+  background: '$black900',
 
   '@mobile': {
     flexDirection: 'column',

@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 
 import {
@@ -12,34 +13,41 @@ import { Container, Wrapper, Title } from './styles';
 export function SocialLinks() {
   return (
     <Container id="social-links">
-      <Title>Redes Sociais</Title>
+      <motion.div
+        whileInView={{ marginTop: '0rem' }}
+        transition={{ duration: 0.5 }}
+        style={{ marginTop: '30rem' }}
+        viewport={{ once: true }}
+      >
+        <Title>Redes Sociais</Title>
 
-      <Wrapper>
-        <SocialLink
-          title="Github"
-          nickname="@MattFerreira18"
-          link="https://github.com/MattFerreira18"
-          icon={<IoLogoGithub />}
-        />
-        <SocialLink
-          title="LinkedIn"
-          nickname="@matt-ferreira18"
-          link="https://www.linkedin.com/in/matt-ferreira18/"
-          icon={<IoLogoLinkedin />}
-        />
-        <SocialLink
-          title="Email"
-          nickname="matheusferreira.dev@gmail.com"
-          link="mailto:matheusferreira.dev@gmail.com"
-          icon={<MdEmail />}
-        />
-        <SocialLink
-          title="Telegram"
-          nickname="@MattFerreira18"
-          link="https://t.me/MattFerreira18"
-          icon={<BsTelegram />}
-        />
-      </Wrapper>
+        <Wrapper>
+          <SocialLink
+            title="Github"
+            nickname="@MattFerreira18"
+            link="https://github.com/MattFerreira18"
+            icon={<IoLogoGithub />}
+          />
+          <SocialLink
+            title="LinkedIn"
+            nickname="@matt-ferreira18"
+            link="https://www.linkedin.com/in/matt-ferreira18/"
+            icon={<IoLogoLinkedin />}
+          />
+          <SocialLink
+            title="Email"
+            nickname="matheusferreira.dev@gmail.com"
+            link="mailto:matheusferreira.dev@gmail.com"
+            icon={<MdEmail />}
+          />
+          <SocialLink
+            title="Telegram"
+            nickname="@MattFerreira18"
+            link="https://t.me/MattFerreira18"
+            icon={<BsTelegram />}
+          />
+        </Wrapper>
+      </motion.div>
     </Container>
   );
 }

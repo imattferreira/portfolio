@@ -79,10 +79,16 @@ export const TextWrapper = styled('div', {
 export const ProfileWrapper = styled('div', {
   justifySelf: 'center',
 
-  img: {
+  div: {
+    background: '$gray100',
     borderRadius: '50%',
+    maxWidth: '400px',
+    maxHeight: '400px',
+  },
 
-    maxWidth: '360px',
+  img: {
+    maxWidth: '100%',
+    borderRadius: '50%',
 
     '@mobile': {
       width: 'calc(100vw - 4rem)',

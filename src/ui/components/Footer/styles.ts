@@ -9,6 +9,7 @@ export const Container = styled('footer', {
   margin: '0 auto',
 
   padding: '1rem',
+  zIndex: '1',
 
   display: 'flex',
   alignItems: 'center',
@@ -32,12 +33,8 @@ export const InfoWrapper = styled('div', {
     marginX: '0.4rem',
   },
 
-  b: {
+  strong: {
     marginLeft: '0.4rem',
-  },
-
-  '@mobile': {
-    // marginBottom: '1rem',
   },
 });
 

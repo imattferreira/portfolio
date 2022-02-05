@@ -18,6 +18,8 @@ export const Container = styled('div', {
   fontFamily: '$body',
   fontSize: '$medium',
 
+  background: '$black900',
+
   '& svg': {
     fontSize: '5rem',
     marginY: '1rem',

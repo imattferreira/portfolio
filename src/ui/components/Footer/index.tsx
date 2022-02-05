@@ -14,7 +14,7 @@ export function Footer() {
   return (
     <Container>
       <InfoWrapper>
-        feito com <AiFillHeart /> por <b>Matheus Ferreira</b>
+        feito com <AiFillHeart /> por <strong>Matheus Ferreira</strong>
       </InfoWrapper>
       <IconsWrapper>
         <IconSocialLink

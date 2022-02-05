@@ -4,12 +4,23 @@ export const Container = styled('section', {
   marginX: 'auto',
   marginTop: '2rem',
 
+  height: '27.25rem',
   maxWidth: '1200px',
   paddingY: '2rem',
 
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
+  zIndex: '-5',
+
+  background: '$black900',
+
+  '@mobile': {
+    height: '68rem',
+  },
+
+  '& > div': {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
 });
 
 export const Title = styled('h2', {
@@ -24,6 +35,8 @@ export const Wrapper = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
+
+  background: '$black900',
 
   '@mobile': {
     display: 'flex',

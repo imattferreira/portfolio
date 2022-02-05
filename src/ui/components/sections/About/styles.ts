@@ -2,17 +2,31 @@ import { styled } from '../../../../app/configs/stitches';
 
 export const Container = styled('section', {
   maxWidth: '1200px',
+  height: '16.75rem',
 
   marginX: 'auto',
   marginY: '2rem',
   paddingY: '2rem',
+  paddingTop: '4rem',
 
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  flexDirection: 'column',
+  zIndex: '-10',
 
   borderY: '1px solid $black800',
+
+  '@mobile': {
+    height: '28rem',
+  },
+
+  '@min-mobile': {
+    height: '38rem',
+  },
+
+  div: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column',
+  },
 
   '& p': {
     marginY: '1rem',
@@ -21,6 +35,7 @@ export const Container = styled('section', {
     lineHeight: '1.4',
     fontFamily: '$body',
     fontSize: '$medium',
+    zIndex: '-1',
 
     textAlign: 'center',
 
