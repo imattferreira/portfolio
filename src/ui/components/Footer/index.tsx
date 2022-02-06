@@ -23,6 +23,7 @@ export function Footer() {
             <SocialButton
               key={socialNetwork.link}
               link={socialNetwork.link}
+              aria-label={socialNetwork.name}
               icon={createElement(socialNetwork.icon)}
             />
           ))}

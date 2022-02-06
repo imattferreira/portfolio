@@ -34,6 +34,7 @@ export function Header() {
           <SectionsModal>
             {sections.map((section) => (
               <HeaderButton
+                aria-label={`ir para ${section.title}`}
                 key={section.title}
                 title={section.title}
                 section={section.section}
@@ -44,6 +45,7 @@ export function Header() {
           <div>
             {sections.map((section) => (
               <HeaderButton
+                aria-label={`ir para ${section.title}`}
                 key={section.title}
                 title={section.title}
                 section={section.section}

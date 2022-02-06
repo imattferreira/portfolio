@@ -16,6 +16,7 @@ export default function NotFound() {
       <h1>404</h1>
       <h2>Esta página não pode existir.</h2>
       <NoBackgroundButton
+        aria-label="retornar para a página inicial"
         title="Clique aqui para ir para a página inicial"
         onClick={() => handleToInitialPage()}
       />

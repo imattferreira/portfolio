@@ -30,6 +30,7 @@ export function SocialLinks() {
               name={socialNetwork.name}
               nickname={socialNetwork.nickname}
               link={socialNetwork.link}
+              aria-label={socialNetwork.name}
               icon={createElement(socialNetwork.icon)}
             />
           ))}

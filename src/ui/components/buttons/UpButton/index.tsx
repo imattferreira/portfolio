@@ -24,6 +24,7 @@ export function UpButton() {
       onMouseEnter={() => cursorChangeHandler('hovered')}
       onMouseLeave={() => cursorChangeHandler()}
       onClick={() => handleToStartPage()}
+      aria-label="ir para o início"
     >
       <AnimatePresence>
         {isVisible && (
