@@ -1,5 +1,5 @@
-import { styled } from '../../../app/configs/stitches';
-import { translation } from '../../styles/animations';
+import { styled } from '../../../../app/configs/stitches';
+import { translation } from '../../../styles/animations';
 
 export const Container = styled('div', {
   justifySelf: 'center',

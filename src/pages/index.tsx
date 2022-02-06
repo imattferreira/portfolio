@@ -6,10 +6,10 @@ import { Header } from '../ui/components/Header';
 import {
   About,
   HardSkills,
-  ProjectLinks,
   SocialLinks,
   Articles,
   Presentation,
+  Projects,
 } from '../ui/components/sections';
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
       <About />
       <SocialLinks />
       <HardSkills />
-      <ProjectLinks />
+      <Projects />
       <Articles />
       <Footer />
       <UpButton />

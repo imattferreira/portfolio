@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
 import { useMobileVersion } from '../../../app/hooks/useMobileVersion';
-import { LinkHeader } from '../links';
-import { LinksModal } from './LinksModal';
+import { HeaderButton } from '../buttons';
+import { SectionsModal } from '../modal';
 import { Logo } from './Logo';
 import { Container } from './styles';
 
@@ -14,6 +14,14 @@ export function Header() {
     setIsMobile(useMobileVersion());
   }, []);
 
+  const sections = [
+    { title: 'Sobre Mim', section: 'about' },
+    { title: 'Redes Sociais', section: 'social-links' },
+    { title: 'Habilidades', section: 'skills' },
+    { title: 'Projetos', section: 'projects' },
+    { title: 'Artigos', section: 'articles' },
+  ];
+
   return (
     <Container>
       <motion.div
@@ -23,62 +31,16 @@ export function Header() {
       >
         <Logo />
         {isMobile ? (
-          <LinksModal>
-            <>
-              <LinkHeader
-                title="Sobre Mim"
-                section="about"
-                aria-label="Sobre Mim"
-              />
-              <LinkHeader
-                title="Redes Sociais"
-                section="social-links"
-                aria-label="Redes Sociais"
-              />
-              <LinkHeader
-                title="Habilidades"
-                section="skills"
-                aria-label="Projetos"
-              />
-              <LinkHeader
-                title="Projetos"
-                section="projects"
-                aria-label="Projetos"
-              />
-              <LinkHeader
-                title="Artigos"
-                section="articles"
-                aria-label="Artigos"
-              />
-            </>
-          </LinksModal>
+          <SectionsModal>
+            {sections.map((section) => (
+              <HeaderButton title={section.title} section={section.section} />
+            ))}
+          </SectionsModal>
         ) : (
           <div>
-            <LinkHeader
-              title="Sobre Mim"
-              section="about"
-              aria-label="Sobre Mim"
-            />
-            <LinkHeader
-              title="Redes Sociais"
-              section="social-links"
-              aria-label="Redes Sociais"
-            />
-            <LinkHeader
-              title="Habilidades"
-              section="skills"
-              aria-label="Projetos"
-            />
-            <LinkHeader
-              title="Projetos"
-              section="projects"
-              aria-label="Projetos"
-            />
-            <LinkHeader
-              title="Artigos"
-              section="articles"
-              aria-label="Artigos"
-            />
+            {sections.map((section) => (
+              <HeaderButton title={section.title} section={section.section} />
+            ))}
           </div>
         )}
         {/* <SettingsModal /> */}

@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
-import { ModalSection } from '../modal/ModalSection';
+import { ModalSection } from '../ModalSection';
 import { ArrowDown, Container, Content, Wrapper } from './styles';
 
-type PopupProps = {
+type PopoverProps = {
   title: string;
   description: string;
   children: React.ReactElement<any, string | React.JSXElementConstructor<any>>;
 };
 
-export function Popup({ title, description, children }: PopupProps) {
+export function Popover({ title, description, children }: PopoverProps) {
   const [showPopup, setShowPopup] = useState(false);
 
   function onMouseEnter() {

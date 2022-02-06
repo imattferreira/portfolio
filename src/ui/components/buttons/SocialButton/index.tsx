@@ -2,12 +2,12 @@ import React from 'react';
 
 import { useMouseContext } from '../../../../app/contexts/MouseContext';
 
-type IconSocialLinkProps = {
+type SocialButtonProps = {
   link: string;
   icon: React.ReactElement;
 };
 
-export function IconSocialLink({ icon, link }: IconSocialLinkProps) {
+export function SocialButton({ icon, link }: SocialButtonProps) {
   const { cursorChangeHandler } = useMouseContext();
 
   return (

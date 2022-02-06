@@ -10,7 +10,7 @@ export const Container = styled('header', {
 
   padding: '1rem',
 
-  '& > div': {
+  '& div': {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',

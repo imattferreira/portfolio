@@ -1,4 +1,4 @@
-import { styled } from '../../../../app/configs/stitches';
+import { styled } from '../../../../../app/configs/stitches';
 
 export const Container = styled('div', {
   border: '1px solid $black800',

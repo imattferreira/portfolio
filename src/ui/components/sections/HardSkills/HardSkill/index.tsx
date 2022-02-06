@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
-import { Popup } from '../Popup';
+import { Popover } from '../../../modal';
 import { Container } from './styles';
 
 type HardSkillProps = {
@@ -20,7 +20,7 @@ export function HardSkill({
   onMouseLeave,
 }: HardSkillProps) {
   return (
-    <Popup title={name} description={description}>
+    <Popover title={name} description={description}>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -34,6 +34,6 @@ export function HardSkill({
           </Container>
         </motion.div>
       </motion.div>
-    </Popup>
+    </Popover>
   );
 }

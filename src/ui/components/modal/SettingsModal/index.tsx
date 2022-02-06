@@ -1,8 +1,8 @@
-import { useMouseContext } from 'app/contexts/MouseContext';
 import React, { useState } from 'react';
 
 import { GoSettings } from '../../../../app/configs/icons';
-import { ModalSection } from '../../modal/ModalSection';
+import { useMouseContext } from '../../../../app/contexts/MouseContext';
+import { ModalSection } from '../ModalSection';
 import { LangOptionButton } from './LangOptionButton';
 import {
   Button,

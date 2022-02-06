@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import { ModalSection } from 'ui/components/modal/ModalSection';
 
 import { RiMenu3Fill } from '../../../../app/configs/icons';
+import { ModalSection } from '../ModalSection';
 import { MenuButton, Modal, Wrapper, ArrowUp, Content } from './styles';
 
-type LinksModalProps = {
+type SectionsModalProps = {
   children: React.ReactNode;
 };
 
-export function LinksModal({ children }: LinksModalProps) {
+export function SectionsModal({ children }: SectionsModalProps) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (

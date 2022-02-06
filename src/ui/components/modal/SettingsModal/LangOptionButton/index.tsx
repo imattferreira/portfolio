@@ -1,6 +1,6 @@
-import { useMouseContext } from 'app/contexts/MouseContext';
 import React, { ButtonHTMLAttributes } from 'react';
 
+import { useMouseContext } from '../../../../../app/contexts/MouseContext';
 import { Container } from './styles';
 
 interface LangOptionButtonProps

@@ -2,20 +2,22 @@ import React from 'react';
 
 import { Container } from './styles';
 
-type LinkHeaderProps = {
+type HeaderButtonProps = {
   title: string;
   section: string;
   active?: boolean;
 };
 
-export function LinkHeader({
+export function HeaderButton({
   title,
   section,
   active = false,
-}: LinkHeaderProps) {
+}: HeaderButtonProps) {
   return (
     <a href={`#${section}`}>
-      <Container className={active && 'active'}>{title}</Container>
+      <Container className={active && 'active'} aria-label={title}>
+        {title}
+      </Container>
     </a>
   );
 }
