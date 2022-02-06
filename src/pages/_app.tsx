@@ -1,10 +1,9 @@
-import { pageview } from 'app/services/analytics/pageView';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
 
 import { MouseContextProvider } from '../app/contexts/MouseContext';
-import { Analytics } from '../app/services/analytics';
+import { gtag } from '../app/lib/gtag';
 import { DotRing } from '../ui/components/DotRing';
 import { globalStyles } from '../ui/styles/global';
 
@@ -14,8 +13,8 @@ function MyApp({ Component, pageProps }) {
   globalStyles();
 
   useEffect(() => {
-    function handleRouteChange(url) {
-      pageview(url);
+    function handleRouteChange(url: string) {
+      gtag.pageview(url);
     }
 
     router.events.on('routeChangeComplete', handleRouteChange);
@@ -32,7 +31,6 @@ function MyApp({ Component, pageProps }) {
         <title>Matheus Ferreira</title>
       </Head>
       <Component {...pageProps} />
-      <Analytics />
     </MouseContextProvider>
   );
 }

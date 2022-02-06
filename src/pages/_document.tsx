@@ -2,7 +2,8 @@ import NextDocument, { Head, Html, Main, NextScript } from 'next/document';
 import React from 'react';
 
 import { getCssText } from '../app/configs/stitches';
-import { Fonts } from '../app/services/Fonts';
+import { Fonts } from '../app/lib/Fonts';
+import { gtag } from '../app/lib/gtag';
 
 export default class Document extends NextDocument {
   render() {
@@ -10,6 +11,7 @@ export default class Document extends NextDocument {
       <Html lang="pt-br">
         <Head>
           <Fonts />
+          <gtag.Scripts />
           <style
             id="stitches"
             // eslint-disable-next-line react/no-danger
