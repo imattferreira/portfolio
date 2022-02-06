@@ -5,7 +5,7 @@ import React from 'react';
 import { useMouseContext } from '../../../../app/contexts/MouseContext';
 import { Container, TextWrapper, ImageWrapper, Title } from './styles';
 
-type ArticleOverviewProps = {
+type FeaturedArticleProps = {
   id: string;
   banner: string;
   bannerAlt: string;
@@ -13,13 +13,13 @@ type ArticleOverviewProps = {
   overview: string;
 };
 
-export function ArticleOverview({
+export function FeaturedArticle({
   id,
   banner,
   bannerAlt,
   title,
   overview,
-}: ArticleOverviewProps) {
+}: FeaturedArticleProps) {
   const { cursorChangeHandler } = useMouseContext();
 
   return (

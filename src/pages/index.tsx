@@ -7,7 +7,7 @@ import {
   About,
   HardSkills,
   SocialLinks,
-  Articles,
+  FeaturedArticles,
   Presentation,
   Projects,
 } from '../ui/components/sections';
@@ -21,7 +21,7 @@ export default function Home() {
       <SocialLinks />
       <HardSkills />
       <Projects />
-      <Articles />
+      <FeaturedArticles />
       <Footer />
       <UpButton />
     </>

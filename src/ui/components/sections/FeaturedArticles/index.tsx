@@ -1,17 +1,17 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
-import { myProjects } from '../../../../app/data/myProjects';
-import { Project } from './Project';
+import { featuredArticles } from '../../../../app/data/featuredArticles';
+import { FeaturedArticle } from '../../links';
 import { Container, Title, Wrapper } from './styles';
 
-export function Projects() {
+export function FeaturedArticles() {
   return (
-    <Container id="projects">
+    <Container id="articles">
       <motion.div
         whileInView={{ marginTop: '0rem' }}
         transition={{ duration: 0.75 }}
-        style={{ marginTop: '18rem' }}
+        style={{ marginTop: '26rem' }}
         viewport={{ once: true }}
       >
         <motion.div
@@ -20,16 +20,17 @@ export function Projects() {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <Title>Projetos</Title>
+          <Title>Artigos</Title>
         </motion.div>
         <Wrapper>
-          {myProjects.map((project) => (
-            <Project
-              key={project.name}
-              name={project.name}
-              overview={project.overview}
-              repository={project.repository}
-              technologies={project.technologies}
+          {featuredArticles.map((article) => (
+            <FeaturedArticle
+              key={article.id}
+              id={article.id}
+              banner={article.banner}
+              bannerAlt={article.bannerAlt}
+              title={article.title}
+              overview={article.overview}
             />
           ))}
         </Wrapper>

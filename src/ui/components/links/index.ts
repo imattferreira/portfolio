@@ -1,2 +1,2 @@
 export { SocialLink } from './SocialLink';
-export { ArticleOverview } from './ArticleOverview';
+export { FeaturedArticle } from './FeaturedArticle';
