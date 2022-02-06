@@ -27,17 +27,20 @@ export function About() {
           transition={{ duration: 1.5 }}
           viewport={{ once: true }}
         >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industrys standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged. It was popularised in the 1960s with
-          the release of Letraset sheets containing Lorem Ipsum passages, and
-          more recently with desktop publishing software like Aldus PageMaker
-          including versions of Lorem Ipsum.
+          Sou um desenvolvedor e eterno estudante de software apaixonado por
+          aprender e por ajudar os outros que estão ao meu redor. ou estudante
+          de Ciência da Computação na universidade UNIP. Atualmente faço
+          freelances fullstack com a stack Typescript, NodeJS, TypeORM,
+          PrismaORM e PostgreSQL para o desenvolvimento de APIs e ReactJS,
+          NextJS e Styled-Components para o desenvolvimento de websites. Apesar
+          de utilizar essas ferramentas, sou aberto a aprender outras
+          tecnologias e linguagens de programação.
         </motion.p>
       </motion.div>
     </Container>
   );
 }
+
+/**
+ *
+ */
