@@ -37,15 +37,19 @@ export const MenuButton = styled('button', {
 
 export const Modal = styled('div', {
   width: '100vw',
+  height: '100vh',
+
+  background: 'rgba(0,0,0,0.2)',
 
   position: 'fixed',
   zIndex: '9999',
-  marginY: '1rem',
+  top: 0,
   left: 0,
 });
 
 export const Wrapper = styled('div', {
   margin: '0 auto',
+  paddingLeft: '2rem',
 
   display: 'flex',
   flexDirection: 'column',
@@ -57,6 +61,7 @@ export const ArrowUp = styled('div', {
   size: 0,
 
   marginRight: '1.5rem',
+  marginTop: '4rem',
 
   borderX: '10px solid transparent',
   borderBottom: '10px solid $black800',
@@ -64,7 +69,7 @@ export const ArrowUp = styled('div', {
 
 export const Content = styled('div', {
   background: '$black800',
-  width: '18rem',
+  width: '100%',
 
   borderRadius: '0.5rem',
   padding: '1rem',

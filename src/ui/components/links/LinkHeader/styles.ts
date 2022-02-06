@@ -22,13 +22,8 @@ export const Container = styled('button', {
   },
 
   '@mobile': {
-    width: '16rem',
+    width: '100%',
     marginY: '0.4rem',
-    padding: '1.4rem',
-  },
-
-  '@min-mobile': {
-    letterSpacing: '0.2px',
-    padding: '0.2rem 0.4rem',
+    padding: '1.8rem',
   },
 });

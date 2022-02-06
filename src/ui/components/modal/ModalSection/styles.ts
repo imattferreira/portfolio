@@ -10,8 +10,8 @@ export const Container = styled('div', {
   '@mobile': {
     '& > div': {
       fontWeight: 'bold',
-      fontSize: '$large',
-      marginBottom: '0.6rem',
+      fontSize: '$xlarge',
+      marginY: '1rem',
     },
   },
 });
