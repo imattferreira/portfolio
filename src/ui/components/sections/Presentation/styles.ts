@@ -37,12 +37,12 @@ export const TextWrapper = styled('div', {
     textAlign: 'center',
   },
 
-  img: {
+  '.hand-image': {
     width: '1.6rem',
-    marginRight: '0.6rem',
   },
 
-  'img + span': {
+  span: {
+    marginLeft: '0.6rem',
     fontSize: '1.2rem',
 
     '@mobile': {

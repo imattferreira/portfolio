@@ -17,9 +17,3 @@ export const Container = styled('div', {
     marginBottom: '1rem',
   },
 });
-
-export const Button = styled('button', {
-  background: 'none',
-  color: '$gray100',
-  fontSize: '1rem',
-});
