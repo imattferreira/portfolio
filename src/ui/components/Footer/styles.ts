@@ -15,12 +15,12 @@ export const Container = styled('footer', {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-  },
 
-  '@mobile': {
-    flexDirection: 'column-reverse',
-    height: 'auto',
-    paddingY: '2rem',
+    '@mobile': {
+      flexDirection: 'column-reverse',
+      height: 'auto',
+      paddingY: '2rem',
+    },
   },
 });
 
