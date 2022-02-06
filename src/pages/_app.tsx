@@ -1,12 +1,29 @@
-import { MouseContextProvider } from 'app/contexts/MouseContext';
+import { pageview } from 'app/services/analytics/pageView';
 import Head from 'next/head';
-import React from 'react';
+import { useRouter } from 'next/router';
+import React, { useEffect } from 'react';
 
+import { MouseContextProvider } from '../app/contexts/MouseContext';
+import { Analytics } from '../app/services/analytics';
 import { DotRing } from '../ui/components/DotRing';
 import { globalStyles } from '../ui/styles/global';
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
   globalStyles();
+
+  useEffect(() => {
+    function handleRouteChange(url) {
+      pageview(url);
+    }
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
 
   return (
     <MouseContextProvider>
@@ -15,6 +32,7 @@ function MyApp({ Component, pageProps }) {
         <title>Matheus Ferreira</title>
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </MouseContextProvider>
   );
 }
