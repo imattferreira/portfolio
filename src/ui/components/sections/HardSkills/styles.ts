@@ -24,7 +24,7 @@ export const Container = styled('section', {
 
   hr: {
     height: '1px',
-    width: '1200px',
+    maxWidth: '1200px',
 
     background: '$black800',
 
