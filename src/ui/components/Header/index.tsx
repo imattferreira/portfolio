@@ -33,13 +33,21 @@ export function Header() {
         {isMobile ? (
           <SectionsModal>
             {sections.map((section) => (
-              <HeaderButton title={section.title} section={section.section} />
+              <HeaderButton
+                key={section.title}
+                title={section.title}
+                section={section.section}
+              />
             ))}
           </SectionsModal>
         ) : (
           <div>
             {sections.map((section) => (
-              <HeaderButton title={section.title} section={section.section} />
+              <HeaderButton
+                key={section.title}
+                title={section.title}
+                section={section.section}
+              />
             ))}
           </div>
         )}
