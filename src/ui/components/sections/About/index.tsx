@@ -28,7 +28,7 @@ export function About() {
           viewport={{ once: true }}
         >
           Sou um desenvolvedor e eterno estudante de software apaixonado por
-          aprender e por ajudar os outros que estão ao meu redor. ou estudante
+          aprender e por ajudar os outros que estão ao meu redor. Sou estudante
           de Ciência da Computação na universidade UNIP. Atualmente faço
           freelances fullstack com a stack Typescript, NodeJS, TypeORM,
           PrismaORM e PostgreSQL para o desenvolvimento de APIs e ReactJS,

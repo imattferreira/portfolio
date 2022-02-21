@@ -9,6 +9,7 @@ import {
   SiSocketdotio,
   SiPrisma,
   FaNodeJs,
+  SiDocker,
   SiStyledcomponents,
 } from '../../../../../app/configs/icons';
 import { useMouseContext } from '../../../../../app/contexts/MouseContext';
@@ -58,6 +59,9 @@ export function Project({
           break;
         case 'Socket.IO':
           setTechIcons((prev) => [...prev, <SiSocketdotio />]);
+          break;
+        case 'Docker':
+          setTechIcons((prev) => [...prev, <SiDocker />]);
           break;
         case 'Styled-Components':
           setTechIcons((prev) => [...prev, <SiStyledcomponents />]);
