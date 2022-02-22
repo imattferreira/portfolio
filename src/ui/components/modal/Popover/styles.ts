@@ -18,10 +18,10 @@ export const Wrapper = styled('div', {
   position: 'absolute',
   marginBottom: '10.4rem',
   bottom: 'calc(100% - 150px)',
+  // transform: 'scale(1.1)',
 
   '&.active': {
     display: 'inline',
-    transform: 'scale(1.1)',
     animation: `${translation} 300ms`,
   },
 
@@ -34,6 +34,8 @@ export const ArrowDown = styled('div', {
   size: 0,
 
   marginLeft: '6rem',
+  marginTop: '0.4rem',
+
   borderX: '10px solid transparent',
   borderTop: '10px solid $black800',
 
@@ -55,6 +57,8 @@ export const Content = styled('div', {
   lineHeight: '1.4',
   fontFamily: '$body',
   fontSize: '0.825rem',
+
+  transform: 'scale(1.1)',
 
   '@mobile': {
     width: '100%',
