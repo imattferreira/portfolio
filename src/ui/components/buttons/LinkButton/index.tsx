@@ -3,14 +3,11 @@ import React, { ButtonHTMLAttributes } from 'react';
 import { useMouseContext } from '../../../../app/contexts/MouseContext';
 import { Container } from './styles';
 
-type NoBackgroundButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+type LinkButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   title: string;
 };
 
-export function NoBackgroundButton({
-  title,
-  ...props
-}: NoBackgroundButtonProps) {
+export function LinkButton({ title, ...props }: LinkButtonProps) {
   const { cursorChangeHandler } = useMouseContext();
 
   return (

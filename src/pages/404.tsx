@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 
-import { NoBackgroundButton } from '../ui/components/buttons';
+import { LinkButton } from '../ui/components/buttons';
 import { Container } from '../ui/styles/pages/404';
 
 export default function NotFound() {
@@ -15,7 +15,7 @@ export default function NotFound() {
     <Container>
       <h1>404</h1>
       <h2>Esta página não pode existir.</h2>
-      <NoBackgroundButton
+      <LinkButton
         aria-label="retornar para a página inicial"
         title="Clique aqui para ir para a página inicial"
         onClick={() => handleToInitialPage()}
