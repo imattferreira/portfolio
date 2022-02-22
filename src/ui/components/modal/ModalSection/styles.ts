@@ -8,10 +8,18 @@ export const Container = styled('div', {
   },
 
   '@mobile': {
+    display: 'flex',
+    flexDirection: 'column',
+    width: '100%',
+
     '& > div': {
       fontWeight: 'bold',
       fontSize: '$xlarge',
       marginY: '1rem',
+    },
+
+    button: {
+      width: 'calc(100vw - 4rem)',
     },
   },
 });

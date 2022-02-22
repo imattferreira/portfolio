@@ -39,6 +39,7 @@ export const ArrowDown = styled('div', {
   borderTop: '10px solid $black800',
 
   '@mobile': {
+    marginTop: '0',
     marginLeft: '46%',
   },
 });

@@ -42,9 +42,8 @@ export const Modal = styled('div', {
   background: 'rgba(0,0,0,0.2)',
 
   position: 'fixed',
+  inset: 0,
   zIndex: '9999',
-  top: 0,
-  left: 0,
 });
 
 export const Wrapper = styled('div', {
@@ -53,12 +52,21 @@ export const Wrapper = styled('div', {
 
   display: 'flex',
   flexDirection: 'column',
-  alignItems: 'end',
-  justifyContent: 'center',
+
+  position: 'absolute',
+  right: 0,
+  left: 0,
+  top: 0,
+
+  // border: '1px solid green',
+
+  // height: '100%',
+  width: '100%',
 });
 
 export const ArrowUp = styled('div', {
   size: 0,
+  alignSelf: 'end',
 
   marginRight: '1.5rem',
   marginTop: '4rem',
