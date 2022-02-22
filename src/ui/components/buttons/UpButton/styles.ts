@@ -9,6 +9,8 @@ export const Container = styled('button', {
 
   background: 'none',
 
+  zIndex: '100',
+
   div: {
     size: '3rem',
 

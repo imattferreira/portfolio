@@ -7,20 +7,20 @@ import { SectionsModal } from '../modal';
 import { Logo } from './Logo';
 import { Container } from './styles';
 
+const sections = [
+  { title: 'Sobre Mim', section: 'about' },
+  { title: 'Redes Sociais', section: 'social-links' },
+  { title: 'Habilidades', section: 'skills' },
+  { title: 'Projetos', section: 'projects' },
+  { title: 'Artigos', section: 'articles' },
+];
+
 export function Header() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     setIsMobile(useMobileVersion());
   }, []);
-
-  const sections = [
-    { title: 'Sobre Mim', section: 'about' },
-    { title: 'Redes Sociais', section: 'social-links' },
-    { title: 'Habilidades', section: 'skills' },
-    { title: 'Projetos', section: 'projects' },
-    { title: 'Artigos', section: 'articles' },
-  ];
 
   return (
     <Container>

@@ -6,9 +6,13 @@ export const Container = styled('footer', {
 
   height: '5rem',
   maxWidth: '1440px',
-  margin: '0 auto',
 
+  margin: '0 auto',
   padding: '1rem',
+
+  position: 'absolute',
+  right: '0',
+  left: '0',
   zIndex: '1',
 
   '& > div': {

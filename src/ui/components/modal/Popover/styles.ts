@@ -18,7 +18,6 @@ export const Wrapper = styled('div', {
   position: 'absolute',
   marginBottom: '10.4rem',
   bottom: 'calc(100% - 150px)',
-  // transform: 'scale(1.1)',
 
   '&.active': {
     display: 'inline',
@@ -65,5 +64,7 @@ export const Content = styled('div', {
     height: '10rem',
 
     fontSize: '$medium',
+
+    transform: 'scale(1.0)',
   },
 });

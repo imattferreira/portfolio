@@ -6,7 +6,7 @@ import { ArrowDown, Container, Content, Wrapper } from './styles';
 type PopoverProps = {
   title: string;
   description: string;
-  children: React.ReactElement<any, string | React.JSXElementConstructor<any>>;
+  children: React.ReactElement;
 };
 
 export function Popover({ title, description, children }: PopoverProps) {
