@@ -42,7 +42,7 @@ export function Header() {
             ))}
           </ModalSections>
         ) : (
-          <div>
+          <nav>
             {sections.map((section) => (
               <HeaderButton
                 key={section.title}
@@ -51,7 +51,7 @@ export function Header() {
                 section={section.section}
               />
             ))}
-          </div>
+          </nav>
         )}
         {/* <SettingsModal /> */}
       </motion.div>

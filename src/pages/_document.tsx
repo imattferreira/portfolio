@@ -28,10 +28,6 @@ export default class Document extends NextDocument {
             rel="stylesheet"
           />
           <gtag.Scripts />
-          <style
-            id="stitches"
-            dangerouslySetInnerHTML={{ __html: getCssText() }}
-          />
 
           <link
             rel="apple-touch-icon"
@@ -53,6 +49,11 @@ export default class Document extends NextDocument {
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1D1821" />
           <meta name="theme-color" content="#997BAD" />
+
+          <style
+            id="stitches"
+            dangerouslySetInnerHTML={{ __html: getCssText() }}
+          />
         </Head>
 
         <body>
