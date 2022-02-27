@@ -1,14 +1,14 @@
 import { styled } from '../../../app/configs/stitches';
 
 export const Container = styled('footer', {
-  borderTop: '1px solid $black800',
-  background: '$black900',
-
   height: '5rem',
   maxWidth: '1440px',
 
   margin: '0 auto',
   padding: '1rem',
+
+  borderTop: '1px solid $black800',
+  background: '$black900',
 
   position: 'absolute',
   right: '0',

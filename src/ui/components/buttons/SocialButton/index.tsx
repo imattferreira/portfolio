@@ -8,13 +8,13 @@ type SocialButtonProps = {
 };
 
 export function SocialButton({ icon, link }: SocialButtonProps) {
-  const { cursorChangeHandler } = useMouseContext();
+  const { handleCursorModel } = useMouseContext();
 
   return (
     <a target="_blank" href={link} rel="noreferrer">
       <div
-        onMouseEnter={() => cursorChangeHandler('hovered')}
-        onMouseLeave={() => cursorChangeHandler()}
+        onMouseEnter={() => handleCursorModel('hovered')}
+        onMouseLeave={() => handleCursorModel()}
       >
         {icon}
       </div>

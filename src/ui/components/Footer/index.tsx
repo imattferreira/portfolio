@@ -16,7 +16,11 @@ export function Footer() {
         viewport={{ once: true }}
       >
         <InfoWrapper>
-          feito com <AiFillHeart /> por <strong>Matheus Ferreira</strong>
+          <span>feito com</span>
+          <AiFillHeart />{' '}
+          <span>
+            por <strong>Matheus Ferreira</strong>
+          </span>
         </InfoWrapper>
         <IconsWrapper>
           {socialNetworks.map((socialNetwork) => (
@@ -28,7 +32,6 @@ export function Footer() {
             />
           ))}
           <SocialButton
-            key="source"
             link="https://github.com/MattFerreira18/matheus-dev-website"
             icon={<BsCodeSlash />}
           />

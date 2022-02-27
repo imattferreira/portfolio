@@ -1,20 +1,21 @@
 import { styled } from '../../../../../app/configs/stitches';
 
 export const Container = styled('div', {
+  height: '12rem',
+  width: '22rem',
+
+  marginY: '1rem',
+  padding: '2rem',
+
   border: '1px solid $black800',
   borderRadius: '0.5rem',
   background: 'none',
-
-  padding: '2rem',
-  height: '12rem',
-  width: '22rem',
 
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-between',
 
   transition: '250ms',
-  marginY: '1rem',
 
   '&:hover': {
     background: '$black800',

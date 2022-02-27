@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import React from 'react';
+import { myPresentation } from 'src/app/data/myPresentation';
 
 import { Container, ProfileWrapper, TextWrapper } from './styles';
 
@@ -42,7 +43,7 @@ export function Presentation() {
       <ProfileWrapper>
         <div>
           <motion.img
-            src="https://github.com/MattFerreira18.png"
+            src={myPresentation.profile}
             alt="Matheus Ferreira"
             animate={{ scale: 0.92 }}
             transition={{ duration: 0.5 }}

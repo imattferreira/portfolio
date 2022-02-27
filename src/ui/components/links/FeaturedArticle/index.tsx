@@ -20,7 +20,7 @@ export function FeaturedArticle({
   title,
   overview,
 }: FeaturedArticleProps) {
-  const { cursorChangeHandler } = useMouseContext();
+  const { handleCursorModel } = useMouseContext();
 
   return (
     <Link href={`/articles/${id}`}>
@@ -32,8 +32,8 @@ export function FeaturedArticle({
       >
         <motion.div transition={{ duration: 0.25 }} whileHover={{ scale: 1.1 }}>
           <Container
-            onMouseEnter={() => cursorChangeHandler('hovered')}
-            onMouseLeave={() => cursorChangeHandler()}
+            onMouseEnter={() => handleCursorModel('hovered')}
+            onMouseLeave={() => handleCursorModel()}
           >
             <ImageWrapper>
               <img src={banner} alt={bannerAlt} />

@@ -12,7 +12,6 @@ function GtagScript() {
       />
       <Script
         strategy="afterInteractive"
-        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
           __html: `
           window.dataLayer = window.dataLayer || [];

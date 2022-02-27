@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
-import { useMobileVersion } from '../../../app/hooks/useMobileVersion';
+import { useMobileDevice } from '../../../app/hooks/useMobileDevice';
 import { HeaderButton } from '../buttons';
-import { SectionsModal } from '../modal';
+import { ModalSections } from '../modal';
 import { Logo } from './Logo';
 import { Container } from './styles';
 
@@ -19,7 +19,7 @@ export function Header() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    setIsMobile(useMobileVersion());
+    setIsMobile(useMobileDevice());
   }, []);
 
   return (
@@ -31,22 +31,22 @@ export function Header() {
       >
         <Logo />
         {isMobile ? (
-          <SectionsModal>
+          <ModalSections>
             {sections.map((section) => (
               <HeaderButton
-                aria-label={`ir para ${section.title}`}
                 key={section.title}
+                aria-label={`ir para ${section.title}`}
                 title={section.title}
                 section={section.section}
               />
             ))}
-          </SectionsModal>
+          </ModalSections>
         ) : (
           <div>
             {sections.map((section) => (
               <HeaderButton
-                aria-label={`ir para ${section.title}`}
                 key={section.title}
+                aria-label={`ir para ${section.title}`}
                 title={section.title}
                 section={section.section}
               />

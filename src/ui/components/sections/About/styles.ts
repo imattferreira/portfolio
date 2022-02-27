@@ -6,8 +6,8 @@ export const Container = styled('section', {
 
   marginX: 'auto',
   marginY: '2rem',
-  paddingY: '2rem',
   paddingTop: '4rem',
+  paddingBottom: '2rem',
 
   zIndex: '-10',
 
@@ -35,9 +35,9 @@ export const Container = styled('section', {
     lineHeight: '1.4',
     fontFamily: '$body',
     fontSize: '$medium',
-    zIndex: '-1',
-
     textAlign: 'center',
+
+    zIndex: '-1',
 
     '@mobile': {
       marginX: '2rem',

@@ -6,23 +6,23 @@ interface MousePosition {
 }
 
 export function useMousePosition() {
-  const [mousePosition, setMousePosition] = useState<MousePosition>({
+  const [position, setPosition] = useState<MousePosition>({
     x: null,
     y: null,
   });
 
   useEffect(() => {
-    const mouseMoveHandler = (event: MouseEvent) => {
+    const handleMouseMove = (event: MouseEvent) => {
       const { clientX, clientY } = event;
-      setMousePosition({ x: clientX, y: clientY });
+      setPosition({ x: clientX, y: clientY });
     };
 
-    document.addEventListener('mousemove', mouseMoveHandler);
+    document.addEventListener('mousemove', handleMouseMove);
 
     return () => {
-      document.removeEventListener('mousemove', mouseMoveHandler);
+      document.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
-  return mousePosition;
+  return position;
 }

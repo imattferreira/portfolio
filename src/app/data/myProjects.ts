@@ -13,7 +13,7 @@ export const myProjects = [
     ],
   },
   {
-    name: 'Testing',
+    name: 'Testing1',
     overview: 'overview test',
     repository: 'https://github.com/MattFerreira18',
     technologies: [
@@ -26,7 +26,7 @@ export const myProjects = [
     ],
   },
   {
-    name: 'Testing',
+    name: 'Testing2',
     overview: 'overview test',
     repository: 'https://github.com/MattFerreira18',
     technologies: [

@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react';
 
 import { useMouseContext } from '../../../app/contexts/MouseContext';
-import { useMobileVersion } from '../../../app/hooks/useMobileVersion';
+import { useMobileDevice } from '../../../app/hooks/useMobileDevice';
 import { useMousePosition } from '../../../app/hooks/useMousePosition';
 import { Dot, Ring } from './styles';
 
 export function DotRing() {
   const { x, y } = useMousePosition();
-  const { cursorType } = useMouseContext();
+  const { cursorModel } = useMouseContext();
   const [customCursorIsActive, setCustomCursorIsActive] = useState(true);
 
   useEffect(() => {
-    setCustomCursorIsActive(!useMobileVersion());
+    setCustomCursorIsActive(!useMobileDevice());
   }, []);
 
   if (!customCursorIsActive) {
@@ -20,8 +20,8 @@ export function DotRing() {
 
   return (
     <>
-      <Dot style={{ left: `${x}px`, top: `${y}px` }} className={cursorType} />
-      <Ring style={{ left: `${x}px`, top: `${y}px` }} className={cursorType} />
+      <Dot style={{ left: `${x}px`, top: `${y}px` }} className={cursorModel} />
+      <Ring style={{ left: `${x}px`, top: `${y}px` }} className={cursorModel} />
     </>
   );
 }

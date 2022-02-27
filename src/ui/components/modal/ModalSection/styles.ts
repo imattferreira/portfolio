@@ -2,20 +2,23 @@ import { styled } from '../../../../app/configs/stitches';
 
 export const Container = styled('div', {
   '& > div': {
+    marginBottom: '0.6rem',
+
     fontWeight: 'bold',
     fontSize: '$medium',
-    marginBottom: '0.6rem',
   },
 
   '@mobile': {
-    display: 'flex',
-    flexDirection: 'column',
     width: '100%',
 
+    display: 'flex',
+    flexDirection: 'column',
+
     '& > div': {
+      marginY: '1rem',
+
       fontWeight: 'bold',
       fontSize: '$xlarge',
-      marginY: '1rem',
     },
 
     button: {

@@ -4,11 +4,11 @@ import { RiMenu3Fill } from '../../../../app/configs/icons';
 import { ModalSection } from '../ModalSection';
 import { MenuButton, Modal, Wrapper, ArrowUp, Content } from './styles';
 
-type SectionsModalProps = {
+type ModalSectionsProps = {
   children: React.ReactNode;
 };
 
-export function SectionsModal({ children }: SectionsModalProps) {
+export function ModalSections({ children }: ModalSectionsProps) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (

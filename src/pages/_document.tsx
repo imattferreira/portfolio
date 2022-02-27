@@ -15,7 +15,6 @@ export default class Document extends NextDocument {
             href="https://fonts.gstatic.com"
             crossOrigin="anonymous"
           />
-
           <link
             rel="preconnect"
             href="https://fonts.googleapis.com"
@@ -30,8 +29,10 @@ export default class Document extends NextDocument {
             id="stitches"
             dangerouslySetInnerHTML={{ __html: getCssText() }}
           />
+
           <meta name="description" content="Website de Matheus Ferreira" />
         </Head>
+
         <body>
           <Main />
           <NextScript />

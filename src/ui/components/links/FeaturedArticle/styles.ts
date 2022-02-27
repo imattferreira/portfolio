@@ -1,12 +1,13 @@
 import { styled } from '../../../../app/configs/stitches';
 
 export const Container = styled('article', {
+  marginY: '1rem',
   padding: '2rem',
+
   border: '1px solid $black800',
   borderRadius: '0.5rem',
 
   transition: '250ms',
-  marginY: '1rem',
 
   '&:hover': {
     background: '$black800',
@@ -35,11 +36,12 @@ export const ImageWrapper = styled('div', {
 });
 
 export const TextWrapper = styled('div', {
-  padding: '0.4rem',
+  width: '18.6rem',
 
   marginTop: '1rem',
+  padding: '0.4rem',
+
   whiteSpace: 'nowrap',
-  width: '18.6rem',
   overflow: 'hidden',
   textOverflow: 'ellipsis',
 

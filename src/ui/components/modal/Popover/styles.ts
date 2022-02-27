@@ -1,12 +1,18 @@
-import { styled } from '../../../../app/configs/stitches';
-import { translation } from '../../../styles/animations';
+import { keyframes, styled } from '../../../../app/configs/stitches';
+
+const translatePopover = keyframes({
+  '0%': { transform: 'translateY(100%)' },
+  '100%': { transform: 'translateY(0%)' },
+});
 
 export const Container = styled('div', {
-  justifySelf: 'center',
   minWidth: '14rem',
   minHeight: '14rem',
-  position: 'relative',
+
   marginY: '1rem',
+
+  position: 'relative',
+  justifySelf: 'center',
 
   '@mobile': {
     width: '100%',
@@ -14,14 +20,16 @@ export const Container = styled('div', {
 });
 
 export const Wrapper = styled('div', {
-  display: 'none',
-  position: 'absolute',
   marginBottom: '10.4rem',
+
+  display: 'none',
+
+  position: 'absolute',
   bottom: 'calc(100% - 150px)',
 
   '&.active': {
     display: 'inline',
-    animation: `${translation} 300ms`,
+    animation: `${translatePopover} 300ms`,
   },
 
   '@mobile': {

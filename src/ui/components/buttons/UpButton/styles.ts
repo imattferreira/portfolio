@@ -4,12 +4,12 @@ export const Container = styled('button', {
   position: 'fixed',
   bottom: 0,
   right: 0,
+  zIndex: '100',
+
   marginRight: '2rem',
   marginBottom: '2rem',
 
   background: 'none',
-
-  zIndex: '100',
 
   div: {
     size: '3rem',
@@ -19,9 +19,10 @@ export const Container = styled('button', {
     justifyContent: 'center',
 
     borderRadius: '8px',
+    background: '$black800',
+
     fontSize: '$xlarge',
     color: '$gray100',
-    background: '$black800',
 
     '&:hover': {
       background: '$black900',

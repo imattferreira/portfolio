@@ -6,7 +6,7 @@ import { useMouseContext } from '../../../../app/contexts/MouseContext';
 import { Container } from './styles';
 
 export function UpButton() {
-  const { cursorChangeHandler } = useMouseContext();
+  const { handleCursorModel } = useMouseContext();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -15,15 +15,15 @@ export function UpButton() {
     }, 800);
   });
 
-  function handleToStartPage() {
+  function handleMoveStartPage() {
     window.scrollTo(0, 0);
   }
 
   return (
     <Container
-      onMouseEnter={() => cursorChangeHandler('hovered')}
-      onMouseLeave={() => cursorChangeHandler()}
-      onClick={() => handleToStartPage()}
+      onMouseEnter={() => handleCursorModel('hovered')}
+      onMouseLeave={() => handleCursorModel()}
+      onClick={() => handleMoveStartPage()}
       aria-label="ir para o início"
     >
       <AnimatePresence>

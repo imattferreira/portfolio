@@ -29,50 +29,32 @@ type ProjectProps = {
   technologies: string[];
 };
 
+const getTechIcon = {
+  Typescript: <SiTypescript key="typescript" />,
+  ReactJs: <SiReact key="reactjs" />,
+  'Next.JS': <SiNextdotjs key="nextjs" />,
+  PrismaORM: <SiPrisma key="prismaorm" />,
+  'Socket.IO': <SiSocketdotio key="socketio" />,
+  Docker: <SiDocker key="docker" />,
+  'Styled-Components': <SiStyledcomponents key="styledcomponents" />,
+  'Node.JS': <FaNodeJs key="nodejs" />,
+};
+
 export function Project({
   name,
   overview,
   repository,
   technologies,
 }: ProjectProps) {
-  const { cursorChangeHandler } = useMouseContext();
+  const { handleCursorModel } = useMouseContext();
   const [techIcons, setTechIcons] = useState<React.ReactElement[]>([]);
 
   useEffect(() => {
-    if (technologies.length === techIcons.length) {
-      return;
+    if (technologies.length !== techIcons.length) {
+      technologies.forEach((technology) => {
+        setTechIcons((prevState) => [...prevState, getTechIcon[technology]]);
+      });
     }
-
-    technologies.forEach((technology) => {
-      switch (technology) {
-        case 'Typescript':
-          setTechIcons((prev) => [...prev, <SiTypescript />]);
-          break;
-        case 'ReactJS':
-          setTechIcons((prev) => [...prev, <SiReact />]);
-          break;
-        case 'Next.JS':
-          setTechIcons((prev) => [...prev, <SiNextdotjs />]);
-          break;
-        case 'PrismaORM':
-          setTechIcons((prev) => [...prev, <SiPrisma />]);
-          break;
-        case 'Socket.IO':
-          setTechIcons((prev) => [...prev, <SiSocketdotio />]);
-          break;
-        case 'Docker':
-          setTechIcons((prev) => [...prev, <SiDocker />]);
-          break;
-        case 'Styled-Components':
-          setTechIcons((prev) => [...prev, <SiStyledcomponents />]);
-          break;
-        case 'Node.JS':
-          setTechIcons((prev) => [...prev, <FaNodeJs />]);
-          break;
-        default:
-          break;
-      }
-    });
   }, []);
 
   return (
@@ -94,8 +76,8 @@ export function Project({
 
             <a href={repository} target="_blank" rel="noreferrer">
               <GitLink
-                onMouseEnter={() => cursorChangeHandler('hovered')}
-                onMouseLeave={() => cursorChangeHandler()}
+                onMouseEnter={() => handleCursorModel('hovered')}
+                onMouseLeave={() => handleCursorModel()}
               >
                 <IoLogoGithub />
               </GitLink>

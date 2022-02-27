@@ -1,13 +1,14 @@
 import { styled } from '../../../../app/configs/stitches';
 
 export const Container = styled('button', {
+  size: '14rem',
+
+  marginY: '1rem',
+
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   flexDirection: 'column',
-
-  size: '14rem',
-  marginY: '1rem',
 
   borderRadius: '0.5rem',
   border: '1px solid $black800',
@@ -29,9 +30,10 @@ export const Container = styled('button', {
   },
 
   '& svg + span': {
+    marginBottom: '0.2rem',
+
     fontSize: '$large',
     fontWeight: 'bold',
-    marginBottom: '0.2rem',
   },
 
   '& span.reduced': {

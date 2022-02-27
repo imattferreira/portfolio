@@ -1,43 +1,38 @@
 import React, { createContext, useContext, useMemo, useState } from 'react';
 
 type MouseContextProps = {
-  cursorType: string;
-  cursorChangeHandler: (_cursorType?: 'hovered' | 'blocked') => void;
+  cursorModel: string;
+  handleCursorModel: (newCursorModel?: 'hovered' | 'blocked') => void;
 };
 
 type MouseContextProviderProps = {
   children: React.ReactNode;
 };
 
-const MouseContext = createContext<MouseContextProps>({
-  cursorType: '',
-  cursorChangeHandler: (_cursorType?: 'hovered' | 'blocked') => {
-    console.log('void', _cursorType);
-  },
-});
+const MouseContext = createContext<MouseContextProps>({} as MouseContextProps);
 
 export function MouseContextProvider({ children }: MouseContextProviderProps) {
-  const [cursorType, setCursorType] = useState('');
+  const [cursorModel, setCursorModel] = useState('');
 
-  function cursorChangeHandler(_cursorType?: 'hovered' | 'blocked') {
-    setCursorType(_cursorType);
+  function handleCursorModel(newCursorModel?: 'hovered' | 'blocked') {
+    setCursorModel(newCursorModel);
   }
 
-  const memoized = useMemo(
+  const contextMemoized = useMemo(
     () => ({
-      cursorType,
-      cursorChangeHandler,
+      cursorModel,
+      handleCursorModel,
     }),
-    [cursorType, cursorChangeHandler],
+    [cursorModel, handleCursorModel],
   );
 
   return (
-    <MouseContext.Provider value={memoized}>{children}</MouseContext.Provider>
+    <MouseContext.Provider value={contextMemoized}>
+      {children}
+    </MouseContext.Provider>
   );
 }
 
 export function useMouseContext() {
-  const context = useContext(MouseContext);
-
-  return context;
+  return useContext(MouseContext);
 }

@@ -14,13 +14,13 @@ export function LangOptionButton({
   active = false,
   ...rest
 }: LangOptionButtonProps) {
-  const { cursorChangeHandler } = useMouseContext();
+  const { handleCursorModel } = useMouseContext();
 
   return (
     <Container
       className={active ? 'active' : ''}
-      onMouseEnter={() => cursorChangeHandler(active ? 'blocked' : 'hovered')}
-      onMouseLeave={() => cursorChangeHandler()}
+      onMouseEnter={() => handleCursorModel(active ? 'blocked' : 'hovered')}
+      onMouseLeave={() => handleCursorModel()}
       {...rest}
     >
       <span>{title}</span>
