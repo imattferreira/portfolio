@@ -30,6 +30,7 @@ export default class Document extends NextDocument {
             dangerouslySetInnerHTML={{ __html: getCssText() }}
           />
 
+          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="description" content="Website de Matheus Ferreira" />
         </Head>
 
