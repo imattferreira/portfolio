@@ -33,6 +33,10 @@ export const ImageWrapper = styled('div', {
   '@tablet': {
     width: '12rem',
   },
+
+  '@mobile': {
+    width: '100%',
+  },
 });
 
 export const TextWrapper = styled('div', {
@@ -56,6 +60,7 @@ export const TextWrapper = styled('div', {
   },
   '@mobile': {
     width: '100%',
+    marginTop: '1.6rem',
   },
 });
 
