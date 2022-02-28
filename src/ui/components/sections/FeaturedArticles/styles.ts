@@ -38,12 +38,14 @@ export const Wrapper = styled('div', {
 
   background: '$black900',
 
+  '@tablet': {
+    paddingX: '2rem',
+  },
+
   '@mobile': {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     flexDirection: 'column',
-
-    paddingX: '2rem',
   },
 });

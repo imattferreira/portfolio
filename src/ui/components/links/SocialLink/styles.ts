@@ -40,6 +40,10 @@ export const Container = styled('button', {
     fontSize: '$small',
   },
 
+  '@tablet': {
+    width: '12rem',
+  },
+
   '@mobile': {
     width: 'calc(100vw - 4rem)',
   },

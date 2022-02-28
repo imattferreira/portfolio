@@ -39,7 +39,7 @@ export const Container = styled('section', {
 
     zIndex: '-1',
 
-    '@mobile': {
+    '@tablet': {
       marginX: '2rem',
     },
   },

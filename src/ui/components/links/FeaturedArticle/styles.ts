@@ -30,8 +30,8 @@ export const ImageWrapper = styled('div', {
     objectFit: 'cover',
   },
 
-  '@mobile': {
-    width: '100%',
+  '@tablet': {
+    width: '12rem',
   },
 });
 
@@ -50,6 +50,10 @@ export const TextWrapper = styled('div', {
     textOverflow: 'ellipsis',
   },
 
+  '@tablet': {
+    width: '12rem',
+    marginTop: '0',
+  },
   '@mobile': {
     width: '100%',
   },

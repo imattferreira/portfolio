@@ -38,8 +38,11 @@ export const Wrapper = styled('div', {
 
   background: '$black900',
 
+  '@tablet': {
+    paddingX: '2rem',
+  },
+
   '@mobile': {
     flexDirection: 'column',
-    paddingX: '2rem',
   },
 });

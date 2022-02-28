@@ -11,7 +11,7 @@ export function FeaturedArticles() {
       <motion.div
         whileInView={{ marginTop: '0rem' }}
         transition={{ duration: 0.75 }}
-        style={{ marginTop: '18rem' }}
+        style={{ marginTop: '10rem' }}
         viewport={{ once: true }}
       >
         <motion.div

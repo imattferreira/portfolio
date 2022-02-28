@@ -47,8 +47,6 @@ export function Presentation() {
             alt="Matheus Ferreira"
             animate={{ scale: 0.92 }}
             transition={{ duration: 0.5 }}
-            height={400}
-            width={400}
           />
         </div>
       </ProfileWrapper>

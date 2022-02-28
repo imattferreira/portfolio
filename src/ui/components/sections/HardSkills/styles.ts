@@ -12,6 +12,10 @@ export const Container = styled('section', {
 
   zIndex: '-8',
 
+  '@tablet': {
+    maxWidth: '1200px',
+  },
+
   '@mobile': {
     height: '168rem',
   },

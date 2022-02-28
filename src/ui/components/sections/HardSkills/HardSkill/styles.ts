@@ -36,6 +36,10 @@ export const Container = styled('div', {
     marginBottom: '0.2rem',
   },
 
+  '@tablet': {
+    width: '12rem',
+  },
+
   '@mobile': {
     width: '100%',
   },

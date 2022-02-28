@@ -34,6 +34,7 @@ export const {
     },
   },
   media: {
+    tablet: '(max-width: 900px)',
     mobile: '(max-width: 480px)',
     'min-mobile': '(max-width: 360px)',
   },
