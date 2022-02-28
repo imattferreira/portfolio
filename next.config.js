@@ -3,6 +3,7 @@ module.exports = {
   productionBrowserSourceMaps: true,
   swcMinify: true,
   images: {
-    domains: ['camo.githubusercontent.com']
+    domains: ['github.com'],
+    minimumCacheTTL: 60 * 60 * 24,
   }
 }

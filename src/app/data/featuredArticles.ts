@@ -1,7 +1,7 @@
 export const featuredArticles = [
   {
     id: '1',
-    banner: 'https://picsum.photos/200/300',
+    banner: '/article_banner_example.jpg',
     bannerAlt: 'aleatory',
     title: 'My new website',
     overview:
@@ -9,7 +9,7 @@ export const featuredArticles = [
   },
   {
     id: '2',
-    banner: 'https://picsum.photos/200/300',
+    banner: '/article_banner_example.jpg',
     bannerAlt: 'aleatory',
     title: 'My new website',
     overview:
@@ -17,7 +17,7 @@ export const featuredArticles = [
   },
   {
     id: '3',
-    banner: 'https://picsum.photos/200/300',
+    banner: '/article_banner_example.jpg',
     bannerAlt: 'aleatory',
     title: 'My new website',
     overview:

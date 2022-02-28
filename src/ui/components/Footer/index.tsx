@@ -12,7 +12,7 @@ export function Footer() {
       <motion.div
         whileInView={{ marginTop: '0rem' }}
         transition={{ duration: 0.75 }}
-        style={{ marginTop: '5rem' }}
+        style={{ marginTop: '2rem' }}
         viewport={{ once: true }}
       >
         <InfoWrapper>

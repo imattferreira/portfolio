@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -36,7 +37,7 @@ export function FeaturedArticle({
             onMouseLeave={() => handleCursorModel()}
           >
             <ImageWrapper>
-              <img src={banner} alt={bannerAlt} />
+              <Image src={banner} alt={bannerAlt} width={288} height={148} />
             </ImageWrapper>
 
             <TextWrapper>
