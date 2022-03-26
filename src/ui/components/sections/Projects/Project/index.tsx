@@ -41,7 +41,7 @@ const getTechIcon = {
 };
 
 function Project({ name, overview, repository, technologies }: ProjectProps) {
-  const { handleCursorModel } = useMouse();
+  const { changeCursorModel } = useMouse();
   const [techIcons, setTechIcons] = useState<React.ReactElement[]>([]);
 
   useEffect(() => {
@@ -71,8 +71,8 @@ function Project({ name, overview, repository, technologies }: ProjectProps) {
 
             <a href={repository} target="_blank" rel="noreferrer">
               <GitLink
-                onMouseEnter={() => handleCursorModel('hovered')}
-                onMouseLeave={() => handleCursorModel()}
+                onMouseEnter={() => changeCursorModel('hovered')}
+                onMouseLeave={() => changeCursorModel()}
               >
                 <IoLogoGithub />
               </GitLink>

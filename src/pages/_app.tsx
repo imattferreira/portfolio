@@ -1,4 +1,5 @@
 import { DefaultSeo } from 'next-seo';
+import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
 
@@ -8,7 +9,7 @@ import { gtag } from '../app/lib/gtag';
 import { Layout } from '../ui/Layout';
 import { globalStyles } from '../ui/styles/global';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   globalStyles();

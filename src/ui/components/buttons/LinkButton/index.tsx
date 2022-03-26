@@ -8,12 +8,12 @@ type LinkButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 function LinkButton({ title, ...props }: LinkButtonProps) {
-  const { handleCursorModel } = useMouse();
+  const { changeCursorModel } = useMouse();
 
   return (
     <Container
-      onMouseEnter={() => handleCursorModel('hovered')}
-      onMouseLeave={() => handleCursorModel()}
+      onMouseEnter={() => changeCursorModel('hovered')}
+      onMouseLeave={() => changeCursorModel()}
       {...props}
     >
       {title}

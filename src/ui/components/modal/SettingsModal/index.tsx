@@ -14,7 +14,7 @@ import {
 } from './styles';
 
 export function SettingsModal() {
-  const { handleCursorModel } = useMouse();
+  const { changeCursorModel } = useMouse();
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState<'ptbr' | 'en'>('ptbr');
@@ -35,8 +35,8 @@ export function SettingsModal() {
         onClick={() => setModalIsOpen(!modalIsOpen)}
         className={modalIsOpen && 'active'}
         aria-label="open settings"
-        onMouseEnter={() => handleCursorModel('hovered')}
-        onMouseLeave={() => handleCursorModel()}
+        onMouseEnter={() => changeCursorModel('hovered')}
+        onMouseLeave={() => changeCursorModel()}
       >
         <GoSettings />
       </Button>

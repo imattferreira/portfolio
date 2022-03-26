@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import React, { createElement } from 'react';
 
 import { BsCodeSlash, AiFillHeart } from '../../../app/configs/icons';
-import { socialNetworks } from '../../../app/data/socialNetworks';
+import socialNetworks from '../../../app/data/socialNetworks';
 import { SocialButton } from '../buttons';
 import { Container, IconsWrapper, InfoWrapper } from './styles';
 

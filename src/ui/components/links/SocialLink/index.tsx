@@ -12,7 +12,7 @@ type SocialLinkProps = {
 };
 
 function SocialLink({ name, link, nickname, icon }: SocialLinkProps) {
-  const { handleCursorModel } = useMouse();
+  const { changeCursorModel } = useMouse();
 
   return (
     <a href={link} target="_blank" rel="noreferrer">
@@ -25,8 +25,8 @@ function SocialLink({ name, link, nickname, icon }: SocialLinkProps) {
         <motion.div transition={{ duration: 0.25 }} whileHover={{ scale: 1.1 }}>
           <Container
             aria-label={name}
-            onMouseEnter={() => handleCursorModel('hovered')}
-            onMouseLeave={() => handleCursorModel()}
+            onMouseEnter={() => changeCursorModel('hovered')}
+            onMouseLeave={() => changeCursorModel()}
           >
             {icon}
             <span>{name}</span>

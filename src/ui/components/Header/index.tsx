@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
-import { useMobileDevice } from '../../../app/hooks/useMobileDevice';
+import useMobileDevice from '../../../app/hooks/useMobileDevice';
 import { HeaderButton } from '../buttons';
 import { ModalSections } from '../modal';
 import Logo from './Logo';

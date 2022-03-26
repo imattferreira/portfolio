@@ -2,7 +2,7 @@ import React, { createContext, useMemo, useState } from 'react';
 
 type MouseContextProps = {
   cursorModel: string;
-  handleCursorModel: (newCursorModel?: 'hovered' | 'blocked') => void;
+  changeCursorModel: (newCursorModel?: 'hovered' | 'blocked') => void;
 };
 
 type MouseProviderProps = {
@@ -14,16 +14,16 @@ const MouseContext = createContext<MouseContextProps>({} as MouseContextProps);
 function MouseProvider({ children }: MouseProviderProps) {
   const [cursorModel, setCursorModel] = useState('');
 
-  function handleCursorModel(newCursorModel?: 'hovered' | 'blocked') {
+  function changeCursorModel(newCursorModel?: 'hovered' | 'blocked') {
     setCursorModel(newCursorModel);
   }
 
   const contextMemoized = useMemo(
     () => ({
       cursorModel,
-      handleCursorModel,
+      changeCursorModel,
     }),
-    [cursorModel, handleCursorModel],
+    [cursorModel, changeCursorModel],
   );
 
   return (

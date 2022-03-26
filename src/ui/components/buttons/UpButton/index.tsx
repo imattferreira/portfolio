@@ -6,7 +6,7 @@ import useMouse from '../../../../app/hooks/useMouse';
 import { Container } from './styles';
 
 function UpButton() {
-  const { handleCursorModel } = useMouse();
+  const { changeCursorModel } = useMouse();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -21,8 +21,8 @@ function UpButton() {
 
   return (
     <Container
-      onMouseEnter={() => handleCursorModel('hovered')}
-      onMouseLeave={() => handleCursorModel()}
+      onMouseEnter={() => changeCursorModel('hovered')}
+      onMouseLeave={() => changeCursorModel()}
       onClick={() => handleMoveStartPage()}
       aria-label="ir para o início"
     >
