@@ -1,4 +1,4 @@
-export function useMobileDevice() {
+function useMobileDevice() {
   const mobileSystems = [
     'Android',
     'webOS',
@@ -18,3 +18,5 @@ export function useMobileDevice() {
 
   return isMobileSystem || width < maxWindowMobileLength;
 }
+
+export default useMobileDevice;

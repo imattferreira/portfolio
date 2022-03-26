@@ -5,7 +5,7 @@ import {
   BsTelegram,
 } from '../configs/icons';
 
-export const socialNetworks = [
+const socialNetworks = [
   {
     name: 'LinkedIn',
     nickname: '@matt-ferreira18',
@@ -31,3 +31,5 @@ export const socialNetworks = [
     icon: BsTelegram,
   },
 ];
+
+export default socialNetworks;

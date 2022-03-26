@@ -12,7 +12,7 @@ import {
   SiDocker,
   SiStyledcomponents,
 } from '../../../../../app/configs/icons';
-import { useMouseContext } from '../../../../../app/contexts/MouseContext';
+import useMouse from '../../../../../app/hooks/useMouse';
 import {
   Container,
   GitLink,
@@ -40,13 +40,8 @@ const getTechIcon = {
   'Node.JS': <FaNodeJs key="nodejs" />,
 };
 
-export function Project({
-  name,
-  overview,
-  repository,
-  technologies,
-}: ProjectProps) {
-  const { handleCursorModel } = useMouseContext();
+function Project({ name, overview, repository, technologies }: ProjectProps) {
+  const { handleCursorModel } = useMouse();
   const [techIcons, setTechIcons] = useState<React.ReactElement[]>([]);
 
   useEffect(() => {
@@ -88,3 +83,5 @@ export function Project({
     </motion.div>
   );
 }
+
+export default Project;

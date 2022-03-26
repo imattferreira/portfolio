@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { ModalSection } from '../ModalSection';
+import ModalSection from '../ModalSection';
 import { ArrowDown, Container, Content, Wrapper } from './styles';
 
 type PopoverProps = {
@@ -9,7 +9,7 @@ type PopoverProps = {
   children: React.ReactElement;
 };
 
-export function Popover({ title, description, children }: PopoverProps) {
+function Popover({ title, description, children }: PopoverProps) {
   const [showPopup, setShowPopup] = useState(false);
 
   function onMouseEnter() {
@@ -37,3 +37,5 @@ export function Popover({ title, description, children }: PopoverProps) {
     </Container>
   );
 }
+
+export default Popover;

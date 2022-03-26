@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
-import { featuredArticles } from '../../../../app/data/featuredArticles';
+import featuredArticles from '../../../../app/data/featuredArticles';
 import { FeaturedArticle } from '../../links';
 import { Container, Title, Wrapper } from './styles';
 
-export function FeaturedArticles() {
+function FeaturedArticles() {
   return (
     <Container id="articles">
       <motion.div
@@ -38,3 +38,5 @@ export function FeaturedArticles() {
     </Container>
   );
 }
+
+export default FeaturedArticles;

@@ -1,17 +1,17 @@
-import React, { createContext, useContext, useMemo, useState } from 'react';
+import React, { createContext, useMemo, useState } from 'react';
 
 type MouseContextProps = {
   cursorModel: string;
   handleCursorModel: (newCursorModel?: 'hovered' | 'blocked') => void;
 };
 
-type MouseContextProviderProps = {
+type MouseProviderProps = {
   children: React.ReactNode;
 };
 
 const MouseContext = createContext<MouseContextProps>({} as MouseContextProps);
 
-export function MouseContextProvider({ children }: MouseContextProviderProps) {
+function MouseProvider({ children }: MouseProviderProps) {
   const [cursorModel, setCursorModel] = useState('');
 
   function handleCursorModel(newCursorModel?: 'hovered' | 'blocked') {
@@ -33,6 +33,6 @@ export function MouseContextProvider({ children }: MouseContextProviderProps) {
   );
 }
 
-export function useMouseContext() {
-  return useContext(MouseContext);
-}
+export default MouseProvider;
+
+export { MouseContext };

@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
-import { myProjects } from '../../../../app/data/myProjects';
-import { Project } from './Project';
+import myProjects from '../../../../app/data/myProjects';
+import Project from './Project';
 import { Container, Title, Wrapper } from './styles';
 
-export function Projects() {
+function Projects() {
   return (
     <Container id="projects">
       <motion.div
@@ -37,3 +37,5 @@ export function Projects() {
     </Container>
   );
 }
+
+export default Projects;

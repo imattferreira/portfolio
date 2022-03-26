@@ -8,11 +8,7 @@ type HeaderButtonProps = {
   active?: boolean;
 };
 
-export function HeaderButton({
-  title,
-  section,
-  active = false,
-}: HeaderButtonProps) {
+function HeaderButton({ title, section, active = false }: HeaderButtonProps) {
   return (
     <a href={`#${section}`}>
       <Container className={active && 'active'} aria-label={title}>
@@ -21,3 +17,5 @@ export function HeaderButton({
     </a>
   );
 }
+
+export default HeaderButton;

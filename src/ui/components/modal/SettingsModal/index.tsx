@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 import { GoSettings } from '../../../../app/configs/icons';
-import { useMouseContext } from '../../../../app/contexts/MouseContext';
-import { ModalSection } from '../ModalSection';
-import { LangOptionButton } from './LangOptionButton';
+import useMouse from '../../../../app/hooks/useMouse';
+import ModalSection from '../ModalSection';
+import LangOptionButton from './LangOptionButton';
 import {
   Button,
   Modal,
@@ -14,7 +14,7 @@ import {
 } from './styles';
 
 export function SettingsModal() {
-  const { handleCursorModel } = useMouseContext();
+  const { handleCursorModel } = useMouse();
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [currentLanguage, setCurrentLanguage] = useState<'ptbr' | 'en'>('ptbr');
@@ -70,3 +70,5 @@ export function SettingsModal() {
     </div>
   );
 }
+
+export default SettingsModal;

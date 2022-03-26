@@ -12,7 +12,7 @@ type HardSkillProps = {
   onMouseLeave?: () => void;
 };
 
-export function HardSkill({
+function HardSkill({
   name,
   icon,
   description,
@@ -37,3 +37,5 @@ export function HardSkill({
     </Popover>
   );
 }
+
+export default HardSkill;

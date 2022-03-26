@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { useMouseContext } from '../../../../app/contexts/MouseContext';
+import useMouse from '../../../../app/hooks/useMouse';
 
 type SocialButtonProps = {
   link: string;
   icon: React.ReactElement;
 };
 
-export function SocialButton({ icon, link }: SocialButtonProps) {
-  const { handleCursorModel } = useMouseContext();
+function SocialButton({ icon, link }: SocialButtonProps) {
+  const { handleCursorModel } = useMouse();
 
   return (
     <a target="_blank" href={link} rel="noreferrer">
@@ -21,3 +21,5 @@ export function SocialButton({ icon, link }: SocialButtonProps) {
     </a>
   );
 }
+
+export default SocialButton;

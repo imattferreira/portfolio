@@ -6,7 +6,7 @@ import { socialNetworks } from '../../../app/data/socialNetworks';
 import { SocialButton } from '../buttons';
 import { Container, IconsWrapper, InfoWrapper } from './styles';
 
-export function Footer() {
+function Footer() {
   return (
     <Container>
       <motion.div
@@ -40,3 +40,5 @@ export function Footer() {
     </Container>
   );
 }
+
+export default Footer;

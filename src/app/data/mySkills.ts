@@ -11,7 +11,7 @@ import {
   SiNextdotjs,
 } from '../configs/icons';
 
-export const mySkills = {
+const mySkills = {
   hardSkills: [
     {
       name: 'Typescript',
@@ -75,3 +75,5 @@ export const mySkills = {
     },
   ],
 };
+
+export default mySkills;

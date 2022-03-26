@@ -1,7 +1,7 @@
 const title = 'Matheus Ferreira | Home';
 const description = '';
 
-export const SEO = {
+const seo = {
   title,
   description,
   canonical: '',
@@ -13,3 +13,5 @@ export const SEO = {
     description,
   },
 };
+
+export default seo;

@@ -7,7 +7,7 @@ type ModalSectionProps = {
   children: React.ReactNode;
 };
 
-export function ModalSection({ title, children }: ModalSectionProps) {
+function ModalSection({ title, children }: ModalSectionProps) {
   return (
     <Container>
       <div>{title}</div>
@@ -15,3 +15,5 @@ export function ModalSection({ title, children }: ModalSectionProps) {
     </Container>
   );
 }
+
+export default ModalSection;

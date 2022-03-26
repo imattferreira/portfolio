@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import React, { createElement } from 'react';
 
-import { socialNetworks } from '../../../../app/data/socialNetworks';
+import socialNetworks from '../../../../app/data/socialNetworks';
 import { SocialLink } from '../../links';
 import { Container, Wrapper, Title } from './styles';
 
-export function SocialLinks() {
+function SocialLinks() {
   return (
     <Container id="social-links">
       <motion.div
@@ -39,3 +39,5 @@ export function SocialLinks() {
     </Container>
   );
 }
+
+export default SocialLinks;

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
-import { useMouseContext } from '../../../../app/contexts/MouseContext';
+import useMouse from '../../../../app/hooks/useMouse';
 import { Container } from './styles';
 
 type SocialLinkProps = {
@@ -11,8 +11,8 @@ type SocialLinkProps = {
   nickname: string;
 };
 
-export function SocialLink({ name, link, nickname, icon }: SocialLinkProps) {
-  const { handleCursorModel } = useMouseContext();
+function SocialLink({ name, link, nickname, icon }: SocialLinkProps) {
+  const { handleCursorModel } = useMouse();
 
   return (
     <a href={link} target="_blank" rel="noreferrer">
@@ -39,3 +39,5 @@ export function SocialLink({ name, link, nickname, icon }: SocialLinkProps) {
     </a>
   );
 }
+
+export default SocialLink;

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-import { useMouseContext } from '../../../../app/contexts/MouseContext';
+import useMouse from '../../../../app/hooks/useMouse';
 import { Container, TextWrapper, ImageWrapper, Title } from './styles';
 
 type FeaturedArticleProps = {
@@ -14,14 +14,14 @@ type FeaturedArticleProps = {
   overview: string;
 };
 
-export function FeaturedArticle({
+function FeaturedArticle({
   id,
   banner,
   bannerAlt,
   title,
   overview,
 }: FeaturedArticleProps) {
-  const { handleCursorModel } = useMouseContext();
+  const { handleCursorModel } = useMouse();
 
   return (
     <Link href={`/articles/${id}`}>
@@ -50,3 +50,5 @@ export function FeaturedArticle({
     </Link>
   );
 }
+
+export default FeaturedArticle;

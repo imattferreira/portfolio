@@ -1,6 +1,6 @@
 import React, { ButtonHTMLAttributes } from 'react';
 
-import { useMouseContext } from '../../../../../app/contexts/MouseContext';
+import useMouse from '../../../../../app/hooks/useMouse';
 import { Container } from './styles';
 
 interface LangOptionButtonProps
@@ -9,12 +9,12 @@ interface LangOptionButtonProps
   title: string;
 }
 
-export function LangOptionButton({
+function LangOptionButton({
   title,
   active = false,
   ...rest
 }: LangOptionButtonProps) {
-  const { handleCursorModel } = useMouseContext();
+  const { handleCursorModel } = useMouse();
 
   return (
     <Container
@@ -27,3 +27,5 @@ export function LangOptionButton({
     </Container>
   );
 }
+
+export default LangOptionButton;

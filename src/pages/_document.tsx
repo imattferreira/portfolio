@@ -5,7 +5,7 @@ import React from 'react';
 import { getCssText } from '../app/configs/stitches';
 import { gtag } from '../app/lib/gtag';
 
-export default class Document extends NextDocument {
+class myDocument extends NextDocument {
   render() {
     return (
       <Html lang="pt-br">
@@ -64,3 +64,5 @@ export default class Document extends NextDocument {
     );
   }
 }
+
+export default myDocument;

@@ -1,6 +1,6 @@
-export { About } from './About';
-export { HardSkills } from './HardSkills';
-export { Projects } from './Projects';
-export { SocialLinks } from './SocialLinks';
-export { FeaturedArticles } from './FeaturedArticles';
-export { Presentation } from './Presentation';
+export { default as About } from './About';
+export { default as HardSkills } from './HardSkills';
+export { default as Projects } from './Projects';
+export { default as SocialLinks } from './SocialLinks';
+export { default as FeaturedArticles } from './FeaturedArticles';
+export { default as Presentation } from './Presentation';

@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import React, { createElement } from 'react';
 
-import { mySkills } from '../../../../app/data/mySkills';
-import { HardSkill } from './HardSkill';
+import mySkills from '../../../../app/data/mySkills';
+import HardSkill from './HardSkill';
 import { Container, Title, Wrapper } from './styles';
 
-export function HardSkills() {
+function HardSkills() {
   return (
     <Container id="skills">
       <motion.div
@@ -37,3 +37,5 @@ export function HardSkills() {
     </Container>
   );
 }
+
+export default HardSkills;

@@ -3,7 +3,7 @@ import React from 'react';
 
 import { Container, Title } from './styles';
 
-export function About() {
+function About() {
   return (
     <Container id="about">
       <motion.div
@@ -40,3 +40,5 @@ export function About() {
     </Container>
   );
 }
+
+export default About;

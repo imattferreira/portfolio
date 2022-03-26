@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 
 import { RiMenu3Fill } from '../../../../app/configs/icons';
-import { ModalSection } from '../ModalSection';
+import ModalSection from '../ModalSection';
 import { MenuButton, Modal, Wrapper, ArrowUp, Content } from './styles';
 
 type ModalSectionsProps = {
   children: React.ReactNode;
 };
 
-export function ModalSections({ children }: ModalSectionsProps) {
+function ModalSections({ children }: ModalSectionsProps) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   return (
@@ -30,3 +30,5 @@ export function ModalSections({ children }: ModalSectionsProps) {
     </div>
   );
 }
+
+export default ModalSections;

@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { useMobileDevice } from '../../../app/hooks/useMobileDevice';
 import { HeaderButton } from '../buttons';
 import { ModalSections } from '../modal';
-import { Logo } from './Logo';
+import Logo from './Logo';
 import { Container } from './styles';
 
 const sections = [
@@ -15,7 +15,7 @@ const sections = [
   { title: 'Artigos', section: 'articles' },
 ];
 
-export function Header() {
+function Header() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -58,3 +58,5 @@ export function Header() {
     </Container>
   );
 }
+
+export default Header;

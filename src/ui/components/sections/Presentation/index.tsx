@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import React from 'react';
-import { myPresentation } from 'src/app/data/myPresentation';
 
+import myPresentation from '../../../../app/data/myPresentation';
 import { Container, ProfileWrapper, TextWrapper } from './styles';
 
-export function Presentation() {
+function Presentation() {
   return (
     <Container>
       <TextWrapper>
@@ -53,3 +53,5 @@ export function Presentation() {
     </Container>
   );
 }
+
+export default Presentation;

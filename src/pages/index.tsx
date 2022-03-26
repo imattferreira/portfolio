@@ -10,6 +10,8 @@ import {
   Projects,
 } from '../ui/components/sections';
 
+const IS_ARTICLES_SECTION_ENABLED = false;
+
 export default function Home() {
   return (
     <>
@@ -18,7 +20,7 @@ export default function Home() {
       <SocialLinks />
       <HardSkills />
       <Projects />
-      <FeaturedArticles />
+      {IS_ARTICLES_SECTION_ENABLED && <FeaturedArticles />}
     </>
   );
 }
@@ -26,6 +28,6 @@ export default function Home() {
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {},
-    revalidate: 60 * 60 * 24, // 24 hours
+    revalidate: 60 * 60 * 48, // 48 hours
   };
 };

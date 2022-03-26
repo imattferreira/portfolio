@@ -2,11 +2,11 @@ import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 
 import { FiArrowUp } from '../../../../app/configs/icons';
-import { useMouseContext } from '../../../../app/contexts/MouseContext';
+import useMouse from '../../../../app/hooks/useMouse';
 import { Container } from './styles';
 
-export function UpButton() {
-  const { handleCursorModel } = useMouseContext();
+function UpButton() {
+  const { handleCursorModel } = useMouse();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -40,3 +40,5 @@ export function UpButton() {
     </Container>
   );
 }
+
+export default UpButton;
