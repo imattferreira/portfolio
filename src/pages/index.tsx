@@ -8,6 +8,7 @@ import {
   FeaturedArticles,
   Presentation,
   Projects,
+  BooksRead,
 } from '../ui/components/sections';
 
 const IS_ARTICLES_SECTION_ENABLED = false;
@@ -21,6 +22,7 @@ export default function Home() {
       <HardSkills />
       <Projects />
       {IS_ARTICLES_SECTION_ENABLED && <FeaturedArticles />}
+      <BooksRead />
     </>
   );
 }

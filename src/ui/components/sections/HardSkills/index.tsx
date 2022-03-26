@@ -23,12 +23,12 @@ function HardSkills() {
           <Title>Habilidades</Title>
         </motion.div>
         <Wrapper>
-          {mySkills.hardSkills.map((skill) => (
+          {mySkills.hardSkills.map(({ name, description, icon }) => (
             <HardSkill
-              key={skill.name}
-              name={skill.name}
-              description={skill.description}
-              icon={createElement(skill.icon)}
+              key={name}
+              name={name}
+              description={description}
+              icon={createElement(icon)}
             />
           ))}
         </Wrapper>

@@ -12,7 +12,8 @@ const sections = [
   { title: 'Redes Sociais', section: 'social-links' },
   { title: 'Habilidades', section: 'skills' },
   { title: 'Projetos', section: 'projects' },
-  { title: 'Artigos', section: 'articles' },
+  // { title: 'Artigos', section: 'articles' },
+  { title: 'Livros', section: 'books' },
 ];
 
 function Header() {

@@ -24,13 +24,7 @@ function Projects() {
         </motion.div>
         <Wrapper>
           {myProjects.map((project) => (
-            <Project
-              key={project.name}
-              name={project.name}
-              overview={project.overview}
-              repository={project.repository}
-              technologies={project.technologies}
-            />
+            <Project key={project.name} {...project} />
           ))}
         </Wrapper>
       </motion.div>

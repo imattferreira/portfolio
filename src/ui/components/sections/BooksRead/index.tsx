@@ -1,13 +1,13 @@
 import { motion } from 'framer-motion';
 import React from 'react';
 
-import featuredArticles from '../../../../app/data/featuredArticles';
-import { FeaturedArticle } from '../../links';
+import booksRead from '../../../../app/data/booksRead';
+import BookRead from './BookRead';
 import { Container, Title, Wrapper } from './styles';
 
-function FeaturedArticles() {
+function BooksRead() {
   return (
-    <Container id="articles">
+    <Container id="books">
       <motion.div
         whileInView={{ marginTop: '0rem' }}
         transition={{ duration: 0.75 }}
@@ -20,11 +20,11 @@ function FeaturedArticles() {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <Title>Artigos</Title>
+          <Title>Livros que recomendo</Title>
         </motion.div>
         <Wrapper>
-          {featuredArticles.map((article) => (
-            <FeaturedArticle key={article.id} {...article} />
+          {booksRead.map((bookRead) => (
+            <BookRead key={bookRead.name} {...bookRead} />
           ))}
         </Wrapper>
       </motion.div>
@@ -32,4 +32,4 @@ function FeaturedArticles() {
   );
 }
 
-export default FeaturedArticles;
+export default BooksRead;
