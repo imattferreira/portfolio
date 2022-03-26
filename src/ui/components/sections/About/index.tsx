@@ -27,14 +27,12 @@ function About() {
           transition={{ duration: 1.5 }}
           viewport={{ once: true }}
         >
-          Sou um desenvolvedor e eterno estudante de software apaixonado por
-          aprender e por ajudar os outros que estão ao meu redor. Sou estudante
-          de Ciência da Computação na universidade UNIP. Atualmente faço
-          freelances fullstack com a stack Typescript, NodeJS, TypeORM,
-          PrismaORM e PostgreSQL para o desenvolvimento de APIs e ReactJS,
-          NextJS e Styled-Components para o desenvolvimento de websites. Apesar
-          de utilizar essas ferramentas, sou aberto a aprender outras
-          tecnologias e linguagens de programação.
+          Sou um desenvolvedor e eterno estudante apaixonado por aprender e por
+          ajudar os outros que estão ao meu redor. Sou estudante de Ciência da
+          Computação na universidade UNIP. Atualmente sou desenvolvedor
+          Front-End em uma grande empresa e faço alguns freelances fullstack com
+          a stack Javascript. Apesar de utilizar essas ferramentas, sou aberto a
+          aprender outras tecnologias e linguagens de programação.
         </motion.p>
       </motion.div>
     </Container>
