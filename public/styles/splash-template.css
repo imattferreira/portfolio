@@ -1,0 +1,38 @@
+*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#splash-screen__github{
+    background: #515151;
+}
+
+#splash-screen__linkedin{
+    background: #FFFFFF;
+}
+
+#splash-screen__email{
+    background: #E6E6D5;
+}
+
+#splash-screen__share{
+    background: #3B3B3B;
+}
+
+#container img {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}

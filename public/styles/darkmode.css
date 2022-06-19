@@ -1,0 +1,45 @@
+html{
+    color: #ffffff;
+}
+
+body{
+    background: #393949;
+}
+
+.projects{
+    background: #181826;
+}
+
+.mode-visualization{
+    background: #181826;
+}
+
+.socials-networks a path{
+    fill: #41BAD8;
+}
+
+.projects{
+    background: #22222B;
+    border: 3px solid #41BAD8;
+}
+
+.projects a{
+    color: #41BAD8;
+}
+
+.avatar-container svg{
+    fill: #3291A8;
+}
+
+.modal-box{
+    background: #22222B;
+    border: 3px solid #41BAD8;
+}
+
+.modal-content h2{
+    color: #41BAD8;
+}
+
+.modal-content p{
+    color: #ffffff;
+}

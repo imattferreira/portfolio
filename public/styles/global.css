@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Ubuntu' sans-serif;
+}
+
+header{
+    width: 100%;
+}
+
+.mode-visualization{
+    margin: 10px;
+    border: none;
+    border-radius: 2rem;
+    height: 70px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.day-night{
+    cursor: pointer;
+}
+
+header img{
+    height: 2rem;
+    margin-right: 3px;
+}
+
+.avatar-container{
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-container img{
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 19rem;
+    margin-bottom: 30px;
+}
+
+.socials-networks{
+    padding: 1.4rem 4rem 0 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.socials-networks a{
+    height: 50px;
+    margin: 0 18px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 6rem;
+}
+
+.projects{
+    height: 8rem;
+    width: 24rem;
+    margin: 6px;
+    border-radius: 0.6rem;
+    padding: .8rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+
+.projects a{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.projects p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.modal-box{
+    display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    margin: 15% 4%;
+    position: fixed;
+    width: 90vw;
+    height: 30vh;
+    padding: 1.6rem 1.2rem;
+    border-radius: 35px;
+}
+
+.close-button{
+    cursor: pointer;
+    float: right;
+}
+
+.modal-content{
+    padding: 0;
+    margin: 0;
+}
+
+.modal-content h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+
+.modal-content p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    margin-left: 1.2rem;
+}
+
+@media(min-width:900px){
+
+    .avatar{
+        margin: none;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .projects a{
+        font-size: 22px;
+    }
+
+    .projects p{
+        font-size: 22px;
+    }
+}

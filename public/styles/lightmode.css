@@ -1,0 +1,45 @@
+body{
+    background: #ffffff;
+}
+
+.mode-visualization{
+    background: #EBEBEB;
+}
+
+.mode-visualization path{
+    fill: #1A6578;
+}
+
+.avatar-container svg{
+    fill: #2AA1BF;
+}
+
+.socials-networks a path{
+    fill: #1A6578;
+}
+
+.projects{
+    background: #EBEBEB;
+    border: 3px solid #2AA1BF;
+}
+
+.projects a{
+    color: #08667e;
+}
+
+.modal-box{
+    background: #EBEBEB;
+    border: 3px solid #2AA1BF;
+}
+
+.modal-content h2{
+    color: #054D5F
+}
+
+.modal-content p{
+    color: #000000;
+}
+
+.modal-avatar{
+    background: #EBEBEB;
+}

@@ -1,0 +1,71 @@
+.mode-visualization{
+    -moz-transition: all 150ms;
+    -webkit-transition: all 150ms;
+    transition: all 150ms;
+}
+
+.mode-visualization:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.mode-visualization svg{
+    -moz-transition: all 200ms;
+    -webkit-transition: all 200ms;
+    transition: all 200ms;
+}
+
+.mode-visualization svg:hover{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.avatar-container img{
+    -moz-transition: all 150ms;
+    -webkit-transition: all 150ms;
+    transition: all 150ms;
+}
+
+.avatar-container img:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.socials-networks a{
+    -moz-transition: all 150ms;
+    -webkit-transition: all 150ms;
+    transition: all 150ms;
+}
+
+.socials-networks a:hover{
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.projects{
+    -moz-transition: all 250ms;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+}
+
+.projects:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.close-button{
+    -moz-transition: all 250ms;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+}
+
+.close-button:hover{
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
