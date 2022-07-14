@@ -1,9 +1,14 @@
-module.exports = {
+/** @type {import('next').NextConfig} */
+
+const nextConfig = {
+  compiler: {
+    removeConsole: true,
+  },
   reactStrictMode: true,
-  productionBrowserSourceMaps: true,
   swcMinify: true,
-  images: {
-    domains: ['github.com'],
-    minimumCacheTTL: 60 * 60 * 24,
-  }
+  experimental: {
+    legacyBrowsers: false,
+  },
 }
+
+module.exports = nextConfig
