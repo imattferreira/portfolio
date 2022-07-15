@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import type { DocumentProps } from 'next/document';
 import { Head, Html, Main, NextScript } from 'next/document';
 
-import CssHelper from '../components/Scripts/CssHelper';
+import CssHelper from '../ui/components/Scripts/CssHelper';
 
 const MyDocument: NextPage<DocumentProps> = () => (
   <Html>

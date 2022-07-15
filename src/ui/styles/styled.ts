@@ -1,7 +1,8 @@
 /* eslint-disable import/prefer-default-export */
+// import type { PropertyValue } from '@stitches/react';
 import { createStitches } from '@stitches/react';
 
-export const { styled, getCssText, createTheme } = createStitches({
+export const { styled, getCssText, createTheme, globalCss } = createStitches({
   media: {
     bp1: '(min-width: 640px)',
     bp2: '(min-width: 768px)',
@@ -22,9 +23,11 @@ export const { styled, getCssText, createTheme } = createStitches({
     },
     colors: {
       gray100: '#F0E6F3',
-      gray200: '#E1CFE8',
-      gray300: '#B29DBC',
-      gray400: '#706079',
+      // gray200: '#E1CFE8',
+      gray200: '#B29DBC',
+      // gray300: '#B29DBC',
+      gray300: '#706079',
+      gray400: '#403645',
       gray500: '#1D1821',
       gray600: '#16111C',
       gray700: '#110C17',
@@ -118,5 +121,6 @@ export const { styled, getCssText, createTheme } = createStitches({
       title: 'Outfit, sans-serif',
       body: 'Roboto, sans-serif',
     }
-  }
+  },
+  utils: {}
 });

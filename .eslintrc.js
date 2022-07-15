@@ -35,6 +35,7 @@ module.exports = {
     'import/extensions': 0,
     'import/no-anonymous-default-export': 0,
     "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error"
+    "simple-import-sort/exports": "error",
+    "jsx-a11y/anchor-is-valid": 0
   },
 };
