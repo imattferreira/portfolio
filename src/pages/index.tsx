@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
-import Image from 'next/image';
 
+import Image from '../components/Image';
 import { styled } from '../ui/styles';
 
 const Container = styled('div', {
@@ -62,6 +62,7 @@ const Home: NextPage = () => (
         alt="say hello"
         height={25}
         width={25}
+        priority
       />
       <span>Hello, I&apos;m</span>
     </SayHello>
