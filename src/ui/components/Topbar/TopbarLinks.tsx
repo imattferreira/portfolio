@@ -58,10 +58,6 @@ const Link = styled('a', {
 
 const TOPBAR_LINKS = [
   {
-    name: 'Home',
-    href: LINKS.HOME
-  },
-  {
     name: 'About',
     href: LINKS.ABOUT
   },
@@ -72,6 +68,10 @@ const TOPBAR_LINKS = [
   {
     name: 'Blog',
     href: LINKS.BLOG
+  },
+  {
+    name: 'Contact me',
+    href: LINKS.CONTACT_ME
   }
 ];
 

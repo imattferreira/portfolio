@@ -12,7 +12,7 @@ const Container = styled('div', {
   margin: '0 $4',
 
   '@bp3': {
-    margin: 0,
+    margin: 0
   },
   '& h1': {
     marginTop: '$2',
@@ -20,8 +20,8 @@ const Container = styled('div', {
     lineHeight: '54px',
     '@bp2': {
       marginTop: '$6',
-      fontSize: 80,
-    },
+      fontSize: 80
+    }
   },
   '& h2': {
     maxWidth: 900,
@@ -32,9 +32,9 @@ const Container = styled('div', {
     '@bp2': {
       margin: '$8 0',
       fontSize: 50,
-      lineHeight: '54px',
-    },
-  },
+      lineHeight: '54px'
+    }
+  }
 });
 
 const SayHello = styled('p', {
@@ -50,8 +50,8 @@ const Description = styled('p', {
   color: '$gray200',
   marginBottom: '$6',
   '@bp2': {
-    marginBottom: '$12',
-  },
+    marginBottom: '$12'
+  }
 });
 
 const Home: NextPage = () => (
