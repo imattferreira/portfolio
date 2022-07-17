@@ -13,4 +13,3 @@ const CssHelper = () => (
 );
 
 export default CssHelper;
-

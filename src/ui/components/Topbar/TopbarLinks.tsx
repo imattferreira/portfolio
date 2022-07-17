@@ -2,7 +2,7 @@ import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 
 import LINKS from '../../../app/constants/links';
-import { styled } from "../../styles";
+import { styled } from '../../styles';
 
 const Container = styled('div', {
   display: 'flex',
@@ -26,7 +26,7 @@ const Link = styled('a', {
     bottom: 2,
     left: 0,
     right: 0,
-    content: '',
+    content: ''
   },
 
   '&:not(:last-of-type)': {
@@ -40,40 +40,40 @@ const Link = styled('a', {
       active: {
         color: '$gray100',
         '&:after': {
-          display: '-webkit-box',
+          display: '-webkit-box'
         }
       },
       default: {
         color: '$gray200',
         '&:after': {
-          display: 'none',
+          display: 'none'
         }
       }
     }
   },
   defaultVariants: {
-    type: 'default',
+    type: 'default'
   }
 });
 
 const TOPBAR_LINKS = [
   {
     name: 'Home',
-    href: LINKS.HOME,
+    href: LINKS.HOME
   },
   {
     name: 'About',
-    href: LINKS.ABOUT,
+    href: LINKS.ABOUT
   },
   {
     name: 'Projects',
-    href: LINKS.PROJECTS,
+    href: LINKS.PROJECTS
   },
   {
     name: 'Blog',
-    href: LINKS.BLOG,
-  },
-]
+    href: LINKS.BLOG
+  }
+];
 
 function TopbarLinks() {
   const { pathname } = useRouter();
@@ -82,17 +82,13 @@ function TopbarLinks() {
 
   return (
     <Container>
-      {
-        TOPBAR_LINKS.map(({ name, href }) => (
-          <NextLink key={name} href={href} passHref>
-            <Link type={isActive(href) ? 'active' : 'default'}>
-              {name}
-            </Link>
-          </NextLink>
-        ))
-      }
+      {TOPBAR_LINKS.map(({ name, href }) => (
+        <NextLink key={name} href={href} passHref>
+          <Link type={isActive(href) ? 'active' : 'default'}>{name}</Link>
+        </NextLink>
+      ))}
     </Container>
-  )
+  );
 }
 
 export default TopbarLinks;

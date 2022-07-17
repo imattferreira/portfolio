@@ -6,7 +6,7 @@ export const { styled, getCssText, createTheme, globalCss } = createStitches({
   media: {
     bp1: '(min-width: 640px)',
     bp2: '(min-width: 768px)',
-    bp3: '(min-width: 1024px)',
+    bp3: '(min-width: 1200px)',
   },
   theme: {
     borderWidths: {
@@ -119,7 +119,7 @@ export const { styled, getCssText, createTheme, globalCss } = createStitches({
     },
     fonts: {
       title: 'Outfit, sans-serif',
-      body: 'Roboto, sans-serif',
+      body: 'Inter, sans-serif',
     }
   },
   utils: {}

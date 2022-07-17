@@ -7,7 +7,7 @@ export const createGlobalStyles = globalCss({
     padding: 0,
     border: 0,
     fontFamily: '$body, Arial, Helvetica, Courier, sans-serif',
-    transition: '250ms'
+    transition: '250ms',
   },
   html: {
     '@media (max-width: 1080px)': {
@@ -34,5 +34,8 @@ export const createGlobalStyles = globalCss({
   },
   button: {
     cursor: 'pointer',
-  }
+  },
+  p: {
+    lineHeight: 1.8,
+  },
 });

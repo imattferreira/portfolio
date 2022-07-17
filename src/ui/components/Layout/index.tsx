@@ -1,28 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 
-import { styled } from "../../styles";
+import { styled } from '../../styles';
 
 type LayoutProps = {
   children: React.ReactNode;
-}
+};
 
 const StyledLayout = styled('main', {
   margin: '0 auto',
-  maxWidth: 1400,
+  maxWidth: 1400
 });
 
 function Layout({ children }: LayoutProps) {
+  const [topbarHeight, setTopbarHeight] = useState<number | null>(null);
+
+  useEffect(() => {
+    const topbarEl = document.getElementById('topbar');
+    setTopbarHeight(topbarEl?.clientHeight || 0);
+  }, []);
+
   return (
-    <StyledLayout>
+    <StyledLayout style={{ height: `calc(90vh - ${topbarHeight}px)` }}>
       {children}
     </StyledLayout>
-  )
-}
-
-// Layout.defaultProps = {}
-
-Layout.propTypes = {
-
+  );
 }
 
 export default Layout;

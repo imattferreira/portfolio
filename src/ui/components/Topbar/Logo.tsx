@@ -13,18 +13,16 @@ const Anchor = styled('a', {
 
   '&:hover': {
     background: '$gray400',
-    color: '$gray200',
+    color: '$gray200'
   }
 });
 
 function Logo() {
   return (
     <NextLink href={LINKS.HOME} passHref>
-      <Anchor>
-        M
-      </Anchor>
+      <Anchor>M</Anchor>
     </NextLink>
-  )
+  );
 }
 
 export default Logo;

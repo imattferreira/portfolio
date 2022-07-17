@@ -15,7 +15,7 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
         <Component {...pageProps} />
       </Layout>
     </>
-  )
+  );
 };
 
 export default MyApp;
