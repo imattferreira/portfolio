@@ -1,12 +1,33 @@
 import NextLink from 'next/link';
+import { useRouter } from 'next/router';
 
 import LINKS from '../../../app/constants/links';
 import { styled } from "../../styles";
 
-export const Link = styled('a', {
-  padding: '$2 $4',
+const Container = styled('div', {
+  display: 'flex',
+  alignItems: 'flex-start'
+});
+
+const Link = styled('a', {
   borderRadius: '$2',
-  color: '$gray200',
+  display: 'inline-block',
+  padding: '$2 $4',
+  position: 'relative',
+
+  '&:after': {
+    height: 0,
+    width: 32,
+    margin: '0 auto',
+    borderColor: '$gray200',
+    borderStyle: 'solid',
+    borderWidth: '1px',
+    position: 'absolute',
+    bottom: 2,
+    left: 0,
+    right: 0,
+    content: '',
+  },
 
   '&:not(:last-of-type)': {
     marginRight: '$4'
@@ -18,27 +39,59 @@ export const Link = styled('a', {
     type: {
       active: {
         color: '$gray100',
+        '&:after': {
+          display: '-webkit-box',
+        }
+      },
+      default: {
+        color: '$gray200',
+        '&:after': {
+          display: 'none',
+        }
       }
     }
   },
+  defaultVariants: {
+    type: 'default',
+  }
 });
 
+const TOPBAR_LINKS = [
+  {
+    name: 'Home',
+    href: LINKS.HOME,
+  },
+  {
+    name: 'About',
+    href: LINKS.ABOUT,
+  },
+  {
+    name: 'Projects',
+    href: LINKS.PROJECTS,
+  },
+  {
+    name: 'Blog',
+    href: LINKS.BLOG,
+  },
+]
+
 function TopbarLinks() {
+  const { pathname } = useRouter();
+
+  const isActive = (href: string) => href === pathname;
+
   return (
-    <>
-      <NextLink href={LINKS.HOME} passHref>
-        <Link type="active">Home</Link>
-      </NextLink>
-      <NextLink href={LINKS.ABOUT} passHref>
-        <Link>About</Link>
-      </NextLink>
-      <NextLink href={LINKS.PROJECTS} passHref>
-        <Link>Projects</Link>
-      </NextLink>
-      <NextLink href={LINKS.BLOG} passHref>
-        <Link>Blog</Link>
-      </NextLink>
-    </>
+    <Container>
+      {
+        TOPBAR_LINKS.map(({ name, href }) => (
+          <NextLink key={name} href={href} passHref>
+            <Link type={isActive(href) ? 'active' : 'default'}>
+              {name}
+            </Link>
+          </NextLink>
+        ))
+      }
+    </Container>
   )
 }
 
