@@ -6,8 +6,8 @@ import { styled } from '../../ui/styles';
 type ImageProps = {
   alt: string;
   src: string;
-  height: number;
-  width: number;
+  height?: number;
+  width?: number;
   priority?: boolean;
 };
 
@@ -17,24 +17,18 @@ const Container = styled('div', {
   width: 120
 });
 
-function Image({ alt, src, height, width, priority }: ImageProps) {
+function Image({ alt, src, priority }: ImageProps) {
   if (priority) {
     return (
       <Container className="image">
-        <NextImage
-          src={src}
-          alt={alt}
-          height={height}
-          width={width}
-          layout="fill"
-        />
+        <NextImage src={src} alt={alt} layout="fill" />
       </Container>
     );
   }
 
   return (
     <Container className="image">
-      <img src={src} alt={alt} height={height} width={width} />
+      <img src={src} alt={alt} />
     </Container>
   );
 }

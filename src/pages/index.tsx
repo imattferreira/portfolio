@@ -36,11 +36,15 @@ const Container = styled('div', {
   }
 });
 
-const SayHello = styled('p', {
+const SayHello = styled('span', {
   color: '$gray200',
+  display: 'flex',
+  alignItems: 'flex-end',
 
-  '& span': {
-    marginLeft: '$2'
+  [`& ${Image}`]: {
+    height: 36,
+    width: 36,
+    marginRight: '$2'
   }
 });
 
@@ -48,6 +52,7 @@ const Description = styled('p', {
   maxWidth: 620,
   color: '$gray200',
   marginBottom: '$6',
+
   '@bp2': {
     marginBottom: '$12'
   }
@@ -56,14 +61,8 @@ const Description = styled('p', {
 const Home: NextPage = () => (
   <Container>
     <SayHello>
-      <Image
-        src="/images/app/hello_emoji.gif"
-        alt="say hello"
-        height={25}
-        width={25}
-        priority
-      />
-      <span>Hi, I&apos;m</span>
+      <Image src="/images/app/hello_emoji.gif" alt="say hello" priority />
+      <p>Hi, I&apos;m</p>
     </SayHello>
     <h1>Matheus Ferreira</h1>
     <h2>I build modern and interactive web apps.</h2>
