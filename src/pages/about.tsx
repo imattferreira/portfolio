@@ -1,4 +1,4 @@
-import { NextPage } from 'next';
+import type { GetStaticProps, NextPage } from 'next';
 
 import Image from '../components/Image';
 import { styled } from '../ui/styles';
@@ -134,5 +134,10 @@ const About: NextPage = () => (
     </Content>
   </Container>
 );
+
+export const getStaticProps: GetStaticProps = () => ({
+  props: {},
+  revalidate: 60 * 60 * 24, // 1 day
+})
 
 export default About;

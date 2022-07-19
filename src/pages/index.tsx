@@ -1,4 +1,4 @@
-import type { NextPage } from 'next';
+import type { GetStaticProps, NextPage } from 'next';
 
 import Image from '../components/Image';
 import { styled } from '../ui/styles';
@@ -74,5 +74,9 @@ const Home: NextPage = () => (
     </Description>
   </Container>
 );
+
+export const getStaticProps: GetStaticProps = () => ({
+  props: {}
+});
 
 export default Home;
