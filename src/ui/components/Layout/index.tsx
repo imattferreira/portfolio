@@ -10,7 +10,7 @@ const StyledLayout = styled('main', {
   maxWidth: 1400,
   margin: '0 $4',
   '@bp2': {
-    margin: '0 auto',
+    margin: '0 auto'
   }
 });
 

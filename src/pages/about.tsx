@@ -14,7 +14,7 @@ const Container = styled('div', {
     '@bp2': {
       marginTop: 0,
       marginBottom: '$20',
-      fontSize: 44,
+      fontSize: 44
     }
   }
 });
@@ -27,26 +27,26 @@ const Content = styled('div', {
   flexDirection: 'column-reverse',
 
   '@bp2': {
-    flexDirection: 'row',
+    flexDirection: 'row'
   },
   '& p': {
     maxWidth: '600px',
     marginBottom: '$4',
     '@bp3': {
       maxWidth: '800px',
-      marginBottom: '$2',
+      marginBottom: '$2'
     },
     '&:last-of-type': {
       marginTop: '$6',
       '@bp2': {
-        marginBottom: '$4',
-      },
+        marginBottom: '$4'
+      }
     }
   },
   '& ul': {
     marginLeft: '$4',
     display: 'grid',
-    gridTemplateColumns: 'repeat(3, minmax(120px, 200px))',
+    gridTemplateColumns: 'repeat(3, minmax(120px, 200px))'
   },
   '& li': {
     listStyleType: 'none',
@@ -63,7 +63,7 @@ const Content = styled('div', {
       position: 'absolute',
       bottom: 9,
       left: -16
-    },
+    }
   }
 });
 
@@ -79,14 +79,14 @@ const ImageWrapper = styled('div', {
 
   '@bp3': {
     height: 400,
-    width: 400,
+    width: 400
   },
   [`& ${Image}`]: {
     height: 280,
     width: 280,
     '@bp3': {
       height: 360,
-      width: 360,
+      width: 360
     }
   }
 });
@@ -97,18 +97,17 @@ const About: NextPage = () => (
     <Content>
       <div>
         <p>
-          Hello!, Working more than of 3 years, I&apos; m a Software
-          Developer and a eternal student passionate about learning new concepts
-          and to help others people around me.
+          Hello!, Working more than of 3 years, I&apos; m a Software Developer
+          and a eternal student passionate about learning new concepts and to
+          help others people around me.
         </p>
         <p>
-          Currently, I&apos; a student of Computer Science at UNIP
-          university and a Front-End Developer at Promobit and Fullstack
-          Developer Freelancer.
+          Currently, I&apos; a student of Computer Science at UNIP university
+          and a Front-End Developer at Promobit and Fullstack Developer
+          Freelancer.
         </p>
         <p>
-          There&apos;s a few technologies that I&apos;ve been working
-          recently:
+          There&apos;s a few technologies that I&apos;ve been working recently:
         </p>
         <ul>
           <li>Typescript</li>
@@ -137,7 +136,7 @@ const About: NextPage = () => (
 
 export const getStaticProps: GetStaticProps = () => ({
   props: {},
-  revalidate: 60 * 60 * 24, // 1 day
-})
+  revalidate: 60 * 60 * 24 // 1 day
+});
 
 export default About;
