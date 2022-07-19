@@ -9,7 +9,6 @@ const Container = styled('div', {
   alignItems: 'flex-start',
   flexDirection: 'column',
   justifyContent: 'center',
-  margin: '0 $4',
 
   '@bp3': {
     margin: 0
@@ -64,7 +63,7 @@ const Home: NextPage = () => (
         width={25}
         priority
       />
-      <span>Hello, I&apos;m</span>
+      <span>Hi, I&apos;m</span>
     </SayHello>
     <h1>Matheus Ferreira</h1>
     <h2>I build modern and interactive web apps.</h2>

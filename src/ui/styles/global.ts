@@ -13,11 +13,8 @@ export const createGlobalStyles = globalCss({
     '@media (max-width: 1080px)': {
       fontSize: '93.75%',
     },
-    '@media (max-width: 720px)': {
-      fontSize: '87.5%',
-    },
     '@media (max-width: 480px)': {
-      fontSize: '81.25%',
+      fontSize: '87.5%',
     },
   },
   body: {

@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import NextImage from 'next/image';
 
+import { styled } from '../../ui/styles';
+
 type ImageProps = {
   alt: string;
   src: string;
@@ -9,13 +11,35 @@ type ImageProps = {
   priority?: boolean;
 };
 
+const Container = styled('div', {
+  position: 'relative',
+  height: 120,
+  width: 120
+});
+
 function Image({ alt, src, height, width, priority }: ImageProps) {
   if (priority) {
-    return <NextImage src={src} alt={alt} height={height} width={width} />;
+    return (
+      <Container className="image">
+        <NextImage
+          src={src}
+          alt={alt}
+          height={height}
+          width={width}
+          layout="fill"
+        />
+      </Container>
+    );
   }
 
-  return <img src={src} alt={alt} height={height} width={width} />;
+  return (
+    <Container className="image">
+      <img src={src} alt={alt} height={height} width={width} />
+    </Container>
+  );
 }
+
+Image.toString = () => '.image';
 
 Image.defaultProps = {
   priority: false

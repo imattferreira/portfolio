@@ -7,8 +7,11 @@ type LayoutProps = {
 };
 
 const StyledLayout = styled('main', {
-  margin: '0 auto',
-  maxWidth: 1400
+  maxWidth: 1400,
+  margin: '0 $4',
+  '@bp2': {
+    margin: '0 auto',
+  }
 });
 
 function Layout({ children }: LayoutProps) {

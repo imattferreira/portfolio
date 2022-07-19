@@ -9,6 +9,9 @@ const nextConfig = {
   experimental: {
     legacyBrowsers: false,
   },
+  images: {
+    domains: ['github.com']
+  }
 }
 
 module.exports = nextConfig
