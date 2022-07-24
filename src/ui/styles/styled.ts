@@ -120,6 +120,12 @@ export const { styled, getCssText, createTheme, globalCss } = createStitches({
     fonts: {
       title: 'Outfit, sans-serif',
       body: 'Inter, sans-serif',
+    },
+    zIndices: {
+      1: '10',
+      2: '20',
+      3: '30',
+      4: '40',
     }
   },
   utils: {}

@@ -84,9 +84,18 @@ const ImageWrapper = styled('div', {
   [`& ${Image}`]: {
     height: 280,
     width: 280,
+    position: 'relative',
+
+    '& img': {
+      filter: 'saturate(1.25)',
+    },
     '@bp3': {
       height: 360,
-      width: 360
+      width: 360,
+      '&:before': {
+        height: 360,
+        width: 360,
+      }
     }
   }
 });
