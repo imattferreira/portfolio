@@ -1,4 +1,5 @@
 import { GetStaticProps, NextPage } from 'next';
+
 import PostPreview from '../components/PostPreview';
 import { styled } from '../ui/styles';
 

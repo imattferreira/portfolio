@@ -48,7 +48,12 @@ function PostPreview() {
       <Article>
         <h2>Rust is the future of Javascript infrastructure</h2>
         <div>
-          <p>Why is Rust being used to replace parts of the JavaScript web ecosystem like minification (Terser), transpilation (Babel), formatting (Prettier), bundling (webpack), linting (ESLint), and more?</p>
+          <p>
+            Why is Rust being used to replace parts of the JavaScript web
+            ecosystem like minification (Terser), transpilation (Babel),
+            formatting (Prettier), bundling (webpack), linting (ESLint),
+            and more?
+          </p>
           <time dateTime="2022-07-24">July 24</time>
         </div>
       </Article>
