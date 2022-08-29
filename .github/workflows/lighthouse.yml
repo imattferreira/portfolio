@@ -12,3 +12,10 @@ jobs:
             https://www.matheus-ferreira.com/
           uploadArtifacts: true
           temporaryPublicStorage: true
+          
+      - name: Upload to S3 as artifact
+        uses: medlypharmacy/s3-artifacts-action@master
+        with:
+          aws_access_key_id: ${{ secrets.AWS_SECRET_KEY }}
+          aws_secret_access_key: ${{ secrets.AWS_ACCESS_KEY }}
+          source_path: '.lighthouseci'
