@@ -3,6 +3,8 @@ on: [pull_request]
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
+    environment: 
+      name: DEV
     steps:
       - uses: actions/checkout@v2
       - name: Audit URLs using Lighthouse
