@@ -75,6 +75,7 @@ const TOPBAR_LINKS = [
   }
 ];
 
+// TODO change to Anchor component
 function TopbarLinks() {
   const { pathname } = useRouter();
 

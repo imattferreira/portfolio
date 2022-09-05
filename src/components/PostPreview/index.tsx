@@ -1,6 +1,8 @@
 import { styled } from "../../ui/styles";
+import Anchor from '../Anchor';
 
-const Container = styled('a', {
+// TODO reduce tree depth
+const Container = styled('div', {
   width: '100%'
 })
 
@@ -39,12 +41,15 @@ const Article = styled('article', {
   },
   '& p': {
     maxWidth: 1200,
+    marginRight: '$4'
   }
 })
 
 function PostPreview() {
+
   return (
-    <Container href="/blog/post/hello-word">
+    <Anchor link="/blog/post/hello-word" unstyled>
+      <Container>
       <Article>
         <h2>Rust is the future of Javascript infrastructure</h2>
         <div>
@@ -58,6 +63,7 @@ function PostPreview() {
         </div>
       </Article>
     </Container>
+    </Anchor>
   )
 }
 

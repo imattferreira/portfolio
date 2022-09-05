@@ -7,28 +7,47 @@ type AnchorProps = {
   link: string;
   ref?: 'noopener' | 'noreferrer';
   children: ReactNode;
+  unstyled?: boolean;
 }
 
 const StyledAnchor = styled('a', {
   textDecoration: 'none',
-  color: '$gray200',
+  cursor: 'pointer',
 
-  '&:hover': {
-    textDecoration: 'underline'
+  variants: {
+    type: {
+      unstyled: {},
+      default: {
+        color: '$gray200',
+
+        '&:hover': {
+          textDecoration: 'underline'
+        },
+      },
+    }
   }
 });
 
-function Anchor({ link, ref, children }: AnchorProps) {
-  if (ref) {
+function Anchor({ link, ref, children, unstyled = false }: AnchorProps) {
+  if (!ref) {
     return (
       <NextLink href={link} passHref>
-        <StyledAnchor>{children}</StyledAnchor>
+        <StyledAnchor
+          type={unstyled ? 'unstyled' : 'default'}
+        >
+          {children}
+        </StyledAnchor>
       </NextLink>
     )
   }
 
   return (
-    <StyledAnchor href={link}>{children}</StyledAnchor>
+    <StyledAnchor
+      href={link}
+      type={unstyled ? 'unstyled' : 'default'}
+    >
+      {children}
+    </StyledAnchor>
   )
 }
 

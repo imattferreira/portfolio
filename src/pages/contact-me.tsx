@@ -1,5 +1,7 @@
 import { NextPage } from 'next';
 
-const ContactMe: NextPage = () => <h1>Hello World</h1>;
+import UnderConstruction from '../components/UnderConstruction';
+
+const ContactMe: NextPage = () => <UnderConstruction />;
 
 export default ContactMe;

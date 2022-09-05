@@ -17,6 +17,7 @@ const Anchor = styled('a', {
   }
 });
 
+// TODO change to Anchor component
 function Logo() {
   return (
     <NextLink href={LINKS.HOME} passHref>

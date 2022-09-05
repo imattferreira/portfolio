@@ -1,5 +1,7 @@
 import { NextPage } from 'next';
 
-const Projects: NextPage = () => <h1>Hello World</h1>;
+import UnderConstruction from '../components/UnderConstruction';
+
+const Projects: NextPage = () => <UnderConstruction />
 
 export default Projects;
