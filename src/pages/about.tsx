@@ -111,9 +111,8 @@ const About: NextPage = () => (
           help others people around me.
         </p>
         <p>
-          Currently, I&apos; a student of Computer Science at UNIP university
-          and a Front-End Developer at Promobit and Fullstack Developer
-          Freelancer.
+          Currently, I&apos; a student of Computer Science at UNIP university,
+          a Front-End Developer at Promobit and Fullstack Developer Freelancer.
         </p>
         <p>
           There&apos;s a few technologies that I&apos;ve been working recently:
