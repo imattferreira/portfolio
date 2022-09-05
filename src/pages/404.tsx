@@ -11,6 +11,7 @@ const Container = styled('section', {
   flexDirection: 'column',
 
   '& h1': {
+    marginTop: '$4',
     marginBottom: '$4'
   }
 });
@@ -20,7 +21,7 @@ const NotFoundPage: NextPage = () => (
     <Image
       src="/images/app/launch.svg"
       alt="test"
-      height={380}
+      height={280}
       width={380}
       priority
     />

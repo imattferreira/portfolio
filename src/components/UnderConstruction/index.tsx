@@ -6,6 +6,11 @@ const Container = styled('section', {
   flexDirection: 'column',
   alignItems: 'center',
   paddingTop: '$20',
+
+  '& h1': {
+    marginTop: '$4',
+    marginBottom: '$4',
+  }
 });
 
 function UnderConstruction() {
@@ -14,7 +19,7 @@ function UnderConstruction() {
       <Image
         src="/images/app/under-construction.svg"
         alt="under construction"
-        height={380}
+        height={234}
         width={380}
         priority
       />
