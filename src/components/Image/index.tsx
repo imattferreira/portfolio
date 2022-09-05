@@ -17,18 +17,25 @@ const Container = styled('div', {
   width: 120
 });
 
-function Image({ alt, src, priority }: ImageProps) {
+function Image({ alt, src, priority, height, width }: ImageProps) {
   if (priority) {
     return (
-      <Container className="image">
-        <NextImage src={src} alt={alt} layout="fill" />
+      <Container className="image" style={{ height, width }}>
+        <NextImage
+          src={src}
+          alt={alt}
+          layout="fill"
+        />
       </Container>
     );
   }
 
   return (
-    <Container className="image">
-      <img src={src} alt={alt} />
+    <Container className="image" style={{ height, width }}>
+      <img
+        src={src}
+        alt={alt}
+      />
     </Container>
   );
 }
