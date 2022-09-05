@@ -133,8 +133,6 @@ const About: NextPage = () => (
         <Image
           src="https://github.com/MattFerreira18.png"
           alt="Matheus Ferreira"
-          height={120}
-          width={120}
           priority
         />
       </ImageWrapper>
