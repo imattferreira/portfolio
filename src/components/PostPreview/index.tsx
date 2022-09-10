@@ -3,7 +3,7 @@ import Anchor from '../Anchor';
 
 // TODO reduce tree depth
 const Container = styled('div', {
-  width: '100%'
+  minWidth: '100%'
 })
 
 const Article = styled('article', {
@@ -46,7 +46,6 @@ const Article = styled('article', {
 })
 
 function PostPreview() {
-
   return (
     <Anchor link="/blog/post/hello-word" unstyled>
       <Container>
