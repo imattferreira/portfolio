@@ -2,17 +2,17 @@ const booksRead = [
   {
     name: 'Entendendo Algoritmos',
     author: 'Aditya Y. Bhargava',
-    launchDate: '2015-05-30:00:00',
+    launchDate: '2015-05-30',
   },
   {
     name: 'Estruturas de dados e algoritmos',
     author: 'Loiane Groner',
-    launchDate: '2019-03-11:00:00',
+    launchDate: '2019-03-11',
   },
   {
     name: 'Refatoração',
     author: 'Martin Flower',
-    launchDate: '2018-11-19:00:00',
+    launchDate: '2018-11-19',
   },
   // {
   //   name: 'O mítico homem-mês',
