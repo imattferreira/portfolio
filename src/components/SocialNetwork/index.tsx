@@ -30,7 +30,7 @@ const IconWrapper = styled('div', {
 
 function SocialNetwork({ name, icon, link }: SocialNetworkProps) {
   return (
-    <Anchor link={link} unstyled>
+    <Anchor link={link} rel="noreferrer" unstyled>
       <Container>
         <IconWrapper>
           {icon}

@@ -5,7 +5,7 @@ import { styled } from "../../ui/styles";
 
 type AnchorProps = {
   link: string;
-  ref?: 'noopener' | 'noreferrer';
+  rel?: 'noopener' | 'noreferrer';
   children: ReactNode;
   unstyled?: boolean;
 }
@@ -28,8 +28,8 @@ const StyledAnchor = styled('a', {
   }
 });
 
-function Anchor({ link, ref, children, unstyled = false }: AnchorProps) {
-  if (!ref) {
+function Anchor({ link, rel, children, unstyled = false }: AnchorProps) {
+  if (!rel) {
     return (
       <NextLink href={link} passHref>
         <StyledAnchor
@@ -44,6 +44,8 @@ function Anchor({ link, ref, children, unstyled = false }: AnchorProps) {
   return (
     <StyledAnchor
       href={link}
+      rel={rel}
+      target="_blank"
       type={unstyled ? 'unstyled' : 'default'}
     >
       {children}
