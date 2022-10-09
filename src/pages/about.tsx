@@ -10,7 +10,7 @@ const Container = styled('div', {
   flexDirection: 'column',
   '& h1': {
     fontSize: 30,
-    marginTop: '$28',
+    marginTop: '$36',
     '@bp2': {
       marginTop: 0,
       marginBottom: '$20',

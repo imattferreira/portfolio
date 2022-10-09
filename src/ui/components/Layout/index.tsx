@@ -8,8 +8,9 @@ type LayoutProps = {
 
 const StyledLayout = styled('main', {
   maxWidth: 1400,
-  margin: '0 $4',
-  '@bp2': {
+  margin: '0 $8',
+  // margin: '$12',
+  '@bp3': {
     margin: '0 auto'
   }
 });

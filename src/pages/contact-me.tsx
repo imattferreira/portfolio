@@ -10,7 +10,6 @@ const Container = styled('div', {
   flexDirection: 'column',
   '& h1': {
     fontSize: 30,
-    marginTop: '$28',
     '@bp2': {
       marginTop: 0,
       marginBottom: '$20',
@@ -25,9 +24,16 @@ const Content = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   justifySelf: "center",
+  flexDirection: 'column',
+  marginTop: '$20',
 
-  '& > *:not(:first-of-type)': {
-    marginLeft: '$8'
+  '@bp2': {
+    flexDirection: 'row',
+    marginTop: 0,
+
+    '& > *:not(:first-of-type)': {
+      marginLeft: '$8'
+    },
   }
 });
 
