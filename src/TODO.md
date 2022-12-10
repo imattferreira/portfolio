@@ -1,0 +1,10 @@
+- Implement Theme styles
+- Add WebVitals config
+- Add HeatMapper and Analytics
+- Add Locale i18n
+- Configure markdown parser
+- Configure SEO
+- Unit tests
+- Facades see: https://developer.chrome.com/en/docs/lighthouse/performance/third-party-facades/
+- OG:IMAGE for each page
+- Configure next/fonts
