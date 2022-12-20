@@ -8,3 +8,5 @@
 - Facades see: https://developer.chrome.com/en/docs/lighthouse/performance/third-party-facades/
 - OG:IMAGE for each page
 - Configure next/fonts
+- Filters exceptions that are showed in DevTools console
+- Configure browserslist
