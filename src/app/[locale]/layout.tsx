@@ -1,5 +1,6 @@
 import { useLocale } from "next-intl";
 import { notFound } from 'next/navigation';
+import ReportWebVitals from "../../ui/components/ReportWebVitals";
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -18,7 +19,10 @@ function RootLayout({ children, params }: RootLayoutProps) {
   return (
     <html lang={locale}>
     <head />
-    <body>{children}</body>
+    <body>
+      <ReportWebVitals />
+      {children}
+    </body>
     </html>
   );
 }
