@@ -1,10 +1,6 @@
 import {createIntlMiddleware} from 'next-intl/server';
+import i18n from './domain/locale/config';
 
-export default createIntlMiddleware({
-  locales: ['en', 'pt-br'],
-  defaultLocale: 'pt-br'
-});
+export default createIntlMiddleware(i18n.locale);
 
-export const config = {
-  matcher: ['/((?!_next).*)']
-};
+export const config = i18n.config;
