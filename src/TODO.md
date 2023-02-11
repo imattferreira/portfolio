@@ -1,5 +1,5 @@
 - Implement Theme styles
-- Add HeatMapper and Analytics
+- send WebVitals
 - Configure markdown parser
 - Configure SEO
 - Unit tests
@@ -7,4 +7,3 @@
 - OG:IMAGE for each page
 - Configure next/fonts
 - Filters exceptions that are showed in DevTools console
-- Configure browserslist
