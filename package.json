@@ -9,6 +9,15 @@
     "lint": "next lint",
     "test": "jest --watch"
   },
+  "browserslist": [
+    "chrome >= 90",
+    "edge >= 90",
+    "firefox >= 90",
+    "opera >= 75",
+    "safari >= 13",
+    "not IE 11",
+    "not dead"
+  ],
   "dependencies": {
     "@types/node": "^18.13.0",
     "@types/react": "^18.0.27",

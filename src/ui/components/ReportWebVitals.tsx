@@ -7,7 +7,7 @@ function ReportWebVitals() {
     reportWebVitals();
   }, []);
 
-  return <div>test</div>;
+  return <></>;
 }
 
 export default ReportWebVitals;
