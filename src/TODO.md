@@ -1,7 +1,6 @@
 - Implement Theme styles
 - Add WebVitals config
 - Add HeatMapper and Analytics
-- Add Locale i18n
 - Configure markdown parser
 - Configure SEO
 - Unit tests
