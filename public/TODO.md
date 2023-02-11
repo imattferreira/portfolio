@@ -1,0 +1,5 @@
+- webmanifest
+- sitemap
+- favicons
+- browserconfig
+- robots.txt

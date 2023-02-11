@@ -1,9 +1,17 @@
-module.exports = {
+const { createVanillaExtractPlugin } = require("@vanilla-extract/next-plugin");
+const withNextIntl = require("next-intl/plugin")(
+  "./src/domain/locale/config.ts"
+);
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   reactStrictMode: true,
-  productionBrowserSourceMaps: true,
-  swcMinify: true,
-  images: {
-    domains: ['github.com'],
-    minimumCacheTTL: 60 * 60 * 24,
-  }
-}
+  swcMinify: false,
+  experimental: {
+    appDir: true,
+  },
+};
+
+const withVanillaExtract = createVanillaExtractPlugin();
+
+module.exports = withNextIntl(withVanillaExtract(nextConfig));
