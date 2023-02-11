@@ -1,5 +1,4 @@
 - Implement Theme styles
-- Add WebVitals config
 - Add HeatMapper and Analytics
 - Configure markdown parser
 - Configure SEO
