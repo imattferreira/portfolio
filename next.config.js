@@ -1,6 +1,6 @@
 const { createVanillaExtractPlugin } = require("@vanilla-extract/next-plugin");
 const withNextIntl = require("next-intl/plugin")(
-  "./src/domain/locale/config.ts"
+  "./src/domain/locale/matcher.ts"
 );
 
 /** @type {import('next').NextConfig} */
