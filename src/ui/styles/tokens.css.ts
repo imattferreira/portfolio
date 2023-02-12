@@ -1,17 +1,17 @@
 export const colors = {
-  'gray.100': '#fff'
+  'gray.100': '#fff',
 };
 
 export const space = {
-  '0': 0
+  '0': 0,
 };
 
 export const responsive = {
   mobile: {},
   tablet: {
-    '@media': ''
+    '@media': '',
   },
   desktop: {
-    '@media': ''
-  }
+    '@media': '',
+  },
 };

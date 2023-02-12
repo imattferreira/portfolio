@@ -1,6 +1,6 @@
 'use client';
-import { useEffect } from "react";
-import { reportWebVitals } from "../../domain/lib/report-webvitals";
+import { useEffect } from 'react';
+import { reportWebVitals } from '../../domain/lib/report-webvitals';
 
 function ReportWebVitals() {
   useEffect(() => {

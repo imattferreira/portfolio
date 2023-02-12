@@ -4,7 +4,7 @@ import fonts from './fonts.css';
 globalStyle('*', {
   margin: 0,
   padding: 0,
-  boxSizing: 'border-box'
+  boxSizing: 'border-box',
 });
 
 globalStyle('html, body', {
