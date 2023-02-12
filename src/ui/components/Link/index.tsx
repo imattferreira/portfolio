@@ -7,7 +7,7 @@ type LinkProps = {
   children: ReactNode;
   href: string;
   locale: AppLocales;
-}
+};
 
 function Link({ children, href, locale }: LinkProps) {
   return (

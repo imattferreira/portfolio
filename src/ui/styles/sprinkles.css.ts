@@ -5,7 +5,7 @@ const colorProps = defineProperties({
   properties: {
     color: colors,
     background: colors,
-  }
+  },
 });
 
 const responsiveProps = defineProperties({
@@ -20,19 +20,14 @@ const responsiveProps = defineProperties({
       'center',
       'flex-end',
       'space-around',
-      'space-between'
+      'space-between',
     ],
-    alignItems: [
-      'stretch',
-      'flex-start',
-      'center',
-      'flex-end'
-    ],
+    alignItems: ['stretch', 'flex-start', 'center', 'flex-end'],
     paddingTop: space,
     paddingBottom: space,
     paddingLeft: space,
-    paddingRight: space
-  }
+    paddingRight: space,
+  },
 });
 
 const sprinkles = createSprinkles(colorProps, responsiveProps);
