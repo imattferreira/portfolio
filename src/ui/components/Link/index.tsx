@@ -1,7 +1,7 @@
 import { LocalizedLink } from 'next-intl';
 import { ReactNode } from 'react';
 
-import { AppLocales } from '../../../domain/types';
+import { AppLocales } from '@/domain/types';
 
 type LinkProps = {
   children: ReactNode;
