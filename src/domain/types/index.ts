@@ -1,1 +1,1 @@
-export type AppLocales = 'en';
+export type AppLocales = 'en' | 'pt-br';

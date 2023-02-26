@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier \"**/**.(js|ts|tsx)\" --write",
+    "format": "prettier \"(scripts|src)/**/**.(js|ts|tsx)\" --write",
     "test": "jest --watch",
     "pkg:upgrade": "taze"
   },
