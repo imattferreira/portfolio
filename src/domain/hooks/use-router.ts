@@ -1,4 +1,4 @@
-import { useLocalizedRouter } from 'next-intl/client';
+import { useRouter as useLocalizedRouter } from 'next-intl/client';
 
 function useRouter() {
   const router = useLocalizedRouter();

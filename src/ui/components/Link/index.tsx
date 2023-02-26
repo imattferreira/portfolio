@@ -1,4 +1,4 @@
-import { LocalizedLink } from 'next-intl';
+import { Link as LocalizedLink } from 'next-intl';
 import { ReactNode } from 'react';
 
 import { AppLocales } from '@/domain/types';
