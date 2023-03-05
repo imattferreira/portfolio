@@ -1,12 +1,11 @@
 # based on https://github.com/t3-oss/create-t3-app/blob/next/.github/workflows/lighthouse.yml
 name: Lighthouse Audit
 
-on:
-  issue_comment:
-    types: [created, edited]
+on: deployment_status
 
 jobs:
   generate_audit:
+    if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success'
     timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:

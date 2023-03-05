@@ -1,11 +1,10 @@
 name: Run Static Tests and Test Suite
 
-on:
-  issue_comment:
-    types: [created, edited]
+on: deployment_status
 
 jobs:
   verify:
+    if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
