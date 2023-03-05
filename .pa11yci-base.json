@@ -1,6 +1,6 @@
 {
   "urls": [
-    "http://127.0.0.1:3000/en"
+    "/en"
   ],
   "defaults": {
     "concurrency": 1,
