@@ -26,3 +26,9 @@ jobs:
 
       - name: Run test suite
         run: yarn test:ci
+
+      - name: Startup app as localhost
+        run: yarn dev
+
+      - name: Run a11y test
+        run yarn test:a11y

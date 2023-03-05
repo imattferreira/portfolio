@@ -1,0 +1,17 @@
+{
+  "urls": [
+    "http://127.0.0.1:3000/en"
+  ],
+  "defaults": {
+    "concurrency": 1,
+    "standard": "WCAG2AA",
+    "runners": ["axe", "htmlcs"],
+    "ignore": [
+      "color-contrast",
+      "frame-tested"
+    ],
+    "chromeLaunchConfig": {
+      "args": ["--disable-dev-shm-usage", "--no-sandbox", "--disable-gpu"]
+    }
+  }
+}
