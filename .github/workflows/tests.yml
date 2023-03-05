@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Get Vercel preview URL
         id: get_preview_url
-        uses: actions/github-script@v3
+        uses: actions/github-script@6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
@@ -53,7 +53,7 @@ jobs:
         run: yarn dev
 
       - name: Replace URL domain of a11y config
-        uses: actions/github-script@v5
+        uses: actions/github-script@6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
