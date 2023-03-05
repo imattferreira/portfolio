@@ -1,3 +1,4 @@
+# Not working yet
 # based on https://github.com/t3-oss/create-t3-app/blob/next/.github/workflows/lighthouse.yml
 name: Lighthouse Audit
 

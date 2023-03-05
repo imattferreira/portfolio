@@ -1,3 +1,4 @@
+# Not working yet
 name: Run Static Tests and Test Suite
 
 on: deployment_status
