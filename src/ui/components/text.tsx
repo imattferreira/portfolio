@@ -1,6 +1,6 @@
 import { Dynamic, mergeProps } from "solid-js/web";
-import type { TailwindMarginTokens } from "@/@types/tailwind/margin";
-import { compose } from "@/app/utils/style";
+import { compose, optional } from "@/app/utils/style";
+import type { MarginProps } from "@/@types/components/margin";
 
 type PolymorphicText = 'span' | 'p' | 'strong' | 'em';
 
@@ -13,10 +13,9 @@ type TextProps = {
   bold?: boolean;
   children: string;
   italic?: boolean;
-  margin?: TailwindMarginTokens;
   size?: TextSizes;
   type?: TextTypes;
-}
+} & Partial<MarginProps>;
 
 type TextOptionalProps = Required<Pick<TextProps, 'as' | 'type' | 'bold' | 'size' | 'italic'>>;
 
@@ -51,9 +50,15 @@ function Text(_props: TextProps) {
       class={compose(
         TYPE_STYLES[props.type],
         SIZE_STYLES[props.size],
-        props.bold ? 'font-bold' : '',
-        props.italic ? 'italic' : '',
-        !!props.margin ? props.margin : '',
+        optional(props.bold, 'font-bold'),
+        optional(props.italic, 'italic'),
+        optional(props.m, props.m),
+        optional(props.mt, props.mt),
+        optional(props.mb, props.mb),
+        optional(props.ml, props.ml),
+        optional(props.mr, props.mr),
+        optional(props.mx, props.mx),
+        optional(props.my, props.my),
       )}
     >
       {props.children}

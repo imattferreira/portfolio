@@ -1,7 +1,6 @@
-// TODO change font-family
 import { Dynamic, mergeProps } from "solid-js/web";
-import { compose } from "@/app/utils/style";
-import type { TailwindMarginTokens } from "@/@types/tailwind/margin";
+import { compose, optional } from "@/app/utils/style";
+import type { MarginProps } from "@/@types/components/margin";
 
 type PolymorphicHeading = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 
@@ -10,9 +9,8 @@ type HeadingTypes = 'primary' | 'secondary' | 'tertiary';
 type HeadingProps = {
   as?: PolymorphicHeading;
   children: string;
-  margin?: TailwindMarginTokens;
   type?: HeadingTypes;
-}
+} & Partial<MarginProps>;
 
 type HeadingOptionalProps = Required<Pick<HeadingProps, 'as' | 'type'>>;
 
@@ -46,7 +44,13 @@ function Heading(_props: HeadingProps) {
         'font-bold',
         WEIGHT_STYLES[props.as],
         TYPE_STYLES[props.type],
-        !!props.margin ? props.margin : '',
+        optional(props.m, props.m),
+        optional(props.mt, props.mt),
+        optional(props.mb, props.mb),
+        optional(props.ml, props.ml),
+        optional(props.mr, props.mr),
+        optional(props.mx, props.mx),
+        optional(props.my, props.my),
       )}
     >
       {props.children}

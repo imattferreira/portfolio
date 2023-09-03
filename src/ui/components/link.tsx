@@ -1,5 +1,6 @@
 import { Dynamic, mergeProps } from "solid-js/web";
 import { compose, optional } from "@/app/utils/style";
+import type { MarginProps } from "@/@types/components/margin";
 
 type PolymorphicLink = 'a' | 'button';
 
@@ -25,7 +26,7 @@ type LinkCommonProps = {
   italic?: boolean;
   size?: LinkSizes;
   type?: LinkTypes;
-}
+} & Partial<MarginProps>;
 
 type LinkProps = (LinkAnchorProps | LinkButtonProps) & LinkCommonProps;
 
@@ -69,6 +70,13 @@ function Link(_props: LinkProps) {
         optional(!props.asChild, SIZE_STYLES[props.size]),
         optional(props.bold, 'font-bold'),
         optional(props.italic, 'italic'),
+        optional(props.m, props.m),
+        optional(props.mt, props.mt),
+        optional(props.mb, props.mb),
+        optional(props.ml, props.ml),
+        optional(props.mr, props.mr),
+        optional(props.mx, props.mx),
+        optional(props.my, props.my),
       )}
       target={props.as === 'a' && props._blank ? '_blank' : undefined}
       rel={props.as === 'a' && props._blank ? "noopener noreferrer" : undefined}
