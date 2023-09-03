@@ -11,6 +11,9 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.0.0
     version: 5.0.0(astro@3.0.7)(tailwindcss@3.3.3)
+  '@fontsource-variable/rubik':
+    specifier: ^5.0.10
+    version: 5.0.10
   astro:
     specifier: ^3.0.7
     version: 3.0.7
@@ -918,6 +921,10 @@ packages:
     resolution: {integrity: sha512-ZSjtmelB7IJfWD2Fvb7+Z+ChTIKWq6kjda95fLcQKNS5aheVHn4IkfgRQE3sIIzTcSLwLcLZUD9UBt+V7+h+Pw==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
+
+  /@fontsource-variable/rubik@5.0.10:
+    resolution: {integrity: sha512-R0LkqHa5VCO3YgLaTRqy/J/H1/Q6CgIfu+uFCb8a6qFdui0iLxbFh2BQv5lshrKBpZP8IUbNMAb/A1P2r/tq5Q==}
+    dev: false
 
   /@humanwhocodes/config-array@0.11.11:
     resolution: {integrity: sha512-N2brEuAadi0CcdeMXUkhbZB84eskAc8MEX1By6qEchoVywSgXPIjou4rYsl0V3Hj0ZnuGycGCjdNgockbzeWNA==}
