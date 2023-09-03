@@ -4,12 +4,13 @@
   "scripts": {
     "prettier": "prettier --write \"src/**/(*.ts|*.tsx)\"",
     "lint": "eslint --ext \"src/**/*.{ts,tsx}\"",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "astro dev",
+    "build": "astro build",
+    "start": "astro preview"
   },
   "dependencies": {
     "@stitches/react": "^1.2.7",
+    "astro": "^3.0.7",
     "framer-motion": "^6.2.8",
     "next": "^12.1.0",
     "next-seo": "^5.1.0",

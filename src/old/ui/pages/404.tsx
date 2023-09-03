@@ -1,8 +1,8 @@
 import { useRouter } from 'next/router';
 import React from 'react';
 
-import { LinkButton } from '../ui/components/buttons';
-import { Container } from '../ui/styles/pages/404';
+import { LinkButton } from '../components/buttons';
+import { Container } from '../styles/pages/404';
 
 export default function NotFound() {
   const router = useRouter();

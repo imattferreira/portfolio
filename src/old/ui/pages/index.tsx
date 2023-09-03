@@ -9,7 +9,7 @@ import {
   Presentation,
   Projects,
   BooksRead,
-} from '../ui/components/sections';
+} from '../components/sections';
 
 const IS_ARTICLES_SECTION_ENABLED = false;
 

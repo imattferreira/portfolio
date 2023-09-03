@@ -3,11 +3,11 @@ import { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import React, { useEffect } from 'react';
 
-import MouseProvider from '../app/contexts/MouseContext';
-import seo from '../app/data/seo';
-import { gtag } from '../app/lib/gtag';
-import { Layout } from '../ui/Layout';
-import { globalStyles } from '../ui/styles/global';
+import MouseProvider from '../../app/contexts/MouseContext';
+import seo from '../../app/data/seo';
+import { gtag } from '../../app/lib/gtag';
+import { Layout } from '../Layout';
+import { globalStyles } from '../styles/global';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();

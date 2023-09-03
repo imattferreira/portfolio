@@ -2,8 +2,8 @@
 import NextDocument, { Head, Html, Main, NextScript } from 'next/document';
 import React from 'react';
 
-import { getCssText } from '../app/configs/stitches';
-import { gtag } from '../app/lib/gtag';
+import { getCssText } from '../../app/configs/stitches';
+import { gtag } from '../../app/lib/gtag';
 
 class myDocument extends NextDocument {
   render() {
