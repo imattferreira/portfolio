@@ -1,6 +1,7 @@
-import { Dynamic, mergeProps } from "solid-js/web";
-import { compose, optional } from "@/app/utils/style";
-import type { MarginProps } from "@/@types/components/margin";
+import { Dynamic, mergeProps } from 'solid-js/web';
+import { compose, optional } from '@/app/utils/style';
+import type { MarginProps } from '@/@types/tailwind';
+import type { JSXElement } from 'solid-js';
 
 type PolymorphicText = 'span' | 'p' | 'strong' | 'em';
 
@@ -8,14 +9,16 @@ type TextTypes = 'primary' | 'secondary' | 'error' | 'success' | 'warning';
 
 type TextSizes = 'size1' | 'size2' | 'size3';
 
-type TextProps = {
+type StylingProps = Partial<MarginProps>;
+
+type TextProps = StylingProps & {
   as?: PolymorphicText,
   bold?: boolean;
   children: string;
   italic?: boolean;
   size?: TextSizes;
   type?: TextTypes;
-} & Partial<MarginProps>;
+};
 
 type TextOptionalProps = Required<Pick<TextProps, 'as' | 'type' | 'bold' | 'size' | 'italic'>>;
 
@@ -41,7 +44,7 @@ const DEFAULT_PROPS = {
   type: 'secondary',
 } as TextOptionalProps;
 
-function Text(_props: TextProps) {
+function Text(_props: TextProps): JSXElement {
   const props = mergeProps(DEFAULT_PROPS, _props);
 
   return (
@@ -63,7 +66,7 @@ function Text(_props: TextProps) {
     >
       {props.children}
     </Dynamic>
-  )
+  );
 }
 
 export default Text;

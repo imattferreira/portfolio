@@ -1,23 +1,26 @@
-import { Dynamic, mergeProps } from "solid-js/web";
-import { compose, optional } from "@/app/utils/style";
-import type { MarginProps } from "@/@types/components/margin";
+import { Dynamic, mergeProps } from 'solid-js/web';
+import { compose, optional } from '@/app/utils/style';
+import type { MarginProps } from '@/@types/tailwind';
+import type { JSXElement } from 'solid-js';
 
 type PolymorphicHeading = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 
 type HeadingTypes = 'primary' | 'secondary' | 'tertiary';
 
-type HeadingProps = {
+type StylingProps = Partial<MarginProps>;
+
+type HeadingProps = StylingProps & {
   as?: PolymorphicHeading;
   children: string;
   type?: HeadingTypes;
-} & Partial<MarginProps>;
+};
 
 type HeadingOptionalProps = Required<Pick<HeadingProps, 'as' | 'type'>>;
 
 const DEFAULT_PROPS = {
   type: 'primary',
   as: 'h2',
- } satisfies HeadingOptionalProps;
+} satisfies HeadingOptionalProps;
 
 const WEIGHT_STYLES = {
   h1: 'text-3xl',
@@ -34,7 +37,7 @@ const TYPE_STYLES = {
   tertiary: 'text-gray-400'
 } satisfies Record<HeadingTypes, string>;
 
-function Heading(_props: HeadingProps) {
+function Heading(_props: HeadingProps): JSXElement {
   const props = mergeProps(DEFAULT_PROPS, _props);
 
   return (
@@ -55,7 +58,7 @@ function Heading(_props: HeadingProps) {
     >
       {props.children}
     </Dynamic>
-  )
+  );
 }
 
 export default Heading;

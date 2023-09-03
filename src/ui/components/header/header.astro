@@ -1,10 +1,24 @@
 ---
+import Box from '../box';
 import Logo from './logo.astro';
 import Nav from './nav';
 ---
-<header
-  class="flex justify-between p-4 items-center border-b border-b-blue-900 absolute top-0 w-full max-w-7xl left-1/2 -translate-x-1/2 drop-shadow-sm"
+<Box
+  as="header"
+  display="flex"
+  justifyContent="justify-between"
+  p="p-4"
+  alignItems="items-center"
+  border="border-b"
+  borderColor="border-b-blue-900"
+  position="absolute"
+  top="top-0"
+  w="w-full"
+  maxW="max-w-7xl"
+  left="left-1/2"
+  translate="-translate-x-1/2"
+  dropShadow="drop-shadow-sm"
 >
   <Logo />
   <Nav />
-</header>
+</Box>

@@ -1,4 +1,5 @@
 import Link from '@/ui/components/link';
+import Box from '../../box';
 
 type NavItemProps = {
   to: string;
@@ -7,12 +8,12 @@ type NavItemProps = {
 
 function NavItem(props: NavItemProps) {
   return (
-    <li class="py-1 px-2">
+    <Box as="li" py="py-1" px="px-2">
       <Link to={props.to} size="size3" type="secondary">
         {props.children}
       </Link>
-    </li>
-  )
+    </Box>
+  );
 }
 
 export default NavItem;

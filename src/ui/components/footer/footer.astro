@@ -1,11 +1,21 @@
 ---
+import Box from '../box';
 import Link from './footer-link.astro';
 ---
-<footer class="w-full p-4 mx-auto my-0 max-w-7xl border-t border-t-blue-900">
-  <ul class="flex space-x-2">
+<Box
+  as="footer"
+  borderColor="border-t-blue-900"
+  border="border-t"
+  maxW="max-w-7xl"
+  mx="mx-auto"
+  my="my-0"
+  p="p-4"
+  w="w-full"
+>
+  <Box as="ul" display="flex" spacingX="space-x-2">
     <Link to="mailto:matheusferrreira.dev@gmail.com">E-mail</Link>
     <Link to="https://github.com/MattFerreira18">Github</Link>
     <Link to="https://www.linkedin.com/in/matt-ferreira18/">Linkedin</Link>
     <Link to="https://www.instagram.com/imattferreira/">Instagram</Link>
-  </ul>
-</footer>
+  </Box>
+</Box>

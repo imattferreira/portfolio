@@ -4,9 +4,15 @@
 import Text from '@/ui/components/text';
 import Heading from '@/ui/components/heading';
 import Layout from '@/ui/layouts/layout.astro';
+import Box from '@/ui/components/box';
 ---
 <Layout>
-  <div class="h-full flex justify-center flex-col">
+  <Box
+    display="flex"
+    flexDir="flex-col"
+    h="h-full"
+    justifyContent="justify-center"
+  >
     <Heading
       as="h2"
       type="primary"
@@ -28,5 +34,5 @@ import Layout from '@/ui/layouts/layout.astro';
     >
       Passionated to make scalable applications
     </Text>
-  </div>
+  </Box>
 </Layout>

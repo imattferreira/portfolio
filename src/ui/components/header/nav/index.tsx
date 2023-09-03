@@ -1,5 +1,6 @@
-import { For } from "solid-js"
-import NavItem from "./nav-item"
+import { For } from 'solid-js';
+import NavItem from './nav-item';
+import Box from '../../box';
 
 const ITEMS = [
   {
@@ -18,20 +19,20 @@ const ITEMS = [
     title: 'Contact',
     to: '/contact',
   },
-]
+];
 
 function Nav() {
   return (
-    <nav>
-      <ul class="flex space-x-2">
+    <Box as="nav">
+      <Box as="ul" display="flex" spacingX="space-x-2">
         <For each={ITEMS}>
           {({ title, to }) => (
             <NavItem to={to}>{title}</NavItem>
           )}
         </For>
-      </ul>
-    </nav>
-  )
+      </Box>
+    </Box>
+  );
 }
 
 export default Nav;

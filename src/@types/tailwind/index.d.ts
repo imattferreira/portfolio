@@ -1,0 +1,10 @@
+export { BackgroundProps as Backgrounds } from './background';
+export { MarginProps } from './margin';
+export { PaddingProps } from './padding';
+export { SpacingProps } from './spacing';
+export { SizeProps } from './size';
+export { DisplayProps } from './display';
+export { BorderProps } from './border';
+export { PositionProps } from './position';
+export { TranslateProps } from './translate';
+export { DropShadowProps } from './drop-shadow';

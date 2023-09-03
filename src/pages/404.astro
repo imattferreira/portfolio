@@ -3,11 +3,18 @@ import Heading from '@/ui/components/heading';
 import Layout from '@/ui/layouts/layout.astro';
 import Text from '@/ui/components/text';
 import Link from '@/ui/components/link';
+import Box from '@/ui/components/box';
 ---
 <Layout>
-  <div class="flex items-center flex-col justify-center h-full">
+  <Box
+    alignItems="items-center"
+    display="flex"
+    flexDir="flex-col"
+    h="h-full"
+    justifyContent="justify-center"
+  >
     <Heading>Houston, we have a problem!</Heading>
     <Text mt="mt-3" mb="mb-1">The page you are attempting access not exists</Text>
     <Link to="/">Click here to go home</Link>
-  </div>
+  </Box>
 </Layout>

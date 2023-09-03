@@ -1,6 +1,7 @@
-import { Dynamic, mergeProps } from "solid-js/web";
-import { compose, optional } from "@/app/utils/style";
-import type { MarginProps } from "@/@types/components/margin";
+import { Dynamic, mergeProps } from 'solid-js/web';
+import { compose, optional } from '@/app/utils/style';
+import type { MarginProps } from '@/@types/tailwind';
+import type { JSXElement } from 'solid-js';
 
 type PolymorphicLink = 'a' | 'button';
 
@@ -18,7 +19,9 @@ type LinkButtonProps = {
   as?: 'button',
 }
 
-type LinkCommonProps = {
+type StylingProps = Partial<MarginProps>;
+
+type LinkCommonProps = StylingProps & {
   as?: PolymorphicLink;
   asChild?: boolean;
   bold?: boolean;
@@ -26,7 +29,7 @@ type LinkCommonProps = {
   italic?: boolean;
   size?: LinkSizes;
   type?: LinkTypes;
-} & Partial<MarginProps>;
+};
 
 type LinkProps = (LinkAnchorProps | LinkButtonProps) & LinkCommonProps;
 
@@ -56,7 +59,7 @@ const DEFAULT_PROPS = {
   _blank: false,
 } as LinkOptionalProps;
 
-function Link(_props: LinkProps) {
+function Link(_props: LinkProps): JSXElement {
   const props = mergeProps(DEFAULT_PROPS, _props) as Required<LinkProps>;
 
   return (
@@ -79,11 +82,11 @@ function Link(_props: LinkProps) {
         optional(props.my, props.my),
       )}
       target={props.as === 'a' && props._blank ? '_blank' : undefined}
-      rel={props.as === 'a' && props._blank ? "noopener noreferrer" : undefined}
+      rel={props.as === 'a' && props._blank ? 'noopener noreferrer' : undefined}
     >
       {props.children}
     </Dynamic>
-  )
+  );
 }
 
 export default Link;
