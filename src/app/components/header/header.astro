@@ -1,17 +1,10 @@
 ---
-import NavItem from "./nav-item.astro";
 import Logo from "./logo.astro";
+import Nav from "./nav";
 ---
 <header
   class="flex justify-between p-4 items-center border-b border-b-gray-900 absolute top-0 right-0 left-0 drop-shadow-sm"
   >
   <Logo />
-  <nav>
-    <ul class="flex space-x-2">
-      <NavItem to="/about">About</NavItem>
-      <NavItem to="/blog">Articles</NavItem>
-      <NavItem to="/projects">Projects</NavItem>
-      <NavItem to="/contact">Contact</NavItem>
-    </ul>
- </nav>
+  <Nav />
 </header>
