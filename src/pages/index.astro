@@ -1,6 +1,32 @@
 ---
+// TODO centralize better texts
+// TODO change size of texts
+import Text from '@/ui/components/text';
+import Heading from '@/ui/components/heading';
 import Layout from '@/ui/layouts/layout.astro';
 ---
 <Layout>
-  <p>content</p>
+  <div class="h-full flex justify-center flex-col space-y-1">
+    <div class="space-y-4">
+      <Heading
+        as="h2"
+        type="primary"
+      >
+        Matheus Ferreira
+      </Heading>
+      <Text
+        as="p"
+        type="secondary"
+        bold
+      >
+        Software Developer
+      </Text>
+    </div>
+    <Text
+      as="p"
+      type="secondary"
+    >
+      Passionated to make scalable applications
+    </Text>
+  </div>
 </Layout>

@@ -49,8 +49,8 @@ function Text(_props: TextProps) {
       class={compose(
         TYPE_STYLES[props.type],
         SIZE_STYLES[props.size],
-        props.bold ? 'font-bold' : 'font-normal',
-        props.italic ? 'italic' : 'font-normal',
+        props.bold ? 'font-bold' : '',
+        props.italic ? 'italic' : '',
       )}
     >
       {props.children}

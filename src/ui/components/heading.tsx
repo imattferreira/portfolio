@@ -4,7 +4,7 @@ import { compose } from "@/utils/style";
 
 type PolymorphicHeading = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 
-type HeadingTypes = 'primary' | 'secondary';
+type HeadingTypes = 'primary' | 'secondary' | 'tertiary';
 
 type HeadingProps = {
   as?: PolymorphicHeading;
@@ -31,6 +31,7 @@ const WEIGHT_STYLES = {
 const TYPE_STYLES = {
   primary: 'text-yellow-400',
   secondary: 'text-blue-500',
+  tertiary: 'text-gray-400'
 } satisfies Record<HeadingTypes, string>;
 
 function Heading(_props: HeadingProps) {

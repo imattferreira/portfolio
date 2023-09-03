@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply h-full;
+  }
+
   body {
-    min-height: calc(100vh - 69px);
+    height: calc(100vh - 69px - 65px);
 
     @apply bg-gray-950;
   }
