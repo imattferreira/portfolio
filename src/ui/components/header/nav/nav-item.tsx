@@ -1,4 +1,4 @@
-import Link from '@/app/components/link';
+import Link from '@/ui/components/link';
 
 type NavItemProps = {
   to: string;

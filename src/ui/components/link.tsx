@@ -7,16 +7,26 @@ type LinkTypes = 'primary' | 'secondary' | 'error' | 'success' | 'warning';
 
 type LinkSizes = 'size1' | 'size2' | 'size3';
 
-type LinkProps = {
+type LinkAnchorProps = {
   to: string;
-  as?: PolymorphicLink,
+  as?: 'a',
+  _blank?: boolean;
+}
+
+type LinkButtonProps = {
+  as?: 'button',
+}
+
+type LinkCommonProps = {
+  as?: PolymorphicLink;
   bold?: boolean;
   children: string;
   italic?: boolean;
   size?: LinkSizes;
   type?: LinkTypes;
-  _blank?: boolean;
 }
+
+type LinkProps = (LinkAnchorProps | LinkButtonProps) & LinkCommonProps;
 
 type LinkOptionalProps = Required<Pick<LinkProps, 'as' | 'type' | 'bold' | 'size' | 'italic'>>;
 
@@ -44,12 +54,12 @@ const DEFAULT_PROPS = {
 } as LinkOptionalProps;
 
 function Link(_props: LinkProps) {
-  const props = mergeProps(DEFAULT_PROPS, _props);
+  const props = mergeProps(DEFAULT_PROPS, _props) as Required<LinkProps>;
 
   return (
     <Dynamic
       component={props.as}
-      href={props.to}
+      href={props.as === 'a' ? props.to : undefined}
       class={compose(
         'cursor-pointer transition-colors',
         TYPE_STYLES[props.type],
@@ -57,8 +67,8 @@ function Link(_props: LinkProps) {
         props.bold ? 'font-bold' : 'font-normal',
         props.italic ? 'italic' : 'font-normal',
       )}
-      target={props._blank ? '_blank' : '_self'}
-      rel={props._blank ? "noopener noreferrer" : undefined}
+      target={props.as === 'a' && props._blank ? '_blank' : undefined}
+      rel={props.as === 'a' && props._blank ? "noopener noreferrer" : undefined}
     >
       {props.children}
     </Dynamic>
