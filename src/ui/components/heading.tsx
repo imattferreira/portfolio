@@ -1,6 +1,6 @@
 // TODO change font-family
 import { Dynamic, mergeProps } from "solid-js/web";
-import { compose } from "@/utils/style";
+import { compose } from "@/app/utils/style";
 import type { TailwindMarginTokens } from "@/@types/tailwind/margin";
 
 type PolymorphicHeading = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';

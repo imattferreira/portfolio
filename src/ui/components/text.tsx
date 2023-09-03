@@ -1,6 +1,6 @@
 import { Dynamic, mergeProps } from "solid-js/web";
 import type { TailwindMarginTokens } from "@/@types/tailwind/margin";
-import { compose } from "@/utils/style";
+import { compose } from "@/app/utils/style";
 
 type PolymorphicText = 'span' | 'p' | 'strong' | 'em';
 

@@ -1,5 +1,5 @@
 import { Dynamic, mergeProps } from "solid-js/web";
-import { compose, optional } from "@/utils/style";
+import { compose, optional } from "@/app/utils/style";
 
 type PolymorphicLink = 'a' | 'button';
 
