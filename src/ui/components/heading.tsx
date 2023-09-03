@@ -31,7 +31,7 @@ const WEIGHT_STYLES = {
 } satisfies Record<PolymorphicHeading, string>;
 
 const TYPE_STYLES = {
-  primary: 'text-yellow-400',
+  primary: 'text-yellow-500',
   secondary: 'text-blue-500',
   tertiary: 'text-gray-400'
 } satisfies Record<HeadingTypes, string>;
