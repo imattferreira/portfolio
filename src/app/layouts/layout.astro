@@ -1,0 +1,18 @@
+---
+import '@/app/styles/global.css';
+
+import Header from '../components/header/header.astro';
+---
+<html>
+  <head>
+    <!-- TODO add title -->
+    <!-- TODO add favicon -->
+    <!-- TODO add SEO metatags -->
+  </head>
+  <body>
+    <Header />
+    <main class="mt-16 mx-auto pt-14 px-4 w-full max-w-3xl">
+      <slot />
+    </main>
+  </body>
+</html>
