@@ -12,7 +12,7 @@ type HeadingProps = {
   children: string;
 }
 
-type HeadingOptionalProps = Pick<HeadingProps, 'as' | 'type'>;
+type HeadingOptionalProps = Required<Pick<HeadingProps, 'as' | 'type'>>;
 
 const DEFAULT_PROPS = {
   type: 'primary',
