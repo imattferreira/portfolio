@@ -1,0 +1,16 @@
+---
+import Link from '../link';
+
+type Props = {
+  to: string;
+}
+
+const { to } = Astro.props;
+---
+
+<li class="py-1 px-2">
+  <Link to={to} size="size3" type="secondary" _blank>
+    <slot />
+  </Link>
+</li>
+

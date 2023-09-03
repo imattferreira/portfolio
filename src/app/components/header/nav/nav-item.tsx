@@ -7,7 +7,7 @@ type NavItemProps = {
 
 function NavItem(props: NavItemProps) {
   return (
-    <li class="py-1 px-2 hover:text-gray-200">
+    <li class="py-1 px-2">
       <Link to={props.to} size="size3" type="secondary">
         {props.children}
       </Link>

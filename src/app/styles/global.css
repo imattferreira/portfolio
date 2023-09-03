@@ -4,21 +4,8 @@
 
 @layer base {
   body {
-    @apply bg-gray-950 h-screen;
-  }
+    min-height: calc(100vh - 69px);
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    @apply text-yellow-400;
-  }
-
-  p,
-  a,
-  span {
-    @apply text-gray-300;
+    @apply bg-gray-950;
   }
 }

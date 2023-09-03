@@ -15,6 +15,7 @@ type LinkProps = {
   italic?: boolean;
   size?: LinkSizes;
   type?: LinkTypes;
+  _blank?: boolean;
 }
 
 type LinkOptionalProps = Required<Pick<LinkProps, 'as' | 'type' | 'bold' | 'size' | 'italic'>>;
@@ -39,6 +40,7 @@ const DEFAULT_PROPS = {
   italic: false,
   size: 'size2',
   type: 'primary',
+  _blank: false,
 } as LinkOptionalProps;
 
 function Link(_props: LinkProps) {
@@ -47,6 +49,7 @@ function Link(_props: LinkProps) {
   return (
     <Dynamic
       component={props.as}
+      href={props.to}
       class={compose(
         'cursor-pointer transition-colors',
         TYPE_STYLES[props.type],
@@ -54,6 +57,8 @@ function Link(_props: LinkProps) {
         props.bold ? 'font-bold' : 'font-normal',
         props.italic ? 'italic' : 'font-normal',
       )}
+      target={props._blank ? '_blank' : '_self'}
+      rel={props._blank ? "noopener noreferrer" : undefined}
     >
       {props.children}
     </Dynamic>
