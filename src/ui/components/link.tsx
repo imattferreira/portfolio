@@ -1,5 +1,5 @@
 import { Dynamic, mergeProps } from "solid-js/web";
-import { compose } from "@/utils/style";
+import { compose, optional } from "@/utils/style";
 
 type PolymorphicLink = 'a' | 'button';
 
@@ -19,6 +19,7 @@ type LinkButtonProps = {
 
 type LinkCommonProps = {
   as?: PolymorphicLink;
+  asChild?: boolean;
   bold?: boolean;
   children: string;
   italic?: boolean;
@@ -28,7 +29,7 @@ type LinkCommonProps = {
 
 type LinkProps = (LinkAnchorProps | LinkButtonProps) & LinkCommonProps;
 
-type LinkOptionalProps = Required<Pick<LinkProps, 'as' | 'type' | 'bold' | 'size' | 'italic'>>;
+type LinkOptionalProps = Required<Pick<LinkProps, 'as' | 'type' | 'bold' | 'size' | 'italic' | 'asChild'>>;
 
 const TYPE_STYLES = {
   error: 'text-red-700 hover:text-red-500',
@@ -46,6 +47,7 @@ const SIZE_STYLES = {
 
 const DEFAULT_PROPS = {
   as: 'a',
+  asChild: false,
   bold: false,
   italic: false,
   size: 'size2',
@@ -61,11 +63,12 @@ function Link(_props: LinkProps) {
       component={props.as}
       href={props.as === 'a' ? props.to : undefined}
       class={compose(
-        'cursor-pointer transition-colors',
-        TYPE_STYLES[props.type],
-        SIZE_STYLES[props.size],
-        props.bold ? 'font-bold' : 'font-normal',
-        props.italic ? 'italic' : 'font-normal',
+        'cursor-pointer',
+        optional(!props.asChild, 'transition-colors'),
+        optional(!props.asChild, TYPE_STYLES[props.type]),
+        optional(!props.asChild, SIZE_STYLES[props.size]),
+        optional(props.bold, 'font-bold'),
+        optional(props.italic, 'italic'),
       )}
       target={props.as === 'a' && props._blank ? '_blank' : undefined}
       rel={props.as === 'a' && props._blank ? "noopener noreferrer" : undefined}
