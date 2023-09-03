@@ -10,6 +10,14 @@
   body {
     height: calc(100vh - 69px - 65px);
 
-    @apply bg-gray-950;
+    @apply bg-blue-950;
+  }
+
+  ::-moz-selection {
+    @apply text-gray-200 bg-blue-700;
+  }
+
+  ::selection {
+    @apply text-gray-200 bg-blue-700;
   }
 }
