@@ -1,5 +1,5 @@
 import { Dynamic, mergeProps } from 'solid-js/web';
-import { compose, optional } from '@/app/utils/style';
+import { compose, extractMarginProps, optional } from '@/app/utils/style';
 import type { MarginProps } from '@/@types/tailwind';
 import type { JSXElement } from 'solid-js';
 
@@ -55,13 +55,7 @@ function Text(_props: TextProps): JSXElement {
         SIZE_STYLES[props.size],
         optional(props.bold, 'font-bold'),
         optional(props.italic, 'italic'),
-        optional(props.m, props.m),
-        optional(props.mt, props.mt),
-        optional(props.mb, props.mb),
-        optional(props.ml, props.ml),
-        optional(props.mr, props.mr),
-        optional(props.mx, props.mx),
-        optional(props.my, props.my),
+        extractMarginProps(props),
       )}
     >
       {props.children}

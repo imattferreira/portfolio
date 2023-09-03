@@ -43,3 +43,4 @@ type DisplayCommonProps = {
 
 export type DisplayProps = FlexDisplayProps
   | DisplayCommonProps;
+

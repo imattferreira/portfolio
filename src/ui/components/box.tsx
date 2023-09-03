@@ -10,7 +10,18 @@ import type {
   TranslateProps,
   DropShadowProps,
 } from '@/@types/tailwind';
-import { compose, optional } from '@/app/utils/style';
+import {
+  compose,
+  extractBgProps,
+  extractBorderProps,
+  extractDisplayProps,
+  extractDropShadowProps,
+  extractMarginProps,
+  extractPaddingProps,
+  extractPositionProps,
+  extractSizeProps,
+  extractSpacingProps,
+} from '@/app/utils/style';
 import type { JSXElement } from 'solid-js';
 import { Dynamic, mergeProps } from 'solid-js/web';
 
@@ -57,31 +68,15 @@ function Box(_props: BoxProps) {
     <Dynamic
       component={props.as}
       class={compose(
-        optional(props.m, props.m),
-        optional(props.mt, props.mt),
-        optional(props.mb, props.mb),
-        optional(props.ml, props.ml),
-        optional(props.mr, props.mr),
-        optional(props.mx, props.mx),
-        optional(props.my, props.my),
-        optional(props.p, props.p),
-        optional(props.pt, props.pt),
-        optional(props.pb, props.pb),
-        optional(props.pl, props.pl),
-        optional(props.pr, props.pr),
-        optional(props.px, props.px),
-        optional(props.py, props.py),
-        optional(props.spacingX, props.spacingX),
-        optional(props.spacingY, props.spacingY),
-        optional(props.bg, props.bg),
-        optional(props.display, props.display),
-        // optional(props.display === 'flex' && props.flexDir, props.flexDir),
-        // optional(props.alignItems, props.alignItems),
-        // optional(props.justifyContent, props.justifyContent),
-        optional(props.h, props.h),
-        optional(props.minH, props.minH),
-        optional(props.w, props.w),
-        optional(props.minW, props.minW),
+        extractMarginProps(props),
+        extractPaddingProps(props),
+        extractSpacingProps(props),
+        extractBgProps(props),
+        extractDisplayProps(props),
+        extractSizeProps(props),
+        extractBorderProps(props),
+        extractPositionProps(props),
+        extractDropShadowProps(props),
       )}
     >
       {props.children}

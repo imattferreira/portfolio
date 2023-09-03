@@ -1,5 +1,5 @@
 import { Dynamic, mergeProps } from 'solid-js/web';
-import { compose, optional } from '@/app/utils/style';
+import { compose, extractMarginProps } from '@/app/utils/style';
 import type { MarginProps } from '@/@types/tailwind';
 import type { JSXElement } from 'solid-js';
 
@@ -47,13 +47,7 @@ function Heading(_props: HeadingProps): JSXElement {
         'font-bold',
         WEIGHT_STYLES[props.as],
         TYPE_STYLES[props.type],
-        optional(props.m, props.m),
-        optional(props.mt, props.mt),
-        optional(props.mb, props.mb),
-        optional(props.ml, props.ml),
-        optional(props.mr, props.mr),
-        optional(props.mx, props.mx),
-        optional(props.my, props.my),
+        extractMarginProps(props),
       )}
     >
       {props.children}
