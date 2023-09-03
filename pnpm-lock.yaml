@@ -37,6 +37,9 @@ devDependencies:
   eslint-plugin-jsx-a11y:
     specifier: ^6.7.1
     version: 6.7.1(eslint@8.48.0)
+  pnpm:
+    specifier: ^8.7.1
+    version: 8.7.1
   typescript:
     specifier: ^4.5.5
     version: 4.5.5
@@ -3888,6 +3891,12 @@ packages:
     dependencies:
       find-up: 4.1.0
     dev: false
+
+  /pnpm@8.7.1:
+    resolution: {integrity: sha512-Qbt3EhYUaXFS2k4FLQA7r2/eYz/JoDeG680/3UXG0Ga03LPuY4GgdvCLe+zO3M7ZnWG4VI4bAwk7QpJyfr5eqA==}
+    engines: {node: '>=16.14'}
+    hasBin: true
+    dev: true
 
   /postcss-import@15.1.0(postcss@8.4.29):
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}

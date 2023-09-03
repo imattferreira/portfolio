@@ -1,5 +1,6 @@
-import { compose } from "@/utils/style";
 import { Dynamic, mergeProps } from "solid-js/web";
+import type { TailwindMarginTokens } from "@/@types/tailwind/margin";
+import { compose } from "@/utils/style";
 
 type PolymorphicText = 'span' | 'p' | 'strong' | 'em';
 
@@ -12,6 +13,7 @@ type TextProps = {
   bold?: boolean;
   children: string;
   italic?: boolean;
+  margin?: TailwindMarginTokens;
   size?: TextSizes;
   type?: TextTypes;
 }
@@ -51,6 +53,7 @@ function Text(_props: TextProps) {
         SIZE_STYLES[props.size],
         props.bold ? 'font-bold' : '',
         props.italic ? 'italic' : '',
+        !!props.margin ? props.margin : '',
       )}
     >
       {props.children}
