@@ -34,7 +34,7 @@ const TYPE_STYLES = {
 } satisfies Record<HeadingTypes, string>;
 
 function Heading(_props: HeadingProps) {
-  const props = mergeProps(_props, DEFAULT_PROPS) as Required<HeadingProps>;
+  const props = mergeProps(DEFAULT_PROPS, _props);
 
   return (
     <Dynamic

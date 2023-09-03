@@ -1,13 +1,14 @@
 ---
+import Link from '@/app/components/link';
+
 type Props = {
-  href: string;
+  to: string;
 }
 
-const { href } = Astro.props;
+const { to } = Astro.props;
 ---
-<!-- TODO fix hover style and add animation -->
 <li class="py-1 px-2 hover:text-gray-200">
-  <a href={href} class="text-sm">
+  <Link to={to} size="size3" type="secondary">
     <slot />
-  </a>
+  </Link>
 </li>

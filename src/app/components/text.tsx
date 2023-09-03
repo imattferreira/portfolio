@@ -41,7 +41,7 @@ const DEFAULT_PROPS = {
 } as TextOptionalProps;
 
 function Text(_props: TextProps) {
-  const props = mergeProps(_props, DEFAULT_PROPS) as Required<TextProps>;
+  const props = mergeProps(DEFAULT_PROPS, _props);
 
   return (
     <Dynamic
