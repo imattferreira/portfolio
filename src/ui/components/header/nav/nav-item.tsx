@@ -1,10 +1,10 @@
-import Link from '@/ui/components/link';
-import Box from '../../box';
+import Link from "@/ui/components/link";
+import Box from "../../box";
 
 type NavItemProps = {
   to: string;
   children: string;
-}
+};
 
 function NavItem(props: NavItemProps) {
   return (
